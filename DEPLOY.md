@@ -25,47 +25,8 @@ This portfolio website is configured to be deployed to GitHub Pages. Follow thes
    - For example, if your repo is `portfolio`, use `/portfolio`
    - If deploying to `username.github.io`, remove the `basePath` and `assetPrefix` entirely
 
-4. **Enable GitHub Actions**
-   - Create `.github/workflows/deploy.yml`:
-
-   ```yaml
-   name: Deploy to GitHub Pages
-
-   on:
-     push:
-       branches: [main]
-     workflow_dispatch:
-
-   permissions:
-     contents: read
-     pages: write
-     id-token: write
-
-   jobs:
-     build:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: actions/checkout@v4
-         - uses: actions/setup-node@v4
-           with:
-             node-version: '20'
-             cache: 'npm'
-         - run: npm ci
-         - run: npm run build
-         - uses: actions/upload-pages-artifact@v3
-           with:
-             path: ./out
-
-     deploy:
-       needs: build
-       runs-on: ubuntu-latest
-       environment:
-         name: github-pages
-         url: ${{ steps.deployment.outputs.page_url }}
-       steps:
-         - id: deployment
-           uses: actions/deploy-pages@v4
-   ```
+4. **Install npm**
+   npm install
 
 5. **Configure GitHub Pages**
    - Go to your repository on GitHub
@@ -83,9 +44,9 @@ This portfolio website is configured to be deployed to GitHub Pages. Follow thes
 To test the production build locally:
 
 ```bash
-npm run build
-npx serve@latest out
+npm run dev
 ```
+http://localhost:3000/eszter-with-sz-portfolio
 
 ## Troubleshooting
 

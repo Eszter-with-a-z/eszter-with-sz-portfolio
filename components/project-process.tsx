@@ -2,14 +2,16 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Image from "next/image"
 import { Plus } from "lucide-react"
 
-interface ProcessStep {
+export interface ProcessContentItem {
+  type: "text" | "image"
+  text?: string
+  url?: string
+}
+
+export interface ProcessStep {
   title: string
   subtitle: string
-  content: Array<{
-    type: "text" | "image"
-    text?: string
-    url?: string
-  }>
+  content: ProcessContentItem[]
 }
 
 interface ProjectProcessProps {
