@@ -19,13 +19,13 @@ export const projectsData: Record<
 > = {
   "1": {
     id: 1,
-    title: "Sustainable Living App",
-    subtitle: "Making eco-friendly choices accessible",
-    field: "Mobile App Design",
-    projectType: "UX/UI Design",
-    responsibilities: "User research, wireframing, prototyping, visual design",
+    title: "(Em)powered by AI",
+    subtitle: "a conversational agent for creative entrepreneurs’ authentic content creation",
+    field: "Human-centered AI",
+    projectType: "individual thesis project | passed with distinction",
+    responsibilities: "all (user research, analysis, ideation, implementation, testing)",
     duration: "3 months",
-    technology: "Figma, React Native",
+    technology: "generative AI (Gemma 3); Python Flask; JS Vanilla",
     images: [
       "/mobile-app-sustainable-living-1.jpg",
       "/mobile-app-sustainable-living-2.jpg",
@@ -33,22 +33,42 @@ export const projectsData: Record<
       "/mobile-app-sustainable-living-4.jpg",
     ],
     problem: {
-      col1: "Many people want to live more sustainably but find it overwhelming to know where to start. The abundance of information and conflicting advice makes it difficult for individuals to make informed decisions about their daily choices.",
-      col2: "Our research revealed that users needed a personalized, actionable approach to sustainability. They wanted to track their progress, understand their impact, and receive specific recommendations based on their lifestyle and location.",
+      col1: "“I want AI to do my laundry and dishes so that I can do  art and writing, not for AI to do my art and writing so  that I can do my laundry and dishes.“ (Maciejewska,  2024)",
+      col2: `The 4th industrial revolution once again 
+      poses the question: are we automating the work we
+       want to be liberated from? What work should be 
+       replaced by technology (in this case, by AI)? 
+       The target group of the project is creative 
+       entrepreneurs, such as crafters and digital 
+       artists. My thesis asks the question: How might c
+       reative entrepreneurs use generative AI to 
+        enhance the meaningfulness of their (day-to-day) 
+        work?`,
     },
     proposal: {
       text: [
-        "We designed an intuitive mobile application that breaks down sustainable living into manageable daily actions. The app features a personalized dashboard that tracks your environmental impact across categories like transportation, food, energy, and waste.",
-        "Key features include a carbon footprint calculator, a community challenge system to stay motivated, and local resources for sustainable shopping and services. The design emphasizes positive reinforcement and celebrates small wins.",
-        "The interface uses clear data visualization to help users understand their progress over time. We incorporated gamification elements thoughtfully to encourage consistent engagement without feeling preachy or judgmental.",
+        `a conversational agent for creative workers to brainstorm social media content when their hands are busy `,
+        `“Showing the process is important. It’s almost as important as the physical product.”
+            “I know it is important to post on social media...but if I want to do it properly, it takes a full-time job.”
+            Even when your hobby is your work, it has monotonous phases. `,
+        `This project proposes a conversational agent that can help creative entrepreneurs in these monotonous phases progress with the “invisible work” of content creation. 
+            It does so by conversing with creative worker either to capture their ideas or to help come up with new ones. The conversation ends with
+            1) a visual recommendation based on the context (screenshot, video, photo depending on e.g. the location of the person)
+            2) SEO optimized hashtag recommendation for the content.
+            (See in the video below)`,
+        `This proposal builds on the finding that 
+creative entrepreneurs are willing to offload entrepreneurial, rather than the creative tasks in their work to AI. 
+
+This includes content creation for social media which is extremely important, as the creative workers confirm that showing the process behind their products differentiates them from mass-produced alternatives.`,
       ],
       videoUrl: "/sustainable-app-demo-video.jpg",
-      videoCaption: "Interactive prototype showing the onboarding flow and daily challenge feature",
+      videoCaption: "Video: Here, you can see the video prototype showcasing the interaction between an architect student and the conversational agent.",
     },
     process: [
       {
-        title: "Discovery & Research",
-        subtitle: "2 weeks",
+        title: "Academic research",
+        subtitle: `Job crafting is a successful coping strategy against the uncertainty introduced by AI.
+                    Beyond job crafting, the leading principles for the project are going to be grounded in Human-Centered AI.`,
         content: [
           {
             type: "text",
@@ -65,8 +85,8 @@ export const projectsData: Record<
         ],
       },
       {
-        title: "Ideation & Wireframing",
-        subtitle: "2 weeks",
+        title: "Empathize: User Research",
+        subtitle: `Crafters struggle to ask for the real price of their work due the unrealistic competition with industrialized production due to the “invisible work”.`,
         content: [
           {
             type: "image",
@@ -83,8 +103,8 @@ export const projectsData: Record<
         ],
       },
       {
-        title: "Visual Design",
-        subtitle: "3 weeks",
+        title: "Define: Qualitative Analysis",
+        subtitle: `Crafters’ sense of meaningfulness comes from 3 main factors: the sense of creating something; bringing joy to others and artistic self expression.`,
         content: [
           {
             type: "text",
@@ -101,8 +121,9 @@ export const projectsData: Record<
         ],
       },
       {
-        title: "Prototyping",
-        subtitle: "2 weeks",
+        title: "Ideate: Sketching",
+        subtitle: `Through sketching, identify 5 distinct design opportunities. 
+                    From those, “invisible work” is chosen.`,
         content: [
           {
             type: "image",
@@ -119,8 +140,48 @@ export const projectsData: Record<
         ],
       },
       {
-        title: "Usability Testing",
-        subtitle: "2 weeks",
+        title: "Define: Storyboarding",
+        subtitle: `The addressed issue is further narrowed down to social media content creation.
+                    Through storyboarding, I define the expected behavior of the prototype.`,
+        content: [
+          {
+            type: "text",
+            text: "We conducted moderated usability tests with 15 participants, observing how they interacted with the prototype and gathering feedback on the experience.",
+          },
+          {
+            type: "text",
+            text: "Key findings led to refinements in the navigation structure and simplified the onboarding process from 5 steps to 3.",
+          },
+          {
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+          },
+        ],
+      },
+      {
+        title: "Prototyping",
+        subtitle: `The prototype is a conversational agent powered by a generative AI model.
+                    It prioritizes the principles of usable AI, augmenting human skill, and human-driven decision making.`,
+        content: [
+          {
+            type: "text",
+            text: "We conducted moderated usability tests with 15 participants, observing how they interacted with the prototype and gathering feedback on the experience.",
+          },
+          {
+            type: "text",
+            text: "Key findings led to refinements in the navigation structure and simplified the onboarding process from 5 steps to 3.",
+          },
+          {
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+          },
+        ],
+      },
+      {
+        title: "Test: Usability Testing",
+        subtitle: `The AI-powered assistant makes content creation more effortless.
+                    It must ideate creatively, pick up and build on details from the context of the conversation.
+                    Creatives are open for offloading parts of their tasks, but they themselves must do other parts to  preserve authenticity.`,
         content: [
           {
             type: "text",

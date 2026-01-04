@@ -48,6 +48,11 @@ npm run dev
 ```
 http://localhost:3000/eszter-with-sz-portfolio
 
+to export to static pages:
+```bash
+npm run build
+```
+
 ## Troubleshooting
 
 - **Images not loading**: Make sure `images.unoptimized` is set to `true` in `next.config.mjs`
