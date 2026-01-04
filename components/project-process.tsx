@@ -6,6 +6,7 @@ export interface ProcessContentItem {
   type: "text" | "image"
   text?: string
   url?: string
+  caption?:string
 }
 
 export interface ProcessStep {

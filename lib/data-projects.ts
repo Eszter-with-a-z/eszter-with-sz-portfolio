@@ -71,16 +71,20 @@ This includes content creation for social media which is extremely important, as
                     Beyond job crafting, the leading principles for the project are going to be grounded in Human-Centered AI.`,
         content: [
           {
-            type: "text",
-            text: "We conducted interviews with 25 participants across different demographics to understand their relationship with sustainability. We also analyzed competing apps and identified gaps in the market.",
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
           },
           {
             type: "text",
-            text: "Key insights: Users want specific, actionable advice rather than general tips. They need positive reinforcement and community support to maintain motivation.",
+            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+
+                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=user-research-interview-notes",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Image examples for testing"
           },
         ],
       },
@@ -90,15 +94,19 @@ This includes content creation for social media which is extremely important, as
         content: [
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=wireframe-sketches-mobile",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
           },
           {
             type: "text",
-            text: "We explored multiple approaches through rapid sketching and low-fidelity wireframes. The team collaborated in design studios to generate diverse solutions.",
+            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+
+                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=digital-wireframes-screens",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Image examples for testing"
           },
         ],
       },
@@ -107,16 +115,20 @@ This includes content creation for social media which is extremely important, as
         subtitle: `Crafters’ sense of meaningfulness comes from 3 main factors: the sense of creating something; bringing joy to others and artistic self expression.`,
         content: [
           {
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
+          },
+          {
             type: "text",
-            text: "The visual language emphasizes natural, earthy tones while maintaining a modern, clean aesthetic. We created a comprehensive design system for consistency.",
+            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+
+                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=design-system-colors-typography",
-          },
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=final-ui-screens-mobile",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Image examples for testing"
           },
         ],
       },
@@ -127,15 +139,19 @@ This includes content creation for social media which is extremely important, as
         content: [
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=interactive-prototype-figma",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
           },
           {
             type: "text",
-            text: "We built a high-fidelity, interactive prototype in Figma to test the complete user journey from onboarding through daily use.",
+            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+
+                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
           },
           {
-            type: "text",
-            text: "The prototype included micro-interactions and animations to demonstrate the delightful user experience we envisioned.",
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Image examples for testing"
           },
         ],
       },
@@ -145,17 +161,22 @@ This includes content creation for social media which is extremely important, as
                     Through storyboarding, I define the expected behavior of the prototype.`,
         content: [
           {
-            type: "text",
-            text: "We conducted moderated usability tests with 15 participants, observing how they interacted with the prototype and gathering feedback on the experience.",
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
           },
           {
             type: "text",
-            text: "Key findings led to refinements in the navigation structure and simplified the onboarding process from 5 steps to 3.",
+            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+
+                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
           },
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-          },
+            caption:"Image examples for testing"
+          },          
+
         ],
       },
       {
@@ -164,17 +185,22 @@ This includes content creation for social media which is extremely important, as
                     It prioritizes the principles of usable AI, augmenting human skill, and human-driven decision making.`,
         content: [
           {
-            type: "text",
-            text: "We conducted moderated usability tests with 15 participants, observing how they interacted with the prototype and gathering feedback on the experience.",
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
           },
           {
             type: "text",
-            text: "Key findings led to refinements in the navigation structure and simplified the onboarding process from 5 steps to 3.",
+            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+
+                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
           },
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Image examples for testing"
           },
+
         ],
       },
       {
@@ -184,30 +210,35 @@ This includes content creation for social media which is extremely important, as
                     Creatives are open for offloading parts of their tasks, but they themselves must do other parts to  preserve authenticity.`,
         content: [
           {
-            type: "text",
-            text: "We conducted moderated usability tests with 15 participants, observing how they interacted with the prototype and gathering feedback on the experience.",
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
           },
           {
             type: "text",
-            text: "Key findings led to refinements in the navigation structure and simplified the onboarding process from 5 steps to 3.",
+            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+
+                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
           },
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-          },
+            caption:"Image examples for testing"
+          },         
+
         ],
       },
     ],
   },
   "2": {
     id: 2,
-    title: "Healthcare Dashboard",
-    subtitle: "Streamlining patient data management",
-    field: "Web Application",
-    projectType: "Product Design",
-    responsibilities: "User flows, interface design, usability testing",
-    duration: "4 months",
-    technology: "Sketch, Next.js",
+    title: "Reader's Lamp",
+    subtitle: "a lamp to challenge the default switch interaction",
+    field: "product design",
+    projectType: "design sprint in teams of 4",
+    responsibilities: "user researcher; programmer; tester",
+    duration: "1 week",
+    technology: "C++; Arduino; Supplyframe PCB Lamp",
     images: [
       "/healthcare-dashboard-overview.jpg",
       "/healthcare-patient-records.jpg",
@@ -215,102 +246,137 @@ This includes content creation for social media which is extremely important, as
       "/placeholder.svg?height=600&width=800",
     ],
     problem: {
-      col1: "Healthcare providers were struggling with fragmented systems that required switching between multiple applications to access patient information. This led to inefficiencies, potential errors, and frustration among medical staff.",
-      col2: "Doctors and nurses needed a unified dashboard that could provide quick access to patient records, schedules, and critical alerts. The system had to be intuitive enough for busy healthcare workers to use under pressure.",
+      col1: `Light is a versatile design material. Natural light ranges from sunrise to bio-luminescence, from the Northern lights to fire, with a great diversity.
+             Artificial light nowadays is present everywhere from the streets to LEDs in chargers.
+            Despite the ubiquity of artificial light, interacting with it is mostly limited to on/off switches.`,
+      col2: `In our design challenge, our task was to create a quick prototype of a lamp that challenges this conventional binary interaction.`,
     },
     proposal: {
       text: [
-        "We designed a comprehensive dashboard that centralizes all patient information in one place. The interface prioritizes critical information and uses clear visual hierarchy to help healthcare workers find what they need quickly.",
-        "The dashboard includes customizable widgets, allowing each user to configure their workspace based on their specific role and preferences. Real-time updates and smart notifications ensure that important information is never missed.",
-        "We paid special attention to accessibility and compliance with healthcare regulations, ensuring the system could be used by all staff members and met strict security requirements.",
+        "A lamp for readers, whose functionality ranges from ambience lamp to task lamp",
+        `Our prototype proposes a book-shaped ambient lamp whose brightness and temperature are adjustable to match the user's current activity. It ranges from a “candle” light (1500K) which has a warm and relaxing effect to white light (9500K) which helps stay awake and focused.`,
+        `Instead of “switching” between different moods, our goal was to afford an interaction that is 1) integral to its metaphor, & 2) continuous (to replace the switch interaction).
+
+        To achieve this, we chose the book metaphor with the opening - closing interaction. To make it continuous, its light ranges from a white and sharp light to help focused work to a warm, flickering light for relaxing.`,
+        `/the metaphor a book`,
+        `/the interaction opening-closing`
       ],
       videoUrl: "/placeholder.svg?height=400&width=800",
-      videoCaption: "Overview of the dashboard interface and key features in action",
+      videoCaption: `Video: The high-fidelity prototype of the book lamp demonstrates changing the light brightness and temperature depending on the angle of openness
+                    The quality of the camera modified the appearance of the light. It ranges from approx. 1500K to 9500K.`,
     },
     process: [
       {
-        title: "Research & Analysis",
-        subtitle: "3 weeks",
+        title: "Receive design challenge",
+        subtitle: "Create a lamp that affords interaction other than an on/off switch!",
+        content: [],
+      },
+      {
+        title: "Monday: Research & Ideate about Arduino sensors",
+        subtitle: "Create 12 sketches based on the built-in sensors of Arduino",
         content: [
           {
             type: "text",
-            text: "We shadowed healthcare workers in clinical settings to understand their daily workflows and pain points. We also analyzed existing systems to identify opportunities for improvement.",
+            text: `On Monday, upon receiving the design challenge, we got an introduction to our design material: a Supplyfame PCB lamp starter kit as the light output and an Arduino Nano BLE 33 microcontroller as the controller, but also an input device.
+            First, we mapped out the different sensors of the given microcontroller and challenged ourselves to come up with at least one idea for each. 
+            The image shows a stage of our mind map, where the words in rectangles signify the sensors, to which we connected our related ideas. 
+
+            By the end of the session, we collected a total of 12 ideas.`,
           },
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=healthcare-research-shadowing",
-          },
-          {
-            type: "text",
-            text: "Key insight: Speed and clarity are paramount. Healthcare workers need to access information in seconds, not minutes.",
+            caption: "Our initial mind map with each sensor of the microcontroller in the rectangles."
           },
         ],
       },
       {
-        title: "Information Architecture",
-        subtitle: "2 weeks",
+        title: "Tuesday: Research the use of household lamps",
+        subtitle: "Discover a need for adjustable ambience lamps",
         content: [
           {
             type: "text",
-            text: "We mapped out the entire information structure, conducting card sorting exercises with medical staff to understand their mental models.",
-          },
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=information-architecture-diagram",
-          },
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=user-flow-diagrams",
-          },
-        ],
-      },
-      {
-        title: "Interface Design",
-        subtitle: "4 weeks",
-        content: [
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=dashboard-design-iterations",
-          },
-          {
-            type: "text",
-            text: "We created multiple design iterations, focusing on clean layouts and intuitive navigation. Color coding and iconography help users quickly identify different types of information.",
+            text: `On Tuesday, we conducted short interviews with arbitrary people around us to learn more about their use of household lamps. The interviews revealed a need for ambient lamps that are easily adjustable. Based on this, we further narrowed our ideas down to 3 (in the picture: the ones with asterisks next to them).`
           },
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=component-library-medical",
+            caption: "The 3 ideas we narrowed our options down after the interviews: shelf spotlight, proximity brightness, gesture lamp."
           },
         ],
       },
       {
-        title: "Validation & Testing",
-        subtitle: "3 weeks",
+        title: "Wednesday: Ideate about the shape and use of the book lamp",
+        subtitle: "Strive for a light-weighted portable lamp whose functionality ranges from task lamp to ambient lamp",
         content: [
-          {
-            type: "text",
-            text: "We conducted extensive usability testing with doctors, nurses, and administrative staff to validate our design decisions.",
-          },
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=usability-test-results",
+            caption:"Illustrations of the expected behavior of the lamp."
           },
           {
             type: "text",
-            text: "The testing revealed that our design reduced task completion time by 40% compared to the existing system.",
+            text: `In our next ideation phase, we "bodystormed" about the 3 different ideas. As an outcome, we shifted our focus from creating a reading lamp to creating a lamp for a reader. 
+
+                  What it meant for us is to create a wide functionality to fit the user’s versatile needs: sometimes, you need sharp light for reading to focus and prevent eye fatigue, whereas other times, you want to use smaller lamps to create a cozy ambience for reading.
+                  We sketched out four different ideas for its shape. Finally, we picked the idea of the "Pinterest-famous" book-shaped lamp, as we wanted to prioritize lightweight portable ones over standing lamps to afford more flexibility. `
+          },
+          {
+            type: "text",
+            text: `So what would be our contribution? 
+
+                  We decided to focus not in creating a new shape but to enhance the book metaphor by creating a behavior that is integral to it.
+                  In our case, this behavior was the "opening-closing" interaction - instead of on-off states, we focused on the motion and angle of opening the book. It created a range the bridges the gap between ambient lamps to task lamps.`
+          },
+        ],
+      },
+      {
+        title: "Thursday: Prototype & Test",
+        subtitle: "Material exploration",
+        content: [
+          {
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-test-results",
+            caption:"The lampshade in the making."
+          },
+          {
+            type: "text",
+            text: `My groupmates were working on the cover of the book. In the meantime, I wrote the code. The general idea is that the more opened the book is, the more dimmed the light should be to serve as a decoration. Accordingly, the more closed it is, the brighter and more direct the light should be.
+                    It was only after the user testing, the we realized that not only the brightness but also the temperature of the light shall change.
+                    
+                    We spent the rest of the day implementing that feature and refining the lampshade.`
+          },
+        ],
+      },
+      {
+        title: "Friday: Test & Present",
+        subtitle: "Present the prototype to express and deliver the concept.",
+        content: [
+          {
+            type: "image",
+            url: "[gif]/placeholder.svg?height=400&width=600&query=usability-test-results",
+            caption:`The prototype on the day of the presentation.`
+          },
+          {
+            type: "text",
+            text: `On our final day, we once again tested the prototype and documented what would be the next steps in its development.
+
+                Finally, we concluded the design sprint by presenting the concept, receiving feedback and discussing it.`
           },
         ],
       },
     ],
   },
+  
   "3": {
     id: 3,
-    title: "E-Learning Platform",
-    subtitle: "Engaging educational experiences",
-    field: "EdTech",
-    projectType: "Full Stack Design",
-    responsibilities: "Research, design system, interaction design",
-    duration: "6 months",
-    technology: "Figma, Vue.js",
+    title: "Reed-E",
+    subtitle: "a reed eliminating robot to help wetland-restoration",
+    field: "Robotics; More than human design",
+    projectType: "group project in a team of 4",
+    responsibilities: "research analyst; prototyper; project coordinator",
+    duration: "5 weeks",
+    technology: "Teachable Machine ML model; Arduino; C++;",
     images: [
       "/placeholder.svg?height=600&width=800",
       "/placeholder.svg?height=600&width=800",
@@ -318,106 +384,197 @@ This includes content creation for social media which is extremely important, as
       "/placeholder.svg?height=600&width=800",
     ],
     problem: {
-      col1: "Traditional e-learning platforms often feel impersonal and fail to maintain student engagement. High dropout rates and low completion rates indicate that current solutions are not meeting learner needs effectively.",
-      col2: "Students need an engaging, interactive learning experience that adapts to their pace and learning style. Educators need tools to create compelling content and track student progress effectively.",
+      col1: "Reed cutting requires too many resources for NGOs that work toward preserving biodiversity.",
+      col2: "Common reed spreads quickly in Central European wetlands leading to paludification and loss of biodiversity. NGOs tackling wetland preservation identified reed elimination as an area where they would need help. This task is physically demanding and requires a lot of human resources.",
     },
     proposal: {
       text: [
-        "We created an interactive learning platform that makes education feel more like an engaging experience than a chore. The platform uses adaptive learning technology to personalize content based on individual progress and comprehension.",
-        "Students can learn at their own pace with a mix of video lessons, interactive exercises, and collaborative projects. The interface includes progress tracking, achievement badges, and social features to build a sense of community.",
-        "For educators, we designed an intuitive course creation tool with templates, media integration, and analytics to understand how students are engaging with their content.",
+        "A robot with a 2-step reed-recognition system",
+        `Throughout our design, we drew inspiration from more-than-human design, especially from Reynolds-Cuéllar and Salazar-Gómez's work on Nature-Human Interaction (2023). As opposed to the initial problem statement and traditional HCI approach focusing on improving performance or easing the physical burden on humans, we prioritized the ecosystem's and its members' safety.
+        Interestingly, this approach eventually led us to a solution equally beneficial both for humans and for the ecosystem. We could solve both the problem of human resources and the ecosystem's safety by focusing on detecting the sprouts instead of the fully developed reed (see more in the Process section).
+        To achieve it, we developed the concept of a 2-step reed-recognition system with a cutting mechanism:`,
+        "grabbing arms + capacitive sensor /1st step",
+        "The robot is equipped with a capacitive sensor on its grabbing arms. It serves for a constant monitoring of the environment on a low technological level and to distinguish living plants from other members of the ecosystem (e.g. dry trunks, animals).",
+        "camera + ML model 2nd step",
+        "Once a living plant is detected, the camera is activated. It is connected to an ML model trained to distinguish reeds from other members of the wetland vegetation.",
       ],
       videoUrl: "/placeholder.svg?height=400&width=800",
-      videoCaption: "Student experience walkthrough showing interactive lessons and progress tracking",
+      videoCaption: `Video: Here, you can see a video prototype showcasing the expected behavior of the robot in 3 scenarios:
+      1) when it encounters an animal
+      2) when it encounters a plant other than a common reed
+      3) when it encounters common reed`,
     },
     process: [
       {
-        title: "User Research",
-        subtitle: "4 weeks",
+        title: "Narrow down the framing",
+        subtitle: "Our project will encompass the exploration of (1) plant recognition, (2) cutting mechanism, and most importantly, (3) how to combine them.",
         content: [
           {
             type: "text",
-            text: "We interviewed students and educators to understand their frustrations with existing e-learning platforms and what would make learning more engaging.",
-          },
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=student-interview-sessions",
-          },
-          {
-            type: "text",
-            text: "Key findings: Students want variety in content formats, clear progress indicators, and opportunities for interaction with peers and instructors.",
+            text: `After receiving the design brief, we analyzed 
+            it and its design opportunities. We mapped out 
+            three different directions: 
+            1) Navigation on water 
+            2) Cutting mechanism 
+            3)Reed-recognition 
+            We understood that within the given 5 weeks timeframe 
+            we could only focus on 2 of these meaningfully. 
+            We opted for the latter 2 since we had limited 
+            access to the necessary environment for 
+            navigation.`,
           },
         ],
       },
       {
-        title: "Design System",
-        subtitle: "3 weeks",
+        title: "Research Current Practices",
+        subtitle: "Over-surface on-water cutting is the most ideal to be replaced by robots.",
         content: [
           {
             type: "text",
-            text: "We built a comprehensive design system that would support both the student and educator experiences while maintaining consistency across the platform.",
+            text: `Through desk research, academic research and interviews
+             with the NGO, we mapped out different types of 
+             reed eliminating methods:
+            We opted for over-surface on-water cutting considering 2 factors: 
+            1) on-water 
+            It is the most tedious for humans from the above-mentioned methods. 
+            2) over-surface 
+            Although it would be most effective to cut the reed as close to the
+             root as possible, it would disproportionately increase the difficulty
+              of maintenance and costs. Over-surface cutting slows down the growth 
+              of the reed enough so that other plants have time to strengthen. 
+            3) sprouts It is a decision made later in the process. For more, see 
+            "Research the Lifecycle of Reed".`,
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=design-system-components-education",
-          },
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=color-palette-typography-education",
+            url: "/placeholder.svg?height=400&width=600&query=digital-wireframes-screens",
+            caption:"The decision tree for the cutting mechanism"
           },
         ],
       },
       {
-        title: "Student Experience Design",
-        subtitle: "5 weeks",
+        title: "Prototype Cutting Mechanisms",
+        subtitle: "The strength of a pair of scissor blades is sufficient to cut through the reed stem",
         content: [
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=student-dashboard-design",
+            url: "/placeholder.svg?height=400&width=600&query=design-system-colors-typography",
+            caption:"Sketches of the prototype"
           },
           {
             type: "text",
-            text: "We designed an engaging student interface that makes learning feel rewarding. Interactive elements and clear progress tracking help maintain motivation.",
+            text: `We explored different cutting mechanisms.
+            Initially, we prototyped the simplest one which was a pair of blades attached to a servo motor in a scissors-like way (or in our case, an actual pair of scissors). 
+
+            We planned to have it as our first iteration. However, we conducted performance test by cutting actual reed with it and surprisingly, it proved to be sufficiently powerful to cut through the stem. Therefore, we decided to stick to this mechanism.`,
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=lesson-interface-interactive",
+            url: "/placeholder.svg?height=400&width=600&query=final-ui-screens-mobile",
           },
         ],
       },
       {
-        title: "Educator Tools",
-        subtitle: "4 weeks",
+        title: "Research Wetland Ecosystems",
+        subtitle: "A shift in mindset: Prioritizing the safety of the ecosystem over easing burdens on humans",
         content: [
           {
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=interactive-prototype-figma",
+            caption:"Our map of the inhabitants of wetlands"
+          },
+          {
             type: "text",
-            text: "We created a powerful yet intuitive course creation tool that allows educators to build engaging content without technical expertise.",
-          },
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=course-builder-interface",
-          },
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=analytics-dashboard-teacher",
+            text: `We conducted further interviews with the NGO, as well, as a volunteer with experience in reed-cutting to map out the different members of the ecosystem. This served to understand what entities our robot might come across while searching for reed. 
+
+                In this phase, our focus shifted from easing the burden on humans to minimizing foreign intervention in the ecosystem. This deviation from our original goal was underpinned by our academic research in which we learned about the concept of Nature-Robot Interaction.
+
+                Its first principle is that the robot must not harm Nature.
+
+               For the rest of the project, it became a reference point to argue for certain decisions, determining the direction of the project overall.`,
           },
         ],
       },
       {
-        title: "Testing & Iteration",
-        subtitle: "4 weeks",
+        title: "Prototype Capacitive Sensor",
+        subtitle: "A capacitive sensor is a great low-level sensor for continuous monitoring of the environment and plant detection.",
+        content: [
+          {
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Testing the capacitive sensor"
+          },
+          {
+            type: "text",
+            text: `Our two main goals were to develop a cutting mechanism and a plant-recognition system. 
+
+                    To design the latter, our initial approach was creating a vision-based system. However, we realized that that was disproportionally energy-consuming which is an important factor in case of a robot that functions in nature. 
+
+                  Therefore, we decided to deviate from a “human-perception-based” approach (identifying reed by visually recognizing it) and explore low-level sensors. Through  researching different sensors and testing, we found that a capacitive sensor is capable of distinguishing different materials. Although it is not precise enough to base the complete reed-recognition on only capacitance, it serves greatly for a continuous low-level monitoring of the environment, as well as for distinguishing living plants from other entities of the ecosystem.`,
+          },
+        ],
+      },
+      {
+        title: "Research the Lifecycle of Reed",
+        subtitle: "A pivotal point: focusing on sprouts instead of fully developed reed",
         content: [
           {
             type: "text",
-            text: "We ran a beta program with a small group of students and teachers, gathering feedback and iterating on the design based on real usage.",
-          },
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=beta-testing-feedback",
+            text: `In the previous phase, while exploring different sensors, we also learned the traits by which reeds can be identified (leaf width, ligule, etc.). 
+              But more importantly, we learned about its lifecycle. 
+              We first emphasized the importance of cutting the reed before the period when it releases its spores. However, after revising the interviews made with members of the NGO, we noticed a point that we previously overlooked: 
+              The interviewee recommended that the robot cuts the sprouts instead of fully developed reed. 
+              Previously, we didn’t tackle it as our focus was on easing the physical burden on humans.  Cutting the sprouts was`,
           },
           {
             type: "text",
-            text: "The beta program showed a 60% increase in course completion rates compared to the previous platform.",
+            text: `not done by them since they grew over the water at a different pace, so it was more practical to wait until they all grew completely.
+
+                  Once we prioritized the nature, eliminating the sprouts seemed to be the best to prevent the “reed-invasion” since in that case the reed simply has no resources to maintain itself. This method eliminates the reed instead of just slowing down its growth. Thus, interestingly, it is assumed to ease the burden on humans since the robot would do the first-round elimination of the reed,
+                  instead of attempting to replace humans by doing the same job as they do.`
+          },
+        ],
+      },
+      {
+        title: "Prototype Machine Learning Models",
+        subtitle: "An initial development of an image-classifier ML model that is connected to the cutting motors to identify common reed.",
+        content: [
+          {
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
+          },
+          {
+            type: "text",
+            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+
+                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
+          },
+          {
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"Image examples for testing"
+          },
+        ],
+      },
+      {
+        title: "Merging",
+        subtitle: "A grabbing arm is merged to serve both for cutting and for plant recognition.",
+        content: [
+          {
+            type: "text",
+            text: `In our first step (Narrowing Down the Framing), we set the goal of exploring 3 areas in the development of 
+              Reed-E: 
+               1) the cutting mechanism
+               2) the plant recognition, and
+               3) how to combine them.
+              We initially added a pair of grabbing arms to assist the cutting mechanism. In the meantime, we experimented with capacitive sensors.
+              Interestingly, we found that we could enhance the grabbing arms' functionality by adding the capacitive sensor. 
+
+              With this step, we realized our 3rd goal:
+              the grabbing arm helps both the plant-recognition by providing the 1st-step identification & the cutting mechanism by stabilizing the stem.
+
+              With this process we arrived to the concept introduced in the section of design proposal ⬆️.`,
           },
         ],
       },
