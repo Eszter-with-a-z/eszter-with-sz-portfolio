@@ -71,21 +71,21 @@ This includes content creation for social media which is extremely important, as
                     Beyond job crafting, the leading principles for the project are going to be grounded in Human-Centered AI.`,
         content: [
           {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
+            type: "text",
+            text: `Since it was my thesis project, I got started with reviewing academic literature.
+
+                  Research suggests that AI above all will replace tasks, not jobs. Therefore, the project draws inspiration from Job Crafting. It is an approach in which the individual increases meaningfulness in their job through tailoring what tasks it entails. The two main methods are simply adding and dropping tasks over time to not only replace the unwanted parts, but to enhance the meaningful ones.
+
+                  Studies also find that even though there are hardly any jobs that are or will be “replaced”, the changes AI introduces in what each job entails is creating a major shift in industries.`,
           },
           {
             type: "text",
-            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+            text: `The transition, as in previous industrial revolutions, happens naturally, but it doesn’t mean ideally.
+                    The premise of the project is that
+                    it needs deliberate, informed and sensitive design to ensure that the shift occurs in a humane way (as opposed to technocratic). 
 
-                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
-          },
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Image examples for testing"
-          },
+                    Therefore, human-centered AI principles were central in the project (more in Prototyping).`,
+          },          
         ],
       },
       {
@@ -95,18 +95,33 @@ This includes content creation for social media which is extremely important, as
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
+            caption:`Background of the research participants. 
+                    “Side hustle” refers to jobs supplementing another job, whereas “part-time” refers to those participants who don’t have any other jobs but don’t do it full-time.`
           },
           {
             type: "text",
-            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+            text: `I conducted 7 qualitative interviews with craft entrepreneurs. It was important for me to chose crafters, not digital artists, so that generative AI doesn’t directly interfere with their products (which would be the case with e.g. digital artist or musicians).
 
-                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
+                  I used qualitative analysis and created 7 visualizations based in the findings.`,
+          },
+          {
+            type: "text",
+            text: `One of these visualizations is shown on the right. Among all the struggles it illustrates, many can be traced back to struggling to advocate for the actual price of their work. It is due to two reasons:
+
+                  (1) unrealistic competition
+                  Industrialized mass-production production (from the 1st industrial revolution) and all its working conditions lowered the price unrealistically. 
+
+                  The problem with that is that the only comparable information about products is predominantly the amount it costs (think of a web store and what information they highlight when you browse) instead of e.g. creation process or expected longevity. Therefore, it is natural, that most customers will choose based on the price.
+
+                  (2) invisible work
+                  Crafters have to fulfill  all the roles from cleaner, driver,  seller through content creator  and  market  entrepreneur,  analyst , CEO  to  and  bookkeeper without any recognition. 
+                  Crafters feel like it is an invisible and overlooked part of their job  that takes up too much of their  time  and  energy.  Many  considered or actually stopped  crafting professionally because of  this phenomenon.`,
           },
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Image examples for testing"
+            caption:`Crafters’ pain points collected. 
+                    The position of the elements are arbitrary, the colors  indicate somewhat related issues.`
           },
         ],
       },
@@ -115,20 +130,22 @@ This includes content creation for social media which is extremely important, as
         subtitle: `Crafters’ sense of meaningfulness comes from 3 main factors: the sense of creating something; bringing joy to others and artistic self expression.`,
         content: [
           {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
-          },
-          {
             type: "text",
-            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+            text: `After identifying the pain points, the central inquiry of the research was to arrive to a definition of meaningfulness - in order to be able to create a tool to enhance it.
 
-                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
+                  Drawing upon the insights from the research, I created what I called the Value Wheel.
+
+                  The external circle shows the values the crafters highlighted as reasons why their customers choose their products. In the internal circle, you can find the values that the crafters see in their work.
+
+                  In the center, we arrive to what holds all of them together and what is my understanding of meaningfulness for creative entrepreneurs:
+                  the sense of creating something; bringing joy to others and the artistic self expression.
+
+                  I used this illustration as a “compass” to guide my design choices in the ideating and prototyping.`,
           },
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Image examples for testing"
+            caption:"The Value Wheel, another visualization from my qualitative research illustrates the key values of crafters work."
           },
         ],
       },
@@ -137,46 +154,53 @@ This includes content creation for social media which is extremely important, as
         subtitle: `Through sketching, identify 5 distinct design opportunities. 
                     From those, “invisible work” is chosen.`,
         content: [
-          {
+         {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
-          },
-          {
+            caption:"The 5 design opportunities."
+         },
+         {
             type: "text",
-            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+            text: `Drawing upon the identified pain points, I used sketching both to illustrate ideas my interviewees imagined and to generate new ones.
+            I focused on the action of sketching, as a way to generate knowledge, and identified 5 distinct directions of ideas and design opportuities:
+            (A) a design for the (potential) customers - creating some artifacts that promote local crafters and their work;
+            (B) for trend analysis from the international community - collecting and organizing knowledge about current  trends, new technologies, events on a global scale to foster the phase of  research and inspiration;
+            (D) for the local crafter community - connecting crafters in vicinity and building a community and/or local clientele.`,
+          },
 
-                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
-          },
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Image examples for testing"
-          },
         ],
       },
       {
         title: "Define: Storyboarding",
         subtitle: `The addressed issue is further narrowed down to social media content creation.
                     Through storyboarding, I define the expected behavior of the prototype.`,
-        content: [
+        content: [        
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
-          },
+            caption:"Visualization from the qualitative research: crafters’ roles connected to social media management"
+          },  
           {
             type: "text",
-            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+            text: `I opted to narrow down the  scope of the issue that my prototype will address to social media management. 
 
-                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
+                  According to my research, it is not only a highly desired task to avoid among creative workers, but as the visualization illustrates, it is also connected to multiple roles crafters must fulfill while  managing their business.`,
           },
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Image examples for testing"
-          },          
+            caption:"Story board to sketch out the expected interaction and context."
+          },         
+          {
+            type: "text",
+            text: `After a couple of iterations, I created the storyboard shown on the right to demonstrate the expected user flow and context of the  prototype. 
 
+                  The idea is to create an artefact powered by AI that engages creative entrepreneurs verbally while they are working on a repetitive part of their project that doesn’t require too much concentration.
+
+                  The goal with using  voice interaction is so that the new technology doesn’t keep them away from their creative work – and since they do it professionally, there is a lot of  monotonicity involved so the worker might have free capacity to engage in a  dialogue. 
+
+                  The prototype, after having a thought-provoking discussion (ideally, the  questions spark new reflections on the human’s half), would come up with  a recommendation for social media content.`,
+          },
         ],
       },
       {
@@ -191,16 +215,29 @@ This includes content creation for social media which is extremely important, as
           },
           {
             type: "text",
-            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
+            text: `I used a local AI model (Gemma 3) and a light-weight Flask application to build a high-fidelity prototype quickly to test it with my target audience.
 
-                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
+                  I built 2 iterations based on the users’ feedback. The flow charts on the right illustrate how I changed the conversation flow from the first iteration to the second.
+
+                  During the prototyping, I prioritized 3 Human-Centered AI principles:
+
+                  (1) Usable AI
+                  The voice input builds on strengths of AI to reduce screen time and enable usability in cases when the artists can’t  use their eyes and hands to interact with the AI.
+                  (2) Augmenting human ability   
+                  But perhaps more  importantly, it aims to help building a habit and to lower the effort it  takes to post on social media, so that it creates resources for the artists  to augment their skills in what truly matters: in their art or craft.
+                  (3) Human-driven decision making  
+                  Many tools with a similar purpose automate the whole flow of content  generation from collection to publication. The prototype purposefully focuses on the ideation part of content generation, and leaves the  publication for the human. By doing so, plus asking the crafter  whether the generated content feels authentic to them (last two lines in the second iteration), I hope to keep the human the decision-maker of the  process.`,
           },
           {
             type: "image",
             url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Image examples for testing"
+            caption:"The conversation design of the 1st iteration."
           },
-
+          {
+            type: "image",
+            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            caption:"The conversation design of the 2nd iteration."
+          },
         ],
       },
       {
@@ -210,22 +247,19 @@ This includes content creation for social media which is extremely important, as
                     Creatives are open for offloading parts of their tasks, but they themselves must do other parts to  preserve authenticity.`,
         content: [
           {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
+            type: "text",
+            text: `Finally, I conducted 5 usability tests: 2 with the 1st prototype, and 3 with the 2nd iteration. The participants were asked to bring a project in which there were in a monotonous phase, e.g. creating sketches, or coloring bigger surfaces. During the test, they were asked to work on their project in a comfortable work environment while conversing with the prototype. Then, we had a retrospective think-aloud session. 
+              The outcomes revolved around conversation design, voice, the “character” of the assistant, how it fits into the workflow, and finally, the output that the conversation ends with. 
+              The most important findings were that creative workers
+              1) found the visual recommendation and hashtags useful, the caption superfluous;`,
           },
           {
             type: "text",
-            text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
-
-                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
+            text: `2) appreciate the details the assistant picks up from the conversation about the context;
+              3) were surprised by the creativity of the recommendations and that they were built on details from the conversation; and finally,
+              4) agreed that such an assistant can make posting on social media more effortless. The idea of including it in the early phases of the  content generation (reminder, ideation) was appreciated 
+              for sparking creativity but leaving space to personalize the content in the later phases to preserve authenticity.`,
           },
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Image examples for testing"
-          },         
-
         ],
       },
     ],
