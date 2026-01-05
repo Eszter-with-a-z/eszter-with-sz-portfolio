@@ -7,7 +7,7 @@ export default function Hero() {
 
   useEffect(() => {
     // Randomly select image from 1-20
-    const randomNum = Math.floor(Math.random() * 20) + 1
+    const randomNum = Math.floor(Math.random() * 36) + 1
     setBgImage(randomNum)
   }, [])
 
@@ -18,7 +18,7 @@ export default function Hero() {
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: `url(/placeholder.svg?height=1080&width=1920&query=analog-film-photography-vintage-aesthetic-${bgImage})`,
+            backgroundImage: `url(https://res.cloudinary.com/dskrqh0vu/image/upload/v1767638432/analog_${bgImage}.jpg)`,
           }}
         />
         <div className="absolute inset-0 bg-black/50" />
