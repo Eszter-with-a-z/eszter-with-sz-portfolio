@@ -19,7 +19,7 @@ export default function Footer() {
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: `url(/placeholder.svg?height=600&width=1920&query=analog-film-photography-abstract-${bgImage})`,
+            backgroundImage: `url(https://res.cloudinary.com/dskrqh0vu/image/upload/q_auto,f_auto/v1767638432/analog_${bgImage}.jpg)`,
           }}
         />
         <div className="absolute inset-0 bg-black/50" />
