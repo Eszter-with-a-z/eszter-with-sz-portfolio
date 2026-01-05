@@ -24,7 +24,15 @@ export default function ProjectProposal({ proposal }: ProjectProposalProps) {
 
         <div className="max-w-4xl mx-auto">
           <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
-            <Image src={proposal.videoUrl || "/placeholder.svg"} alt="Project video" fill className="object-cover" />
+                <video
+                  className="w-full h-full object-cover"
+                  controls
+                  playsInline
+                  preload="metadata"
+                >
+                  <source src="https://res.cloudinary.com/dskrqh0vu/video/upload/v1767639545/project-1-video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
           </div>
           <p className="text-sm text-muted-foreground text-center mt-4 italic">{proposal.videoCaption}</p>
         </div>
