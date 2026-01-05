@@ -1,6 +1,6 @@
 import type { ProcessStep } from "@/components/project-process"
 const CLOUDINARY_PROJECT_URL_BASE = "https://res.cloudinary.com/xx/image/upload/q_auto,f_auto/xx/portfolio/projects"
-export const projectsData: Record<
+export const caseStudies: Record<
   string,
   {
     id: number
