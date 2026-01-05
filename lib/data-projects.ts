@@ -1,5 +1,6 @@
 import type { ProcessStep } from "@/components/project-process"
-const CLOUDINARY_PROJECT_URL_BASE = "https://res.cloudinary.com/xx/image/upload/q_auto,f_auto/xx/portfolio/projects"
+const CLOUDINARY_PROJECT_URL_BASE = "https://res.cloudinary.com/dskrqh0vu/image/upload/q_auto,f_auto"
+
 export const caseStudies: Record<
   string,
   {
@@ -27,10 +28,11 @@ export const caseStudies: Record<
     duration: "3 months",
     technology: "generative AI (Gemma 3); Python Flask; JS Vanilla",
     images: [
-      "/mobile-app-sustainable-living-1.jpg",
-      "/mobile-app-sustainable-living-2.jpg",
-      "/mobile-app-sustainable-living-3.jpg",
-      "/mobile-app-sustainable-living-4.jpg",
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_2.jpg`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_2.jpg`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_10.jpg`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_11.jpg`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_1.jpg`,
     ],
     problem: {
       col1: "“I want AI to do my laundry and dishes so that I can do  art and writing, not for AI to do my art and writing so  that I can do my laundry and dishes.“ (Maciejewska,  2024)",
@@ -61,7 +63,8 @@ creative entrepreneurs are willing to offload entrepreneurial, rather than the c
 
 This includes content creation for social media which is extremely important, as the creative workers confirm that showing the process behind their products differentiates them from mass-produced alternatives.`,
       ],
-      videoUrl: "/sustainable-app-demo-video.jpg",
+      
+      videoUrl: "https://res.cloudinary.com/dskrqh0vu/video/upload/v1767639545/project-1-video.mp4",
       videoCaption: "Video: Here, you can see the video prototype showcasing the interaction between an architect student and the conversational agent.",
     },
     process: [
@@ -94,7 +97,7 @@ This includes content creation for social media which is extremely important, as
         content: [
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_12.jpg`,
             caption:`Background of the research participants. 
                     “Side hustle” refers to jobs supplementing another job, whereas “part-time” refers to those participants who don’t have any other jobs but don’t do it full-time.`
           },
@@ -119,7 +122,7 @@ This includes content creation for social media which is extremely important, as
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_3.jpg`,
             caption:`Crafters’ pain points collected. 
                     The position of the elements are arbitrary, the colors  indicate somewhat related issues.`
           },
@@ -144,7 +147,7 @@ This includes content creation for social media which is extremely important, as
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_4.jpg`,
             caption:"The Value Wheel, another visualization from my qualitative research illustrates the key values of crafters work."
           },
         ],
@@ -156,7 +159,7 @@ This includes content creation for social media which is extremely important, as
         content: [
          {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_5.jpg`,
             caption:"The 5 design opportunities."
          },
          {
@@ -177,7 +180,7 @@ This includes content creation for social media which is extremely important, as
         content: [        
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_6.jpg`,
             caption:"Visualization from the qualitative research: crafters’ roles connected to social media management"
           },  
           {
@@ -188,7 +191,7 @@ This includes content creation for social media which is extremely important, as
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_7.jpg`,
             caption:"Story board to sketch out the expected interaction and context."
           },         
           {
@@ -209,11 +212,6 @@ This includes content creation for social media which is extremely important, as
                     It prioritizes the principles of usable AI, augmenting human skill, and human-driven decision making.`,
         content: [
           {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
-            caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
-          },
-          {
             type: "text",
             text: `I used a local AI model (Gemma 3) and a light-weight Flask application to build a high-fidelity prototype quickly to test it with my target audience.
 
@@ -230,12 +228,12 @@ This includes content creation for social media which is extremely important, as
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_8.jpg`,
             caption:"The conversation design of the 1st iteration."
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_9.jpg`,
             caption:"The conversation design of the 2nd iteration."
           },
         ],
@@ -260,6 +258,11 @@ This includes content creation for social media which is extremely important, as
               4) agreed that such an assistant can make posting on social media more effortless. The idea of including it in the early phases of the  content generation (reminder, ideation) was appreciated 
               for sparking creativity but leaving space to personalize the content in the later phases to preserve authenticity.`,
           },
+                    {
+            type: "image",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_1.jpg`,
+            caption:"User testing"
+          },
         ],
       },
     ],
@@ -274,10 +277,11 @@ This includes content creation for social media which is extremely important, as
     duration: "1 week",
     technology: "C++; Arduino; Supplyframe PCB Lamp",
     images: [
-      "/healthcare-dashboard-overview.jpg",
-      "/healthcare-patient-records.jpg",
-      "/healthcare-analytics-view.jpg",
-      "/placeholder.svg?height=600&width=800",
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_7.png`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_10.png`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_3.png`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_8.png`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_4.png`,
     ],
     problem: {
       col1: `Light is a versatile design material. Natural light ranges from sunrise to bio-luminescence, from the Northern lights to fire, with a great diversity.
@@ -295,7 +299,7 @@ This includes content creation for social media which is extremely important, as
         `/the metaphor a book`,
         `/the interaction opening-closing`
       ],
-      videoUrl: "/placeholder.svg?height=400&width=800",
+      videoUrl: "https://res.cloudinary.com/dskrqh0vu/video/upload/v1767639567/project-2-video_2.mp4",
       videoCaption: `Video: The high-fidelity prototype of the book lamp demonstrates changing the light brightness and temperature depending on the angle of openness
                     The quality of the camera modified the appearance of the light. It ranges from approx. 1500K to 9500K.`,
     },
@@ -319,7 +323,7 @@ This includes content creation for social media which is extremely important, as
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=healthcare-research-shadowing",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_5.png`,
             caption: "Our initial mind map with each sensor of the microcontroller in the rectangles."
           },
         ],
@@ -334,7 +338,7 @@ This includes content creation for social media which is extremely important, as
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=component-library-medical",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_6.png`,
             caption: "The 3 ideas we narrowed our options down after the interviews: shelf spotlight, proximity brightness, gesture lamp."
           },
         ],
@@ -345,7 +349,7 @@ This includes content creation for social media which is extremely important, as
         content: [
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-test-results",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_7.png`,
             caption:"Illustrations of the expected behavior of the lamp."
           },
           {
@@ -370,7 +374,7 @@ This includes content creation for social media which is extremely important, as
         content: [
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-test-results",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_4.png`,
             caption:"The lampshade in the making."
           },
           {
@@ -388,7 +392,7 @@ This includes content creation for social media which is extremely important, as
         content: [
           {
             type: "image",
-            url: "[gif]/placeholder.svg?height=400&width=600&query=usability-test-results",
+            url: `https://res.cloudinary.com/dskrqh0vu/image/upload/v1767639561/project-2_3.png`,
             caption:`The prototype on the day of the presentation.`
           },
           {

@@ -94,7 +94,7 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
             </div>
 
             <div className="relative h-[600px]">
-              {project.images.map((image, index) => (
+              {project.images.slice(1).map((image, index) => (
                 <div
                   key={index}
                   className="absolute"

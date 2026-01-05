@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { projectsData } from "@/lib/data-projects"
+import { caseStudies } from "@/lib/data-projects"
 import ProjectHero from "@/components/project-hero"
 import ProjectProblem from "@/components/project-problem"
 import ProjectProposal from "@/components/project-proposal"
@@ -21,7 +21,7 @@ export default async function ProjectPage({
 }) {
   const { id } = await params
 
-  const project = projectsData[id as keyof typeof projectsData]
+  const project = caseStudies[id as keyof typeof caseStudies]
 
   if (!project) {
     notFound()

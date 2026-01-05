@@ -30,7 +30,7 @@ export default function ProjectProposal({ proposal }: ProjectProposalProps) {
                   playsInline
                   preload="metadata"
                 >
-                  <source src="https://res.cloudinary.com/dskrqh0vu/video/upload/v1767639545/project-1-video.mp4" type="video/mp4" />
+                  <source src={proposal.videoUrl} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
           </div>
