@@ -416,10 +416,11 @@ This includes content creation for social media which is extremely important, as
     duration: "5 weeks",
     technology: "Teachable Machine ML model; Arduino; C++;",
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_8.png`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_8.png`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_5.png`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_4.png`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_6.png`,
     ],
     problem: {
       col1: "Reed cutting requires too many resources for NGOs that work toward preserving biodiversity.",
@@ -436,7 +437,8 @@ This includes content creation for social media which is extremely important, as
         "camera + ML model 2nd step",
         "Once a living plant is detected, the camera is activated. It is connected to an ML model trained to distinguish reeds from other members of the wetland vegetation.",
       ],
-      videoUrl: "/placeholder.svg?height=400&width=800",
+      
+      videoUrl: `https://res.cloudinary.com/dskrqh0vu/video/upload/v1767639663/project-3-video.mp4`,
       videoCaption: `Video: Here, you can see a video prototype showcasing the expected behavior of the robot in 3 scenarios:
       1) when it encounters an animal
       2) when it encounters a plant other than a common reed
@@ -485,7 +487,7 @@ This includes content creation for social media which is extremely important, as
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=digital-wireframes-screens",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_11.png`,
             caption:"The decision tree for the cutting mechanism"
           },
         ],
@@ -494,11 +496,7 @@ This includes content creation for social media which is extremely important, as
         title: "Prototype Cutting Mechanisms",
         subtitle: "The strength of a pair of scissor blades is sufficient to cut through the reed stem",
         content: [
-          {
-            type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=design-system-colors-typography",
-            caption:"Sketches of the prototype"
-          },
+
           {
             type: "text",
             text: `We explored different cutting mechanisms.
@@ -508,8 +506,14 @@ This includes content creation for social media which is extremely important, as
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=final-ui-screens-mobile",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_3.png`,
+            caption:"Sketches of the prototype"
           },
+          {
+            type: "image",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_2.png`,
+          },
+
         ],
       },
       {
@@ -518,7 +522,7 @@ This includes content creation for social media which is extremely important, as
         content: [
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=interactive-prototype-figma",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_5.png`,
             caption:"Our map of the inhabitants of wetlands"
           },
           {
@@ -539,7 +543,7 @@ This includes content creation for social media which is extremely important, as
         content: [
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_6.png`,
             caption:"Testing the capacitive sensor"
           },
           {
@@ -579,7 +583,7 @@ This includes content creation for social media which is extremely important, as
         content: [
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_1.png`,
             caption:"Testing by connecting the motors to a phone's camera for the scope of prototyping"
           },
           {
@@ -590,7 +594,7 @@ This includes content creation for social media which is extremely important, as
           },
           {
             type: "image",
-            url: "/placeholder.svg?height=400&width=600&query=usability-testing-session",
+            url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_7.png`,
             caption:"Image examples for testing"
           },
         ],
