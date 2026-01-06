@@ -6,47 +6,49 @@ export default function AboutMe() {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Column 1 */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Creating meaningful interactions</h3>
+            <h3 className="text-2xl font-bold mb-4">I am Eszter Kovács, an Interaction Designer based in Malmö, Sweden.</h3>
             <p className="leading-relaxed text-muted-foreground">
-              I'm passionate about designing digital experiences that make a real difference in people's lives. With a
-              background in both design and human psychology, I bring a unique perspective to every project.
+              📚🤸🌎💬
+            </p>
+            <p className="leading-relaxed text-muted-foreground">
+              I am passionate about my analog camera, linguistics, calisthenics, sustainability, wombats, and getting to know people!
             </p>
           </div>
 
           {/* Column 2 */}
-          <div>
+          {/*<div>
             <p className="leading-relaxed text-muted-foreground">
-              My approach is rooted in empathy and research. I believe that great design starts with understanding the
-              people who will use it. Through careful observation, conversation, and iteration, I craft solutions that
-              feel intuitive and natural.
+              No matter how extroverted I am there are 2 things I can never respond to properly:
+                How are you?
+              Introduce yourself!
             </p>
             <p className="leading-relaxed text-muted-foreground mt-4">
-              When I'm not designing, you'll find me exploring new places, trying out the latest design tools, or
-              contributing to the design community through workshops and mentorship.
+              The first is not relevant now. But instead of introducing myself, let me just say that instead of defining myself,
+              I strive to define my goals and my principles. Consequently, I trust that  they will define me if my actions are aligned with them.
             </p>
+            <p>So what are these goals and principles? 
+              Here are some I find important:</p>
           </div>
 
-          {/* Column 3 */}
+           Column 3 */}
           <div className="space-y-8">
             <div>
-              <h4 className="font-semibold mb-2">Education</h4>
+              <h4 className="font-semibold mb-2"> 🔬 my design approach</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Master's in Interaction Design from Umeå Institute of Design, Sweden. Bachelor's in Digital Media from
-                Budapest University of Technology.
+                Enhancing rather than replacing meaningful human interactions with technology.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">Experience</h4>
+              <h4 className="font-semibold mb-2">🥅 my goal</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                8+ years working with startups and established companies across Europe, specializing in mobile and web
-                applications.
+                To find projects that challenge me to learn new skills.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">Skills</h4>
+              <h4 className="font-semibold mb-2">🌠 my philosophy</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                User research, prototyping, usability testing, design systems, accessibility, Figma, Adobe Creative
-                Suite, HTML/CSS.
+                You improve when you help others improve,
+                and you help others improve by improving yourself.
               </p>
             </div>
           </div>

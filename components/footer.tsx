@@ -35,7 +35,7 @@ export default function Footer() {
 
           <div className="space-y-4">
             <a
-              href="https://linkedin.com/in/eszterkovacs"
+              href="https://www.linkedin.com/in/eszter-kov%C3%A1cs-a40826213/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 hover:opacity-80 transition-opacity"
@@ -44,19 +44,19 @@ export default function Footer() {
               <span>Eszter Kovács</span>
             </a>
 
-            <a href="mailto:email@address.com" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <a href="mailto:eszter.with.sz@gmail.com" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
               <Mail className="w-5 h-5" />
-              <span>email@address.com</span>
+              <span>eszter.with.sz@gmail.com</span>
             </a>
 
             <div className="flex items-center gap-3">
               <Phone className="w-5 h-5" />
-              <span>🇸🇪 +123 345</span>
+              <span>🇸🇪 +46 79 355 2542</span>
             </div>
 
             <div className="flex items-center gap-3">
               <Phone className="w-5 h-5" />
-              <span>🇭🇺 +123 345</span>
+              <span>🇭🇺 +36 70 622 0027</span>
             </div>
           </div>
         </div>

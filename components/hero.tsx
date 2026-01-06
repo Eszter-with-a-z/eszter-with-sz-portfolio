@@ -29,15 +29,17 @@ export default function Hero() {
         <div className="text-white flex-1">
           <p className="text-lg mb-2">Hi there! I am</p>
           <h1 className="text-6xl font-bold mb-4">Eszter Kovács</h1>
-          <p className="text-2xl">- an interaction designer</p>
+          <p className="text-2xl">- an Interaction Designer based in Malmö, Sweden</p>
         </div>
 
         {/* Dictionary Style Card */}
         <div className="bg-white text-foreground p-8 rounded-lg max-w-md shadow-xl">
           <div className="border-l-4 border-primary pl-4">
-            <h2 className="text-2xl font-bold mb-2">Interaction Design</h2>
-            <p className="text-sm italic text-muted-foreground mb-3">noun</p>
-            <p className="leading-relaxed">Design between humans and computers</p>
+            <h2 className="text-2xl font-bold mb-2">Interaction Design </h2>
+            <p className="text-sm italic text-muted-foreground mb-3">noun  [U]</p>
+            <p className="text-sm italic text-muted-foreground mb-3">/subjective definition/</p>
+            <p className="leading-relaxed">designing the interaction between humans and computers; </p>
+            <p className="leading-relaxed">the process of bringing the user’s perspective into the development of digital products and services </p>
           </div>
         </div>
       </div>

@@ -2,19 +2,31 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const testimonials = [
   {
-    text: "Working with Eszter was an absolute pleasure. Her attention to detail and understanding of user needs transformed our product completely. The designs were not only beautiful but also highly functional.",
-    name: "Maria Johnson",
-    title: "Product Manager at TechCorp",
+    text: "“[She] listens carefully to the different voices that might  appear in her work. She makes considered judgements, is a team player and communicates well.’",
+    name: "Lizette",
+    title: "my professor & client for my project “Indigenous Weather Station”",
   },
   {
-    text: "Eszter's ability to bridge the gap between design and development is remarkable. She created intuitive interfaces that our users love, and the development team found easy to implement.",
-    name: "Lars Andersson",
-    title: "CTO at StartupHub",
+    text: `In our time working together, I’ve seen 
+    Eszter demonstrate a great ability to engage with 
+    different complex design challenges. She approaches 
+    problems with curiosity and  willingness to explore, 
+    making her a valuable contributor to projects. In her 
+    IOIO work with external research projects, she proved 
+    herself to be independent and reliable asset conducting 
+    workshops and driving user centric processes.`,
+    name: "Johannes",
+    title: "head of IOIO lab",
   },
   {
-    text: "The research-driven approach Eszter brought to our project was exactly what we needed. She identified pain points we hadn't even considered and designed elegant solutions for each one.",
-    name: "Sofia Chen",
-    title: "UX Lead at DesignStudio",
+    text: `I have witnessed first-hand her exceptional growth a
+    nd innate talents in this domain. Eszter is deeply reflective 
+    and thoughtful designer who is committed  to continuous 
+    learning.[...] It is rare to find a junior service designer
+     who already exhibits skills characteristic of medior and, in 
+     some areas, even senior-level professionals.`,
+    name: "Laci",
+    title: "CEO of Meet Prespectives Ltd.",
   },
 ]
 
@@ -27,7 +39,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <p className="text-muted-foreground mb-6 leading-relaxed italic">"{testimonial.text}"</p>
+                <p className="text-muted-foreground mb-6 leading-relaxed italic">{testimonial.text}</p>
                 <div className="border-t pt-4">
                   <p className="font-semibold">{testimonial.name}</p>
                   <p className="text-sm text-muted-foreground">{testimonial.title}</p>
