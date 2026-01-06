@@ -1,3 +1,4 @@
+const CLOUDINARY_URL_BASE = "https://res.cloudinary.com/dskrqh0vu/image/upload/q_auto,f_auto/v1767694934"
 export interface OtherProject {
     image: string
     title: string
@@ -9,7 +10,8 @@ export interface OtherProject {
 
 export const projectGallery:OtherProject[] = [
   {
-    image: "/branding-design-project.jpg",
+    
+    image: `${CLOUDINARY_URL_BASE}/other-project_5.png`,
     title: "Brand Identity Redesign",
     subtitle: "Complete visual identity overhaul",
     field: "Branding",
@@ -17,7 +19,7 @@ export const projectGallery:OtherProject[] = [
     responsibilities: "Logo design, style guide, brand guidelines",
   },
   {
-    image: "/fintech-mobile-app.jpg",
+    image: `${CLOUDINARY_URL_BASE}/other-project_6.png`,
     title: "FinTech Mobile App",
     subtitle: "Personal finance management",
     field: "Mobile",
@@ -25,7 +27,7 @@ export const projectGallery:OtherProject[] = [
     responsibilities: "User research, prototyping",
   },
   {
-    image: "/social-media-platform.jpg",
+    image: `${CLOUDINARY_URL_BASE}/other-project_4.png`,
     title: "Social Media Platform",
     subtitle: "Community-focused networking",
     field: "Web & Mobile",
@@ -33,7 +35,39 @@ export const projectGallery:OtherProject[] = [
     responsibilities: "Information architecture, design",
   },
   {
-    image: "/restaurant-ordering-system.jpg",
+    image: `${CLOUDINARY_URL_BASE}/other-project_1.png`,
+    title: "Restaurant Ordering System",
+    subtitle: "Seamless dining experience",
+    field: "Web Application",
+    projectType: "UX Design",
+    responsibilities: "User flows, wireframes",
+  },
+    {
+    image: `${CLOUDINARY_URL_BASE}/other-project_3.png`,
+    title: "Restaurant Ordering System",
+    subtitle: "Seamless dining experience",
+    field: "Web Application",
+    projectType: "UX Design",
+    responsibilities: "User flows, wireframes",
+  },  
+  {
+    image: `${CLOUDINARY_URL_BASE}/other-project_7.png`,
+    title: "Restaurant Ordering System",
+    subtitle: "Seamless dining experience",
+    field: "Web Application",
+    projectType: "UX Design",
+    responsibilities: "User flows, wireframes",
+  },
+ {
+    image: `${CLOUDINARY_URL_BASE}/other-project_8.png`,
+    title: "Restaurant Ordering System",
+    subtitle: "Seamless dining experience",
+    field: "Web Application",
+    projectType: "UX Design",
+    responsibilities: "User flows, wireframes",
+  },
+  {
+    image: `${CLOUDINARY_URL_BASE}/other-project_9.png`,
     title: "Restaurant Ordering System",
     subtitle: "Seamless dining experience",
     field: "Web Application",
