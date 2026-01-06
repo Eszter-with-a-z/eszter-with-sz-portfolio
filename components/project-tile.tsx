@@ -10,7 +10,7 @@ interface ProjectTileProps {
     title: string
     subtitle: string
     field: string
-    projectType: string
+    team: string
     responsibilities: string
   }
 }
@@ -41,7 +41,7 @@ export default function ProjectTile({ project }: ProjectTileProps) {
                 <span className="font-semibold">Field:</span> {project.field}
               </div>
               <div>
-                <span className="font-semibold">Project type:</span> {project.projectType}
+                <span className="font-semibold">Project type:</span> {project.team}
               </div>
               <div>
                 <span className="font-semibold">Responsibilities:</span> {project.responsibilities}

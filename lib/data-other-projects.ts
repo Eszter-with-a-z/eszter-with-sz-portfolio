@@ -4,7 +4,7 @@ export interface OtherProject {
     title: string
     subtitle: string
     field: string
-    projectType: string
+    team: string
     responsibilities: string
 }
 
@@ -12,66 +12,69 @@ export const projectGallery:OtherProject[] = [
   {
     
     image: `${CLOUDINARY_URL_BASE}/other-project_5.png`,
-    title: "Brand Identity Redesign",
-    subtitle: "Complete visual identity overhaul",
-    field: "Branding",
-    projectType: "Visual Design",
-    responsibilities: "Logo design, style guide, brand guidelines",
+    title: "QR scanner for Material & Automation",
+    subtitle: "proposing & creating the QR scanner for an exhibition piece for the Southern Swedish Designer days",
+    field: "robotics",
+    team: "in a team of 2",
+    responsibilities: "technical implementation",
   },
   {
     image: `${CLOUDINARY_URL_BASE}/other-project_6.png`,
-    title: "FinTech Mobile App",
-    subtitle: "Personal finance management",
-    field: "Mobile",
-    projectType: "UX/UI Design",
-    responsibilities: "User research, prototyping",
+    title: "Indigenous Weather Station",
+    subtitle: "data physicalization to help indigenous communities predict rain in the era of climate change in collaboration with the Indigenous Climate Observatories and the Lesotho Meteorological Services",
+    field: "robotics / data physicalization",
+    team: "individual",
+    responsibilities: "whole process",
   },
   {
     image: `${CLOUDINARY_URL_BASE}/other-project_4.png`,
-    title: "Social Media Platform",
-    subtitle: "Community-focused networking",
-    field: "Web & Mobile",
-    projectType: "Product Design",
-    responsibilities: "Information architecture, design",
+    title: "They don't write books about every hero",
+    subtitle: "a digital novel about climate change and cultural learning",
+    field: "full stack programming",
+    team: "individual",
+    responsibilities: "programming in Python Flask; JavaScript",
   },
   {
     image: `${CLOUDINARY_URL_BASE}/other-project_1.png`,
-    title: "Restaurant Ordering System",
-    subtitle: "Seamless dining experience",
-    field: "Web Application",
-    projectType: "UX Design",
-    responsibilities: "User flows, wireframes",
+    title: "Active Listener",
+    subtitle: "experimenting with motion tracking to explore turntaking in conversations",
+    field: "ML & Interaction Aesthetics",
+    team: "team of 2",
+    responsibilities: "coding; testing",
   },
     {
     image: `${CLOUDINARY_URL_BASE}/other-project_3.png`,
-    title: "Restaurant Ordering System",
-    subtitle: "Seamless dining experience",
-    field: "Web Application",
-    projectType: "UX Design",
-    responsibilities: "User flows, wireframes",
+    title: "Feedback Pillar",
+    subtitle: "user research & concept-proposal for giving feedback in Rosengard Library",
+    field: "Service Design",
+    team: "group project in a team of 5",
+    responsibilities: "user research; prototyping",
   },  
   {
     image: `${CLOUDINARY_URL_BASE}/other-project_7.png`,
-    title: "Restaurant Ordering System",
-    subtitle: "Seamless dining experience",
-    field: "Web Application",
-    projectType: "UX Design",
-    responsibilities: "User flows, wireframes",
+    title: "Participatory Design for Dental Innovation",
+    subtitle: "designing & conducting 2 participatory design workshops for a dental equipment innovation",
+    field: "Participatory Design",
+    team: "in a team of 2",
+    responsibilities: "UX research; workshop moderation & analysis",
   },
  {
     image: `${CLOUDINARY_URL_BASE}/other-project_8.png`,
-    title: "Restaurant Ordering System",
-    subtitle: "Seamless dining experience",
-    field: "Web Application",
-    projectType: "UX Design",
-    responsibilities: "User flows, wireframes",
+    title: "Sanitary points for slums",
+    subtitle: `human-centered research and concept-proposal 
+    of modular and scalable sanitary points to Kibera, Kenya 
+    in collaboration with the Hungarian Maltese Charity Service 
+    | Award Winning - 1st at Beton Fesztivál in category "Concrete construction, architecture"`,
+    field: "Architecture",
+    team: "in a team of 3 (2 architects)",
+    responsibilities: "design consulting; graphic design",
   },
   {
     image: `${CLOUDINARY_URL_BASE}/other-project_9.png`,
-    title: "Restaurant Ordering System",
-    subtitle: "Seamless dining experience",
-    field: "Web Application",
-    projectType: "UX Design",
-    responsibilities: "User flows, wireframes",
+    title: "Design system variables for an educational app",
+    subtitle: "a three-tier variable system for the DS of a financial literacy app",
+    field: "UI design",
+    team: "individual contribution",
+    responsibilities: "create the variable collections",
   },
 ]
