@@ -75,8 +75,9 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --font-sans: var(--font-satoshi), "Geist", "Geist Fallback";
+  --font-serif: var(--font-playfair), "Georgia", serif;
+  --font-mono: var(--font-roboto), "Courier New", monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
