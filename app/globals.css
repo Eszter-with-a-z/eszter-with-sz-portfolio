@@ -16,7 +16,8 @@
   --secondary-foreground: oklch(0.15 0.01 270);
   --muted: oklch(0.92 0.01 90);
   --muted-foreground: oklch(0.45 0.02 270);
-  --accent: oklch(0.88 0.03 120);
+  --accent: oklch(0.3534 0.0817 292.25);
+  --accent-hover:oklch(0.2818 0.058 293.85);
   --accent-foreground: oklch(0.15 0.01 270);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0.005 90);
@@ -91,6 +92,7 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
   --color-accent-foreground: var(--accent-foreground);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
@@ -122,5 +124,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1{
+    @apply font-serif;
   }
 }

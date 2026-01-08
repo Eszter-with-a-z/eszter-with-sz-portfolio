@@ -2,12 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Playfair_Display, Roboto } from "next/font/google"
 import localFont from "next/font/local"
-import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 const satoshi = localFont({
   src: [
@@ -59,7 +55,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "Eszter Kovács - Interaction Designer",
-  description: "Portfolio of interaction designer Eszter Kovács, showcasing UX/UI design projects and case studies",
+  description: "Enhance humans instead of replacing them | IxD & UX/UI | Case Studies | More Projects | Testimonials | About me | Contact",
   
   icons: {
     icon: [
@@ -87,7 +83,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={
+        `${satoshi.variable} ${playfairDisplay.variable} ${roboto.variable} font-sans antialiased`
+        }>
         {children}
         <Analytics />
       </body>
