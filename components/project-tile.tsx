@@ -19,7 +19,7 @@ export default function ProjectTile({ project }: ProjectTileProps) {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div
+    <div id="other-projects"
       className="relative aspect-square overflow-hidden rounded-lg cursor-pointer group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

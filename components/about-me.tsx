@@ -31,7 +31,7 @@ export default function AboutMe() {
           </div>
 
            Column 3 */}
-          <div className="space-y-8">
+          <div id="about-me" className="space-y-8">
             <div>
               <h4 className="font-semibold mb-2"> 🔬 my design approach</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
