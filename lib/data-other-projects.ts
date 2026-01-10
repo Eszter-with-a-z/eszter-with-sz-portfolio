@@ -9,11 +9,19 @@ export interface OtherProject {
 }
 
 export const projectGallery:OtherProject[] = [
+    {
+    image: `${CLOUDINARY_URL_BASE}/other-project_9.png`,
+    title: "Design system variables for an educational app",
+    subtitle: "a three-tier variable system for the DS of a financial literacy app",
+    field: "UI design",
+    team: "individual contribution",
+    responsibilities: "create the variable collections",
+  },
   {
     
     image: `${CLOUDINARY_URL_BASE}/other-project_5.png`,
     title: "QR scanner for Material & Automation",
-    subtitle: "proposing & creating the QR scanner for an exhibition piece for the Southern Swedish Designer days",
+    subtitle: "Creating the QR scanner a project in the Southern Swedish Designer Days",
     field: "robotics",
     team: "in a team of 2",
     responsibilities: "technical implementation",
@@ -21,7 +29,7 @@ export const projectGallery:OtherProject[] = [
   {
     image: `${CLOUDINARY_URL_BASE}/other-project_6.png`,
     title: "Indigenous Weather Station",
-    subtitle: "data physicalization to help indigenous communities predict rain in the era of climate change in collaboration with the Indigenous Climate Observatories and the Lesotho Meteorological Services",
+    subtitle: "data physicalization for indigenous communities to adapt to climate change in collaboration with the Lesotho Meteorological Services",
     field: "robotics / data physicalization",
     team: "individual",
     responsibilities: "whole process",
@@ -61,20 +69,12 @@ export const projectGallery:OtherProject[] = [
  {
     image: `${CLOUDINARY_URL_BASE}/other-project_8.png`,
     title: "Sanitary points for slums",
-    subtitle: `human-centered research and concept-proposal 
-    of modular and scalable sanitary points to Kibera, Kenya 
+    subtitle: `modular sanitary points to Kibera, Kenya 
     in collaboration with the Hungarian Maltese Charity Service 
-    | Award Winning - 1st at Beton Fesztivál in category "Concrete construction, architecture"`,
+   `,
     field: "Architecture",
     team: "in a team of 3 (2 architects)",
-    responsibilities: "design consulting; graphic design",
+    responsibilities: "HCD; design consulting; graphic design",
   },
-  {
-    image: `${CLOUDINARY_URL_BASE}/other-project_9.png`,
-    title: "Design system variables for an educational app",
-    subtitle: "a three-tier variable system for the DS of a financial literacy app",
-    field: "UI design",
-    team: "individual contribution",
-    responsibilities: "create the variable collections",
-  },
+
 ]

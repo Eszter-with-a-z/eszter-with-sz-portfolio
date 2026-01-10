@@ -56,7 +56,7 @@ export default function Navbar() {
                     <Link
                       key={study.id}
                       href={`/projects/${study.id}`}
-                          className={`block px-3 py-2 text-sm hover:text-white rounded-lg transition-colors
+                      className={`block px-3 py-2 text-sm hover:text-white rounded-lg transition-colors
                             ${study.id === 1 ? "hover:bg-project-1-hover" : ""}
                             ${study.id === 2 ? "hover:bg-project-2-hover" : ""}
                             ${study.id === 3 ? "hover:bg-project-3-hover" : ""}

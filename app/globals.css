@@ -161,8 +161,8 @@
   body {
     @apply bg-background text-foreground;
   }
-  h1{
-    @apply font-serif;
+  h1, h3, h4{
+    @apply font-serif italic;
   }
   button{
     @apply cursor-pointer

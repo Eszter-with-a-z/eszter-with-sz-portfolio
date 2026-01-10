@@ -33,7 +33,7 @@ export default function ProjectTile({ project }: ProjectTileProps) {
           </div>
         </>
       ) : (
-        <div className="absolute inset-0 bg-primary text-primary-foreground p-6 flex flex-col justify-between">
+        <div className="absolute inset-0 bg-accent text-primary-foreground p-6 flex flex-col justify-between">
           <div>
             <p className="text-sm mb-4">{project.subtitle}</p>
             <div className="space-y-2 text-sm">
@@ -49,7 +49,7 @@ export default function ProjectTile({ project }: ProjectTileProps) {
             </div>
           </div>
           <div>
-            <p className="text-xs mb-3">Do you want to know more about the project?</p>
+            <p className="text-xs mb-1 text-center">Sounds interesting?</p>
             <Button variant="secondary" size="sm" className="w-full">
               Contact me for a discussion!
             </Button>
