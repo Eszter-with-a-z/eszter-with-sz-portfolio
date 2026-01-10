@@ -22,6 +22,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, className }: ProjectCardProps) {
   return (
+    <Link href={`/projects/${project.id}`} className="w-full">
     <Card   className={clsx(
     "overflow-hidden hover:shadow-lg text-background transition-shadow",
     className
@@ -31,31 +32,32 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
         <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
       </div>
       <CardContent className="p-6">
-        <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-        <p className="text-sm text-muted-foreground mb-4">{project.subtitle}</p>
-        <div className="space-y-2 text-sm">
+        <h3 className="text-4xl  mb-2">{project.title}</h3>
+        <p className="text-sm font-sans text-white mb-4">{project.subtitle}</p>
+        <div className="space-y-2 ">
           <div>
-            <span className="font-semibold">Field:</span> {project.field}
+            <span className="text-white/80 ">Field:</span> {project.field}
           </div>
           <div>
-            <span className="font-semibold">Project type:</span> {project.projectType}
+            <span className="text-white/80 ">Project type:</span> {project.projectType}
           </div>
           <div>
-            <span className="font-semibold">Responsibilities:</span> {project.responsibilities}
+            <span className="text-white/80 ">Responsibilities:</span> {project.responsibilities}
           </div>
           <div>
-            <span className="font-semibold">Duration:</span> {project.duration}
+            <span className="text-white/80 ">Duration:</span> {project.duration}
           </div>
           <div>
-            <span className="font-semibold">Technology:</span> {project.technology}
+            <span className="text-white/80 ">Technology:</span> {project.technology}
           </div>
         </div>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Link href={`/projects/${project.id}`} className="w-full">
-          <Button className="w-full">Click for more!</Button>
-        </Link>
+        
+          <Button className="flex p-6 m-auto bg-black rounded-3xl text-lg hover:text-black hover:bg-white">Click to view case study!</Button>
+        
       </CardFooter>
     </Card>
+    </Link>
   )
 }

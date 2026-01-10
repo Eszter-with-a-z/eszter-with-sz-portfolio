@@ -271,7 +271,7 @@ This includes content creation for social media which is extremely important, as
     id: 2,
     title: "Reader's Lamp",
     subtitle: "a lamp to challenge the default switch interaction",
-    field: "product design",
+    field: "Product Design",
     projectType: "design sprint in teams of 4",
     responsibilities: "user researcher; programmer; tester",
     duration: "1 week",
