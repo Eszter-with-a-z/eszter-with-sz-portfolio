@@ -21,8 +21,8 @@ export default function Navbar() {
 
   return (
     
-    <nav className="fixed top-4 left-0 right-0 z-50 px-4">
-      <div className="max-w-7xl mx-auto bg-white rounded-full shadow-lg flex items-center justify-between px-2 py-2">
+    <nav className="fixed top-4 m-auto w-full z-50 px-4">
+      <div className="max-w-2xl mx-auto bg-white rounded-full shadow-lg flex items-center justify-between px-2 py-2">
         <Link href="/" className="font-serif italic text-lg px-6 py-2 hover:bg-accent hover:text-white rounded-full transition-colors">
           Eszter with SZ
         </Link>
@@ -45,11 +45,11 @@ export default function Navbar() {
             </Link>
 
             <div
-              className={`absolute top-full left-0 bg-white rounded-2xl shadow-xl min-w-[240px] border border-gray-100 overflow-hidden transition-all duration-300 ease-out origin-top ${
+              className={`absolute  top-full left-0 bg-white rounded-2xl shadow-xl min-w-[240px] border border-gray-100 overflow-hidden transition-all duration-300 ease-out origin-top ${
                 isProjectsOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
               }`}
             >
-              <div className="py-2">
+              <div className="py-2  ">
                 <div className="px-4 py-2">
                   <p className="text-xs font-semibold text-gray-500 uppercase mb-2">Case Studies</p>
                   {Object.values(caseStudies).map((study) => (
@@ -70,7 +70,7 @@ export default function Navbar() {
                 <div className="px-4 py-2">
                   <Link
                     href="/#other-projects"
-                    className="w-full text-left px-3 py-2 text-sm hover:bg-accent hover:text-white rounded-lg transition-colors"
+                    className="w-full block text-left px-3 py-2 text-sm hover:bg-accent hover:text-white rounded-lg transition-colors"
                   >
                     <span className="font-medium">Other Projects</span>
                   </Link>
@@ -88,6 +88,14 @@ export default function Navbar() {
           >
             About
           </Link>
+
+          <Link
+            href="/#testimonials"
+            className="px-6 py-2 text-sm hover:bg-accent hover:text-white rounded-full transition-colors"
+          >
+            Testimonials
+          </Link>
+
           <Link
             href="#footer"
             className="px-6 py-2 text-sm hover:bg-accent hover:text-white rounded-full transition-colors"
@@ -106,8 +114,8 @@ export default function Navbar() {
       </div>
 {/*Mobile view*/}
       <div
-        className={`lg:hidden mt-2 bg-white rounded-3xl shadow-lg overflow-hidden transition-all duration-300 ease-out origin-top ${
-          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        className={`lg:hidden max-w-2xl  mx-auto  mt-2 bg-white rounded-3xl shadow-lg overflow-hidden transition-all duration-300 ease-out origin-top ${
+          isOpen ? " opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="px-6 py-4 flex flex-col gap-2">
@@ -145,7 +153,7 @@ export default function Navbar() {
                 <div className="border-t border-gray-100 my-2"></div>
                 <Link
                   href="/#other-projects"
-                  className="w-full text-left py-2 px-4 text-sm hover:bg-accent hover:text-white rounded-lg transition-colors"
+                  className="text-left block py-2 px-4 text-sm hover:bg-accent hover:text-white rounded-lg transition-colors"
                 >
                   <div className="font-medium">Other Projects</div>
                 </Link>
