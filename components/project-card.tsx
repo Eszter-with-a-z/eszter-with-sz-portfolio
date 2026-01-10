@@ -22,11 +22,11 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, className }: ProjectCardProps) {
   return (
-    <Link href={`/projects/${project.id}`} className="w-full">
+  <Link href={`/projects/${project.id}`} className="w-full hover:shadow-lg rounded-xl">
     <Card   className={clsx(
-    "overflow-hidden hover:shadow-lg text-background transition-shadow",
+    "overflow-hidden h-full justify-between text-background transition-shadow",
     className
-  )}>
+    )}>
 
       <div className="aspect-video relative">
         <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
