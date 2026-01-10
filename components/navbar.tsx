@@ -23,7 +23,7 @@ export default function Navbar() {
     
     <nav className="fixed top-4 left-0 right-0 z-50 px-4">
       <div className="max-w-7xl mx-auto bg-white rounded-full shadow-lg flex items-center justify-between px-2 py-2">
-        <Link href="/" className="font-serif italic text-lg px-6 py-2 hover:bg-gray-50 rounded-full transition-colors">
+        <Link href="/" className="font-serif italic text-lg px-6 py-2 hover:bg-accent hover:text-white rounded-full transition-colors">
           Eszter with SZ
         </Link>
 {/*Desktop view */}
@@ -33,19 +33,19 @@ export default function Navbar() {
             onMouseEnter={() => setIsProjectsOpen(true)}
             onMouseLeave={() => setIsProjectsOpen(false)}
           >
-            <button
-              onClick={() => scrollToSection("projects")}
-              className="px-6 py-2 text-sm hover:bg-gray-50 rounded-full transition-colors flex items-center gap-1"
+            <Link
+              href="/#projects"
+              className="cursor-pointer px-6 py-2 text-sm hover:bg-accent hover:text-white rounded-full transition-colors flex items-center gap-1"
             >
               Projects
               <ChevronDown
                 className={`w-4 h-4 transition-transform duration-300 ${isProjectsOpen ? "rotate-180" : ""}`}
               />
               {/* </CHANGE> */}
-            </button>
+            </Link>
 
             <div
-              className={`absolute top-full left-0 mt-2 bg-white rounded-2xl shadow-xl min-w-[240px] border border-gray-100 overflow-hidden transition-all duration-300 ease-out origin-top ${
+              className={`absolute top-full left-0 bg-white rounded-2xl shadow-xl min-w-[240px] border border-gray-100 overflow-hidden transition-all duration-300 ease-out origin-top ${
                 isProjectsOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
               }`}
             >
@@ -56,7 +56,11 @@ export default function Navbar() {
                     <Link
                       key={study.id}
                       href={`/projects/${study.id}`}
-                      className="block px-3 py-2 text-sm hover:bg-gray-50 rounded-lg transition-colors"
+                          className={`block px-3 py-2 text-sm hover:text-white rounded-lg transition-colors
+                            ${study.id === 1 ? "hover:bg-project-1-hover" : ""}
+                            ${study.id === 2 ? "hover:bg-project-2-hover" : ""}
+                            ${study.id === 3 ? "hover:bg-project-3-hover" : ""}
+                          `}
                     >
                       {study.title}
                     </Link>
@@ -66,7 +70,7 @@ export default function Navbar() {
                 <div className="px-4 py-2">
                   <Link
                     href="/#other-projects"
-                    className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 rounded-lg transition-colors"
+                    className="w-full text-left px-3 py-2 text-sm hover:bg-accent hover:text-white rounded-lg transition-colors"
                   >
                     <span className="font-medium">Other Projects</span>
                   </Link>
@@ -80,13 +84,13 @@ export default function Navbar() {
 
           <Link
             href="/#about-me"
-            className="px-6 py-2 text-sm hover:bg-gray-50 rounded-full transition-colors"
+            className="px-6 py-2 text-sm hover:bg-accent hover:text-white rounded-full transition-colors"
           >
             About
           </Link>
           <Link
             href="#footer"
-            className="px-6 py-2 text-sm hover:bg-gray-50 rounded-full transition-colors"
+            className="px-6 py-2 text-sm hover:bg-accent hover:text-white rounded-full transition-colors"
           >
             Contact
           </Link>
@@ -94,7 +98,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden p-2 hover:bg-gray-50 rounded-full transition-colors"
+          className="lg:hidden p-2 mx-2 hover:bg-accent hover:text-white rounded-full transition-colors"
           aria-label="Toggle menu"
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -110,7 +114,7 @@ export default function Navbar() {
           <div>
             <button
               onClick={() => setIsProjectsOpen(!isProjectsOpen)}
-              className="w-full text-left py-3 px-4 hover:bg-gray-50 rounded-xl transition-colors flex items-center justify-between"
+              className="w-full text-left py-3 px-4 hover:bg-accent hover:text-white rounded-xl transition-colors flex items-center justify-between"
             >
               Projects
               <ChevronDown
@@ -128,7 +132,11 @@ export default function Navbar() {
                   <Link
                     key={study.id}
                     href={`/projects/${study.id}`}
-                    className="block py-2 px-4 text-sm hover:bg-gray-50 rounded-lg transition-colors"
+                    className={`block px-3 py-2 text-sm hover:text-white rounded-lg transition-colors
+                      ${study.id === 1 ? "hover:bg-project-1-hover" : ""}
+                      ${study.id === 2 ? "hover:bg-project-2-hover" : ""}
+                      ${study.id === 3 ? "hover:bg-project-3-hover" : ""}
+                    `}
                     onClick={() => setIsOpen(false)}
                   >
                     {study.title}
@@ -137,7 +145,7 @@ export default function Navbar() {
                 <div className="border-t border-gray-100 my-2"></div>
                 <Link
                   href="/#other-projects"
-                  className="w-full text-left py-2 px-4 text-sm hover:bg-gray-50 rounded-lg transition-colors"
+                  className="w-full text-left py-2 px-4 text-sm hover:bg-accent hover:text-white rounded-lg transition-colors"
                 >
                   <div className="font-medium">Other Projects</div>
                 </Link>
@@ -147,13 +155,13 @@ export default function Navbar() {
           </div>
           <Link
             href="/#about"
-            className="text-left py-3 px-4 hover:bg-gray-50 rounded-xl transition-colors"
+            className="text-left py-3 px-4 hover:bg-accent hover:text-white rounded-xl transition-colors"
           >
             About
           </Link>
           <button
             onClick={() => scrollToSection("footer")}
-            className="text-left py-3 px-4 hover:bg-gray-50 rounded-xl transition-colors"
+            className="text-left py-3 px-4 hover:bg-accent hover:text-white rounded-xl transition-colors"
           >
             Contact
           </button>

@@ -4,8 +4,13 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  {/*#faf8f5*/} 
   --background: oklch(0.98 0.005 90);
+  {/*#f1f1fc*/} 
+  --background-hover:oklch(0.9613 0.0147 286.12);
   --foreground: oklch(0.15 0.01 270);
+  {/*#2b2343*/} 
+  --foreground-hover: oklch(0.2818 0.058 293.85)
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.15 0.01 270);
   --popover: oklch(1 0 0);
@@ -16,9 +21,28 @@
   --secondary-foreground: oklch(0.15 0.01 270);
   --muted: oklch(0.92 0.01 90);
   --muted-foreground: oklch(0.45 0.02 270);
+  {/* #3d3262*/} 
   --accent: oklch(0.3534 0.0817 292.25);
+  {/* #2b2343*/} 
   --accent-hover:oklch(0.2818 0.058 293.85);
   --accent-foreground: oklch(0.15 0.01 270);
+  
+  {/* #013350*/}
+  --project-1:oklch(0.3073 0.0713 241.47);
+  {/* #015077*/}
+  --project-1-hover:oklch(0.4107 0.0926 239.37);
+
+  {/* #0b0a38*/}
+  --project-2: oklch(0.1869 0.0858 275.15);
+  {/* #1a1b95*/}
+  --project-2-hover:oklch(0.3354 0.188 269.94);
+
+  {/* #264500*/}
+  --project-3:oklch(0.3523 0.098384 132.3642);
+   {/* #3a5b0c*/}
+  --project-3-hover:oklch(0.4297 0.1095 130.65);
+
+
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0.005 90);
   --border: oklch(0.88 0.01 90);
@@ -80,7 +104,10 @@
   --font-serif: var(--font-playfair), "Georgia", serif;
   --font-mono: var(--font-roboto), "Courier New", monospace;
   --color-background: var(--background);
+  --color-background-hover: var(--background-hover);
   --color-foreground: var(--foreground);
+  --color-foreground-hover: var(--foreground-hover);
+  --color-foreground: var(--foreground); 
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
@@ -94,6 +121,15 @@
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-accent-foreground: var(--accent-foreground);
+
+  --color-project-1: var(--project-1);
+  --color-project-2: var(--project-2);
+  --color-project-3: var(--project-3);
+
+  --color-project-1-hover: var(--project-1-hover);
+  --color-project-2-hover: var(--project-2-hover);
+  --color-project-3-hover: var(--project-3-hover);
+
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -127,5 +163,8 @@
   }
   h1{
     @apply font-serif;
+  }
+  button{
+    @apply cursor-pointer
   }
 }
