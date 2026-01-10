@@ -18,11 +18,19 @@ interface ProjectTileProps {
 export default function ProjectTile({ project }: ProjectTileProps) {
   const [isHovered, setIsHovered] = useState(false)
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <div id="other-projects"
-      className="relative aspect-square overflow-hidden rounded-lg cursor-pointer group"
+      className="relative aspect-square overflow-hidden rounded-lg cursor-default group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={() => setIsHovered(!isHovered)}
     >
       {!isHovered ? (
         <>
@@ -35,22 +43,24 @@ export default function ProjectTile({ project }: ProjectTileProps) {
       ) : (
         <div className="absolute inset-0 bg-accent text-primary-foreground p-6 flex flex-col justify-between">
           <div>
-            <p className="text-sm mb-4">{project.subtitle}</p>
-            <div className="space-y-2 text-sm">
+            <p className="text-sm mb-4 sm:mb-3">{project.subtitle}</p>
+            <div className="space-y-2 sm:space-y-1 text-sm">
               <div>
-                <span className="font-semibold">Field:</span> {project.field}
+                <span className="text-white/80">field:</span> {project.field}
               </div>
               <div>
-                <span className="font-semibold">Project type:</span> {project.team}
+                <span className="text-white/80">project type:</span> {project.team}
               </div>
               <div>
-                <span className="font-semibold">Responsibilities:</span> {project.responsibilities}
+                <span className="text-white/80">responsibilities:</span> {project.responsibilities}
               </div>
             </div>
           </div>
           <div>
             <p className="text-xs mb-1 text-center">Sounds interesting?</p>
-            <Button variant="secondary" size="sm" className="w-full">
+            <Button
+              onClick={()=> scrollToSection('footer')}
+              variant="secondary" size="sm" className="w-full rounded-4xl">
               Contact me for a discussion!
             </Button>
           </div>

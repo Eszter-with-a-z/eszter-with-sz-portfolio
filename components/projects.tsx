@@ -7,7 +7,7 @@ import { caseStudies } from "@/lib/data-projects"
 
 export default function Projects() {
   return (
-    <section id="projects" className="  py-18 bg-white">
+    <section id="projects" className="  py-18 bg-background">
       <div className=" container mx-auto px-6">
         <h2 className=" text-4xl font-bold mb-16">Projects</h2>
 
