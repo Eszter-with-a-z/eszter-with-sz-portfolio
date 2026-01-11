@@ -26,11 +26,11 @@ export default function Footer() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-white">
+      <div className="border-l-4 border-white pl-4 ml-8 relative z-10 container mx-auto px-6 text-white">
         <div className="max-w-2xl">
           <a href="#hero" className="inline-block mb-8 hover:opacity-80 transition-opacity">
-            <h3 className="text-2xl font-bold">Eszter Kovács</h3>
-            <p className="text-sm">Interaction Designer</p>
+            <h3 className="text-2xl font-bold mb-2">Eszter Kovács</h3>
+            <p className="text-sm italic font-bold  ">Interaction Designer <span className="not-italic font-light">[ C ]</span> </p>
           </a>
 
           <div className="space-y-4">
@@ -61,6 +61,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+
     </footer>
   )
 }
