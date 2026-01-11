@@ -5,10 +5,22 @@ type PhraseStyle = {
   className: string
 }
 
+type TextSize = "sm" | "md" | "lg" | "xl" | "default"
+
+const sizeClassMap: Record<TextSize, string> = {
+  sm: "text-sm",
+  md: "text-base",
+  lg: "text-lg",
+  xl: "text-xl",
+  default: "text-default"
+}
+
+
 export function renderWithTextStyling(
   text: string,
   boldPhrases: string[] = [],
-  serifPhrases: string[] = []
+  serifPhrases: string[] = [],
+  size: TextSize = "default"
 ): ReactNode[] {
   // Build a unified list of styled phrases
   const styledPhrases: PhraseStyle[] = [
@@ -18,7 +30,7 @@ export function renderWithTextStyling(
     })),
     ...serifPhrases.map((phrase) => ({
       phrase,
-      className: "text-lg font-serif italic",
+      className: `${sizeClassMap[size]} font-serif italic`,
     })),
   ]
 
