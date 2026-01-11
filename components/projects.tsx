@@ -1,7 +1,7 @@
 import ProjectCard from "./project-card"
 import ProjectTile from "./project-tile"
-import { projectGallery } from "@/lib/data-other-projects"
-import { caseStudies } from "@/lib/data-projects"
+import { projectGallery } from "@/lib/data/other-projects"
+import { caseStudies } from "@/lib/data/projects"
 
 
 
@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <section id="projects" className="  py-18 bg-background">
       <div className=" container mx-auto px-6">
-        <h2 className=" text-4xl font-bold mb-16">Projects</h2>
+        <h2 className=" text-4xl font-bold text-center mb-16">Projects</h2>
 
         {/* Case Studies */}
         <div className="mb-24">
@@ -34,7 +34,7 @@ export default function Projects() {
 
         {/* Project Gallery */}
         <div>
-          <div className="mb-8 text-center ">
+          <div className="mb-8  text-center ">
             <h3 className="text-2xl font-semibold mb-2">Other Projects</h3>
             <p className="text-muted-foreground">Hover/tap for more!</p>
           </div>

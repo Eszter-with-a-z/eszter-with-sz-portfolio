@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { caseStudies } from "@/lib/data-projects"
+import { caseStudies } from "@/lib/data/projects"
 import ProjectHero from "@/components/project-hero"
 import ProjectProblem from "@/components/project-problem"
 import ProjectProposal from "@/components/project-proposal"

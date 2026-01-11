@@ -28,7 +28,7 @@ export default function Hero() {
 
 
   return (
-    <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="sticky top-0 -z-10 h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <div
@@ -41,7 +41,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative h-100 z-10 container flex flex-col lg:flex-row mx-auto px-4 flex items-center justify-between gap-12">
+      <div className="relative h-100 container flex flex-col lg:flex-row mx-auto px-4 flex items-center justify-between gap-12">
         {/* Col 1 */}
         <div className="flex-1 "></div>
         {/* Col 2 =  */}

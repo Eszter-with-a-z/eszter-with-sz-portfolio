@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { useState } from "react"
-import { caseStudies } from "@/lib/data-projects"
+import { caseStudies } from "@/lib/data/projects"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
