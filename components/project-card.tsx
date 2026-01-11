@@ -29,7 +29,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
     )}>
 
       <div className="aspect-video relative">
-        <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+        <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover sticky top-0" />
       </div>
       <CardContent className="p-6">
         <h3 className="text-4xl  mb-2">{project.title}</h3>

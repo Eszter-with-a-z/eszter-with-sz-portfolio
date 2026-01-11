@@ -60,7 +60,7 @@ export default function ProjectTile({ project }: ProjectTileProps) {
             <p className="text-xs mb-1 text-center">Sounds interesting?</p>
             <Button
               onClick={()=> scrollToSection('footer')}
-              variant="secondary" size="sm" className="w-full rounded-4xl">
+              variant="secondary" size="sm" className="w-full rounded-4xl hover:bg-background hover:text-foreground bg-black text-white">
               Contact me for a discussion!
             </Button>
           </div>
