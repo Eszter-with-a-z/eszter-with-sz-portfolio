@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <section id="about" className="z-10 py-24 bg-background">
       <div className="container mx-auto px-6">
-        <h3 className="text-4xl font-bold mb-16 text-center">About me</h3>
+        <h2 className="text-4xl font-bold mb-16 text-center">About me</h2>
         <div className="m-auto max-w-[1000px] grid sm:grid-cols-2 gap-12">
           {/* Column 1 */}
           <div className="text-end text-2xl ">
