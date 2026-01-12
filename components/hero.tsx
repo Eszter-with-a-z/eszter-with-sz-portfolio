@@ -48,7 +48,7 @@ export default function Hero() {
         <div className="text-white text-center flex-1">
           <p className="text-lg mb-2">Hi there! I am</p>
           <h1 className=" text-6xl font-bold italic mb-4">Eszter <br/> (with SZ)</h1>
-          <p className="text-2xl w-100">- an Interaction Designer based in Malmö, Sweden</p>
+          <p className="text-2xl max-w-100">- an Interaction Designer based in Malmö, Sweden</p>
         </div>
 
         {/* Dictionary Style Card */}
