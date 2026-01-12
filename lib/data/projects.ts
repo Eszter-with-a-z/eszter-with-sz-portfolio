@@ -12,6 +12,7 @@ export const caseStudies: Record<
     responsibilities: string
     duration: string
     technology: string 
+    coverImage: string
     images: string[]
     problem: any
     proposal: any
@@ -27,6 +28,7 @@ export const caseStudies: Record<
     responsibilities: "all (user research, analysis, ideation, implementation, testing)",
     duration: "3 months",
     technology: "generative AI (Gemma 3); Python Flask; JS Vanilla",
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_2.jpg`,
     images: [
       
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_2.jpg`,
@@ -276,11 +278,13 @@ This includes content creation for social media which is extremely important, as
     responsibilities: "user researcher; programmer; tester",
     duration: "1 week",
     technology: "C++; Arduino; Supplyframe PCB Lamp",
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_9.png`,
+    
     images: [
       
-      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_10.png`,
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_3.png`,
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_8.png`,
+      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_10.png`,
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_4.png`,
     ],
     problem: {
@@ -415,6 +419,7 @@ This includes content creation for social media which is extremely important, as
     responsibilities: "research analyst; prototyper; project coordinator",
     duration: "5 weeks",
     technology: "Teachable Machine ML model; Arduino; C++;",
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_8.png`,
     images: [
       
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_8.png`,

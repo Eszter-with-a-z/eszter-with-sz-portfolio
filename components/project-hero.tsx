@@ -5,6 +5,7 @@ import Image from "next/image"
 
 interface ProjectHeroProps {
   project: {
+    id: number
     title: string
     subtitle: string
     field: string
@@ -36,51 +37,101 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
- 
+  const [isDesktop, setIsDesktop] = useState(false)
+
+  useEffect(() => {
+    const update = () => setIsDesktop(window.innerWidth >= 1024)
+    update()
+    window.addEventListener("resize", update)
+    return () => window.removeEventListener("resize", update)
+  }, [])
+
+ const pseudoRandom = (index: number) => {
+  const x = Math.sin(index * 9999) * 10000
+  return x - Math.floor(x)
+}
+
+
 const easeInOut = (t: number) =>
   t < 0.5
     ? 2 * t * t
     : 1 - Math.pow(-2 * t + 2, 2) / 2
 
+// --- DARKENING ---
+const outroMath = (v: number) => Math.max(0, Math.min(1, v))
+
+const outroProgress = outroMath((scrollProgress - 0.80) / 0.20)
+const outroEase = easeInOut(outroProgress)
+
 const getImageTransform = (index: number) => {
-  // Different speed per image
-  const speed = 0.4 + Math.pow(index + 1, 1.2) * 0.15
+  const rand = pseudoRandom(index)
+
+  // --- SPEED (random but controlled) ---
+  const baseSpeed = isDesktop ? 0.35 : 0.45
+  const speedVariance = isDesktop ? 0.25 : 0.4
+  const speed = baseSpeed + rand * speedVariance
+
+  // --- ENTRY / EXIT DISTANCE ---
+  const startY = isDesktop
+    ? 420 + rand * 120   // desktop: enters sooner
+    : 700 + rand * 220   // mobile: dramatic
+
+  const endY = isDesktop
+    ? -520 - rand * 160  // desktop: slower exit
+    : -900 - rand * 280
+
+  // --- EASING ---
+  const eased = easeInOut(scrollProgress)
 
 
-  // Image starts below viewport and ends above
-  const startY = 500
-  const endY = -700
 
-  const easedProgress = easeInOut(scrollProgress)
 
   const translateY =
-    startY + (endY - startY) * easedProgress * speed
+    startY + (endY - startY) * eased * speed
 
-  // Fade only at start & end
+  // --- OPACITY ---
   let opacity = 1
-  if (scrollProgress < 0.15) {
-    opacity = scrollProgress / 0.15
-  } else if (scrollProgress > 0.85) {
-    opacity = (1 - scrollProgress) / 0.15
+  const fadeInEnd = isDesktop ? 0.05 : 0.08
+  const fadeOutStart = isDesktop ? 0.95 : 0.92
+
+  if (scrollProgress < fadeInEnd) {
+    opacity = scrollProgress / fadeInEnd
+  } else if (scrollProgress > fadeOutStart) {
+    opacity = (1 - scrollProgress) / (1 - fadeOutStart)
   }
 
   return {
     transform: `translateY(${translateY}px)`,
-    opacity,
+    opacity:1,
   }
 }
+
 
   
 
   return (
-    <section ref={heroRef} className="relative h-[300vh]">
-      <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden bg-muted/30">
-        <div className="absolute inset-0 flex flex-col items-center justify-center z-20 text-center px-6">
-          <h1 className="text-5xl lg:text-7xl font-bold mb-4 text-balance">{project.title}</h1>
-          <p className="text-xl lg:text-2xl text-muted-foreground mb-8 text-pretty max-w-3xl">{project.subtitle}</p>
+    
+    <section 
+    ref={heroRef} 
+    className="relative h-[300vh]"
+      style={{
+        "--project-color": `var(--project-${project.id})`,
+      } as React.CSSProperties}>
 
-          <div className="bg-background/95 backdrop-blur-sm p-8 rounded-2xl border shadow-xl max-w-2xl">
-            <div className="space-y-3 text-sm">
+      <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden overflow-x-hidden overflow-y-hidden 
+      bg-[color:var(--project-color)]">
+        <div
+          className="relative inset-0 flex flex-col items-center justify-center z-20 text-center px-6"
+          style={{
+            opacity: 1 - outroEase,
+          }}
+        >
+
+          <h1 className="text-white text-5xl  lg:text-7xl font-bold mb-4 text-balance">{project.title}</h1>
+          <p className="text-white/90 text-xl lg:text-2xl text-muted-foreground mb-8 text-pretty max-w-3xl">{project.subtitle}</p>
+
+          <div className=" bg-background/95 backdrop-blur-sm p-8 rounded-2xl border shadow-xl max-w-2xl">
+            <div className=" space-y-3 text-sm">
               <div className="flex gap-2 justify-between">
                 <span className="font-semibold">Field:</span>
                 <span className="text-muted-foreground">{project.field}</span>
@@ -108,30 +159,42 @@ const getImageTransform = (index: number) => {
         <div className="absolute inset-0 z-100">
           {project.images.map((image, index) => {
             const positions = [
-              { top: "15%", left: "8%", width: 280, height: 400 },
-              { top: "25%", right: "10%", width: 320, height: 420 },
-              { bottom: "18%", left: "12%", width: 300, height: 380 },
-              { bottom: "15%", right: "15%", width: 260, height: 360 },
+              { top: "10%", left: "4%", width: 220, height: 320 },
+              { top: "22%", right: "6%", width: 250, height: 350 },
+              { bottom: "28%", left: "8%", width: 230, height: 330 },
+              { bottom: "12%", right: "4%", width: 210, height: 300 },
             ]
 
+
             const pos = positions[index] || positions[0]
+
+            const imageWidth = isDesktop
+              ? pos.width
+              : Math.min(pos.width, window.innerWidth * 0.85)
+
+            const imageHeight = imageWidth * (pos.height / pos.width)
+
             const style = getImageTransform(index)
 
             return (
               <div
                 key={index}
-                className="absolute "
+                className="absolute max-w-[90vw]"
                 style={{
                   ...style,
                   ...pos,
                 }}
               >
                 <div
-                  className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
+                  className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20
+                    w-[180px] h-[260px]
+                    sm:w-[220px] sm:h-[320px]
+                    lg:w-auto lg:h-auto"
                   style={{
-                    width: pos.width,
-                    height: pos.height,
-                  }}
+                  width: imageWidth,
+                  height: imageHeight,
+                }}
+
                 >
                   <Image
                     src={image || "/placeholder.svg"}
@@ -144,6 +207,13 @@ const getImageTransform = (index: number) => {
             )
           })}
         </div>
+        <div
+          className="absolute inset-0 z-30 pointer-events-none bg-black"
+          style={{
+            opacity: outroEase * 0.5,
+          }}
+        />
+
       </div>
     </section>
   )

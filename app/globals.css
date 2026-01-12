@@ -125,6 +125,7 @@
   --color-project-1: var(--project-1);
   --color-project-2: var(--project-2);
   --color-project-3: var(--project-3);
+  --project-color: var(--foreground);
 
   --color-project-1-hover: var(--project-1-hover);
   --color-project-2-hover: var(--project-2-hover);

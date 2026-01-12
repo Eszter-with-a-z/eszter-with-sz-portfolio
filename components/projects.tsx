@@ -26,7 +26,7 @@ export default function Projects() {
             
               project={{
                ...project,
-               image: project.images[0],
+               image: project.coverImage,
                 }} />
             ))}
           </div>
