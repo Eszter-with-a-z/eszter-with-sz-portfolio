@@ -40,11 +40,11 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
   const [isDesktop, setIsDesktop] = useState(false)
 
   useEffect(() => {
-    const update = () => setIsDesktop(window.innerWidth >= 1024)
-    update()
-    window.addEventListener("resize", update)
-    return () => window.removeEventListener("resize", update)
+    if (typeof window === "undefined") return
+
+    setIsDesktop(window.matchMedia("(min-width: 1024px)").matches)
   }, [])
+
 
  const pseudoRandom = (index: number) => {
   const x = Math.sin(index * 9999) * 10000
