@@ -159,7 +159,7 @@ const getImageTransform = (index: number) => {
         <div className="absolute inset-0 z-100">
           {project.images.map((image, index) => {
             const positions = [
-              { top: "10%", left: "4%", width: 220, height: 320 },
+              { top: "18%", left: "4%", width: 220, height: 320 },
               { top: "22%", right: "6%", width: 250, height: 350 },
               { bottom: "28%", left: "8%", width: 230, height: 330 },
               { bottom: "12%", right: "4%", width: 210, height: 300 },
@@ -189,7 +189,7 @@ const getImageTransform = (index: number) => {
                   className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20
                     w-[180px] h-[260px]
                     sm:w-[220px] sm:h-[320px]
-                    lg:w-auto lg:h-auto"
+                    lg:w-auto lg:h-auto "
                   style={{
                   width: imageWidth,
                   height: imageHeight,
@@ -200,7 +200,8 @@ const getImageTransform = (index: number) => {
                     src={image || "/placeholder.svg"}
                     alt={`${project.title} ${index + 1}`}
                     fill
-                    className="object-cover"
+                    className="object-cover bg-background"
+                    
                   />
                 </div>
               </div>
