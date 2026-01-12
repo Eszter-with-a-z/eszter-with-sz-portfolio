@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
+import { useMemo } from "react"
+import { useIsDesktop } from "@/hooks/use-is-dektop"
 
 interface ProjectHeroProps {
   project: {
@@ -37,13 +39,7 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const [isDesktop, setIsDesktop] = useState(false)
-
-  useEffect(() => {
-    if (typeof window === "undefined") return
-
-    setIsDesktop(window.matchMedia("(min-width: 1024px)").matches)
-  }, [])
+  const isDesktop = useIsDesktop()
 
 
  const pseudoRandom = (index: number) => {
@@ -61,7 +57,11 @@ const easeInOut = (t: number) =>
 const outroMath = (v: number) => Math.max(0, Math.min(1, v))
 
 const outroProgress = outroMath((scrollProgress - 0.80) / 0.20)
-const outroEase = easeInOut(outroProgress)
+const outroEase = useMemo(() => {
+  const p = Math.max(0, Math.min(1, (scrollProgress - 0.8) / 0.2))
+  return easeInOut(p)
+}, [scrollProgress])
+
 
 const getImageTransform = (index: number) => {
   const rand = pseudoRandom(index)
