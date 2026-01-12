@@ -34,23 +34,29 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
       <CardContent className="p-6">
         <h3 className="text-4xl  mb-2">{project.title}</h3>
         <p className="text-sm font-sans text-white mb-4">{project.subtitle}</p>
-        <div className="space-y-2 ">
-          <div>
-            <span className="text-white/80 ">Field:</span> {project.field}
-          </div>
-          <div>
-            <span className="text-white/80 ">Project type:</span> {project.projectType}
-          </div>
-          <div>
-            <span className="text-white/80 ">Responsibilities:</span> {project.responsibilities}
-          </div>
-          <div>
-            <span className="text-white/80 ">Duration:</span> {project.duration}
-          </div>
-          <div>
-            <span className="text-white/80 ">Technology:</span> {project.technology}
-          </div>
-        </div>
+        
+            <div className=" space-y-3 text-sm">
+              <div className="flex justify-between pb-3 border-b-1 border-white/30">
+                <span className="font-semibold text-white/70">Field</span>
+                <span className="text-white  text-end max-w-[60%]">{project.field}</span>
+              </div>
+              <div className="flex justify-between pb-3 border-b-1 border-white/30">
+                <span className="font-semibold text-white/70">Project type</span>
+                <span className="text-white  text-end max-w-[60%]">{project.projectType}</span>
+              </div>
+              <div className="flex justify-between pb-3 border-b-1 border-white/30">
+                <span className="font-semibold text-white/70">Responsibilities</span>
+                <span className="text-white text-end max-w-[60%]">{project.responsibilities}</span>
+              </div>
+              <div className="flex justify-between pb-3 border-b-1 border-white/30">
+                <span className="font-semibold text-white/70">Duration</span>
+                <span className="text-white text-end max-w-[60%]">{project.duration}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-semibold text-white/70">Technology</span>
+                <span className="text-white text-end max-w-[60%]">{project.technology}</span>
+              </div>
+            </div>
       </CardContent>
       <CardFooter className="p-6 pt-0">
         
