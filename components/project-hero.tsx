@@ -113,7 +113,7 @@ const getImageTransform = (index: number) => {
     
     <section 
     ref={heroRef} 
-    className="relative h-[300vh]"
+    className="relative h-[300vh] overscroll-none"
       style={{
         "--project-color": `var(--project-${project.id})`,
       } as React.CSSProperties}>
@@ -132,25 +132,25 @@ const getImageTransform = (index: number) => {
 
           <div className=" bg-background/95 backdrop-blur-sm p-8 rounded-2xl border shadow-xl max-w-2xl">
             <div className=" space-y-3 text-sm">
-              <div className="flex gap-2 justify-between">
-                <span className="font-semibold">Field:</span>
+              <div className="flex justify-between pb-3 border-b-1">
+                <span className="font-semibold">Field</span>
                 <span className="text-muted-foreground">{project.field}</span>
               </div>
-              <div className="flex gap-2 justify-between">
-                <span className="font-semibold">Project type:</span>
+              <div className="flex justify-between pb-3 border-b-1">
+                <span className="font-semibold">Project type</span>
                 <span className="text-muted-foreground">{project.projectType}</span>
               </div>
-              <div className="flex gap-2 justify-between">
-                <span className="font-semibold">Responsibilities:</span>
-                <span className="text-muted-foreground">{project.responsibilities}</span>
+              <div className="flex justify-between pb-3 border-b-1">
+                <span className="font-semibold">Responsibilities</span>
+                <span className="text-muted-foreground text-end max-w-[50%]">{project.responsibilities}</span>
               </div>
-              <div className="flex gap-2 justify-between">
-                <span className="font-semibold">Duration:</span>
+              <div className="flex justify-between pb-3 border-b-1">
+                <span className="font-semibold">Duration</span>
                 <span className="text-muted-foreground">{project.duration}</span>
               </div>
-              <div className="flex gap-2 justify-between">
-                <span className="font-semibold">Technology:</span>
-                <span className="text-muted-foreground">{project.technology}</span>
+              <div className="flex justify-between">
+                <span className="font-semibold">Technology</span>
+                <span className="text-muted-foreground text-end max-w-[50%]">{project.technology}</span>
               </div>
             </div>
           </div>
