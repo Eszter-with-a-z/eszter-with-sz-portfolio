@@ -81,6 +81,12 @@ export default function Navbar() {
           </div>
 
           <div className="flex-1"></div>
+          <Link
+            href="/#testimonials"
+            className="px-6 py-2 text-sm hover:bg-accent hover:text-white rounded-full transition-colors"
+          >
+            Testimonials
+          </Link>
 
           <Link
             href="/#about-me"
@@ -89,12 +95,6 @@ export default function Navbar() {
             About
           </Link>
 
-          <Link
-            href="/#testimonials"
-            className="px-6 py-2 text-sm hover:bg-accent hover:text-white rounded-full transition-colors"
-          >
-            Testimonials
-          </Link>
 
           <Link
             href="#footer"
@@ -160,9 +160,16 @@ export default function Navbar() {
               </div>
             </div>
             {/* </CHANGE> */}
+          
           </div>
           <Link
-            href="/#about"
+            href="/#testimonials"
+            className="text-left py-3 px-4 hover:bg-accent hover:text-white rounded-xl transition-colors"
+          >
+            Testimonials
+          </Link>
+          <Link
+            href="/#about-me"
             className="text-left py-3 px-4 hover:bg-accent hover:text-white rounded-xl transition-colors"
           >
             About
