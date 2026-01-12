@@ -28,7 +28,7 @@ export const caseStudies: Record<
     duration: "3 months",
     technology: "generative AI (Gemma 3); Python Flask; JS Vanilla",
     images: [
-      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_2.jpg`,
+      
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_2.jpg`,
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_10.jpg`,
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639536/project-1_11.jpg`,
@@ -277,7 +277,7 @@ This includes content creation for social media which is extremely important, as
     duration: "1 week",
     technology: "C++; Arduino; Supplyframe PCB Lamp",
     images: [
-      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_7.png`,
+      
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_10.png`,
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_3.png`,
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_8.png`,
@@ -416,7 +416,7 @@ This includes content creation for social media which is extremely important, as
     duration: "5 weeks",
     technology: "Teachable Machine ML model; Arduino; C++;",
     images: [
-      `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_8.png`,
+      
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_8.png`,
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_5.png`,
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_4.png`,
