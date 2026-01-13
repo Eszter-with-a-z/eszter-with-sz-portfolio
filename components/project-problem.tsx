@@ -10,8 +10,8 @@ interface ProjectProblemProps {
 
 export default function ProjectProblem({ problem }: ProjectProblemProps) {
   return (
-    <section className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-24 sticky top-0 -z-1">
+      <div className="container mx-auto px-6  bg-background">
         <h2 className="text-3xl font-bold mb-12">Problem</h2>
         <div className="grid md:grid-cols-2 gap-12">
           <p className="text-2xl leading-relaxed text-muted-foreground">

@@ -32,7 +32,7 @@ export default async function ProjectPage({
       <Navbar />
       <ProjectHero project={project} />
       <ProjectProblem problem={project.problem} />
-      <ProjectProposal proposal={project.proposal} />
+      <ProjectProposal id={project.id} proposal={project.proposal} />
       <ProjectProcess process={project.process} />
       <ProjectNavigation currentId={project.id} />
       <Footer />
