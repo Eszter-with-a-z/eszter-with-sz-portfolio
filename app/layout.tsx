@@ -56,17 +56,12 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Eszter Kovács - Interaction Designer",
   description: "Enhance humans instead of replacing | IxD & UX/UI | Case Studies | More Projects | Testimonials | About me | Contact",
-  /**
-  icons: {
+  
+  /*icons: {
     icon: [
       {
-        url: "/favicon/favicon-32x32.png",
+        url: "/icon.png",
         sizes: "32x32",
-        type: "image/png",
-      },
-      {
-        url: "/favicon/favicon-16x16.png",
-        sizes: "16x16",
         type: "image/png",
       },
       {
@@ -75,10 +70,10 @@ export const metadata: Metadata = {
       },
     ],
     apple: {
-      url: "/favicon/apple-icon.png",
+      url: "/apple-icon.png",
       sizes: "180x180",
     },
-  }, */
+    },*/
 }
 
 export default function RootLayout({
