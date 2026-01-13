@@ -12,7 +12,8 @@ export default function Testimonials() {
             <Card key={index} className="sticky top-36 max-w-[400px] bg-background transition-shadow">
               <CardContent className="p-6 pt-0">
                 <p className="mb-6 font-semibold text-foreground/50">{testimonial.id}/{testimonials.length}</p>
-                <p className="text-muted-foreground mb-6 leading-relaxed italic">{renderWithTextStyling(testimonial.text, testimonial.bold)}</p>
+                <p className="text-muted-foreground mb-6 leading-relaxed ">
+                  {renderWithTextStyling(testimonial.text, testimonial.styles)}</p>
                 <div className="border-t pt-4 w-full flex flex-col items-end pr-8">
                   <p className="font-semibold font-serif italic text-lg text-right">{testimonial.name}</p>
                   <p className="text-sm text-muted-foreground text-right max-w-[70%]">{testimonial.title}</p>

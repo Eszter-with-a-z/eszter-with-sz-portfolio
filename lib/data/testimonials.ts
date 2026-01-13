@@ -1,10 +1,9 @@
-
 export interface Testimonial {
     id: number
     text: string
     name: string
     title: string
-    bold?: string[]
+    styles?: any
 }
 
 export const testimonials: Testimonial[] = [
@@ -13,10 +12,11 @@ export const testimonials: Testimonial[] = [
     text: "[She] listens carefully to the different voices that might  appear in her work. She makes considered judgements, is a team player and communicates well.",
     name: "Lizette",
     title: "my professor & client for my project “Indigenous Weather Station”",
-    bold:[
-      "listens carefully to the different voices",
-      "team player and communicates well"
-    ]
+    styles:[ 
+      { phrase: "listens carefully to the different voices", bold: true },
+      { phrase: "team player and communicates well", bold: true },
+    ],
+    
   },
   {
     id: 2,
@@ -30,29 +30,30 @@ export const testimonials: Testimonial[] = [
     workshops and driving user centric processes.`,
     name: "Johannes",
     title: "head of IOIO lab",
-    bold: [
-      "complex design challenges",
-      "curiosity and willingness to explore",
-      "valuable contributor",
-      "independent and reliable asset",
-      "driving user centric processes",
+    styles:[ 
+      { phrase: "complex design challenges", bold: true },
+      { phrase: "curiosity and willingness to explore", bold: true },
+      { phrase: "valuable contributor", bold: true },
+      { phrase: "independent and reliable", bold: true },
+      { phrase: "driving user centric processes", bold: true },
     ],
   },
   {
     id:3,
-    text: `I have witnessed first-hand her exceptional growth a
-    nd innate talents in this domain. Eszter is deeply reflective 
+    text: `I have witnessed first-hand her exceptional growth 
+    and innate talents in this domain. Eszter is deeply reflective 
     and thoughtful designer who is committed  to continuous 
     learning.[...] It is rare to find a junior service designer
      who already exhibits skills characteristic of medior and, in 
      some areas, even senior-level professionals.`,
     name: "Laci",
     title: "CEO of Meet Prespectives Ltd.",
-    bold:[
-      "innate talents in this domain",
-      "deeply reflective and thoughtful",
-      "exhibits skills characteristic of medior",
-      "senior-level professionals"
+    styles: [
+      {phrase:"innate talents in this domain", bold: true},
+      {phrase:"deeply reflective and thoughtful", bold: true},
+      {phrase:"exhibits skills characteristic of medior", bold: true},
+      {phrase:"senior-level professionals", bold: true}     
     ]
+
   },
 ]

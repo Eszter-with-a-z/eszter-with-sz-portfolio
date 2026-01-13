@@ -1,10 +1,5 @@
 import { ReactNode } from "react"
 
-type PhraseStyle = {
-  phrase: string
-  className: string
-}
-
 type TextSize = "sm" | "md" | "lg" | "xl" | "default"
 
 const sizeClassMap: Record<TextSize, string> = {
@@ -16,39 +11,44 @@ const sizeClassMap: Record<TextSize, string> = {
 }
 
 
+export interface InlineTextStyle {
+  phrase: string
+
+  bold?: boolean
+  serif?: boolean
+
+  size?: "sm" | "md" | "lg" | "xl"
+
+  colorClass?: string
+}
+
+// use as: {renderWithTextStyling(text, boldArray, serifArray)}
 export function renderWithTextStyling(
   text: string,
-  boldPhrases: string[] = [],
-  serifPhrases: string[] = [],
-  size: TextSize = "default"
+  styles: InlineTextStyle[]
 ): ReactNode[] {
-  // Build a unified list of styled phrases
-  const styledPhrases: PhraseStyle[] = [
-    ...boldPhrases.map((phrase) => ({
-      phrase,
-      className: "font-semibold",
-    })),
-    ...serifPhrases.map((phrase) => ({
-      phrase,
-      className: `${sizeClassMap[size]} font-serif italic`,
-    })),
-  ]
-
   let parts: ReactNode[] = [text]
 
-  styledPhrases.forEach(({ phrase, className }) => {
-    parts = parts.flatMap((part, index) => {
+  styles.forEach((style, styleIndex) => {
+    parts = parts.flatMap((part) => {
       if (typeof part !== "string") return part
 
-      return part.split(phrase).flatMap((chunk, i, arr) =>
+      return part.split(style.phrase).flatMap((chunk, i, arr) =>
         i < arr.length - 1
           ? [
               chunk,
               <span
-                key={`${phrase}-${index}-${i}`}
-                className={className}
+                key={`${style.phrase}-${styleIndex}-${i}`}
+                className={[
+                  style.bold && "font-semibold",
+                  style.serif && "font-serif italic",
+                  style.size && sizeClassMap[style.size],
+                  style.colorClass,
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
               >
-                {phrase}
+                {style.phrase}
               </span>,
             ]
           : [chunk]

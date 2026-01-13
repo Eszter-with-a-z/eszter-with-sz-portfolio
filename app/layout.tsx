@@ -54,7 +54,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "Eszter Kovács - Interaction Designer",
+  title: "Eszter (with SZ) Kovács - Interaction Designer",
   description: "Enhance humans instead of replacing | IxD & UX/UI | Case Studies | More Projects | Testimonials | About me | Contact",
   
   /*icons: {

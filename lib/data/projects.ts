@@ -48,6 +48,9 @@ export const caseStudies: Record<
        reative entrepreneurs use generative AI to 
         enhance the meaningfulness of their (day-to-day) 
         work?`,
+        styles: {
+          col1: [`“I want AI to do my laundry and dishes so that I can do  art and writing, not for AI to do my art and writing so  that I can do my laundry and dishes.“`],
+        }
     },
     proposal: {
       text: [
@@ -288,10 +291,16 @@ This includes content creation for social media which is extremely important, as
       `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_4.png`,
     ],
     problem: {
-      col1: `Light is a versatile design material. Natural light ranges from sunrise to bio-luminescence, from the Northern lights to fire, with a great diversity.
+      col1: `In our design challenge, our task was to create a quick prototype of a lamp that challenges the binary switch interaction.`,
+      col2: `Light is a versatile design material. Natural light ranges from sunrise to bio-luminescence, from the Northern lights to fire, with a great diversity.
              Artificial light nowadays is present everywhere from the streets to LEDs in chargers.
             Despite the ubiquity of artificial light, interacting with it is mostly limited to on/off switches.`,
-      col2: `In our design challenge, our task was to create a quick prototype of a lamp that challenges this conventional binary interaction.`,
+      styles: {
+        col1: [
+          
+          { phrase: "a lamp that challenges the binary switch interaction.", bold: true, serif: true },
+        ],
+      }
     },
     proposal: {
       text: [
@@ -430,6 +439,12 @@ This includes content creation for social media which is extremely important, as
     problem: {
       col1: "Reed cutting requires too many resources for NGOs that work toward preserving biodiversity.",
       col2: "Common reed spreads quickly in Central European wetlands leading to paludification and loss of biodiversity. NGOs tackling wetland preservation identified reed elimination as an area where they would need help. This task is physically demanding and requires a lot of human resources.",
+      styles: {
+        col1: [
+          
+          { phrase: "preserving biodiversity", bold: true, serif: true },
+        ],
+      }
     },
     proposal: {
       text: [
