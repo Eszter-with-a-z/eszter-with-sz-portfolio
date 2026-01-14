@@ -475,23 +475,32 @@ export const caseStudies: Record<
     proposal: {
       text: [
         "A robot with a 2-step reed-recognition system",
-        `Throughout our design, we drew inspiration from more-than-human design, especially from Reynolds-Cuéllar and Salazar-Gómez's work on Nature-Human Interaction (2023). As opposed to the initial problem statement and traditional HCI approach focusing on improving performance or easing the physical burden on humans, we prioritized the ecosystem's and its members' safety.
-        Interestingly, this approach eventually led us to a solution equally beneficial both for humans and for the ecosystem. We could solve both the problem of human resources and the ecosystem's safety by focusing on detecting the sprouts instead of the fully developed reed (see more in the Process section).
-        To achieve it, we developed the concept of a 2-step reed-recognition system with a cutting mechanism:`,
-        "grabbing arms + capacitive sensor /1st step",
-        "The robot is equipped with a capacitive sensor on its grabbing arms. It serves for a constant monitoring of the environment on a low technological level and to distinguish living plants from other members of the ecosystem (e.g. dry trunks, animals).",
-        "camera + ML model 2nd step",
-        "Once a living plant is detected, the camera is activated. It is connected to an ML model trained to distinguish reeds from other members of the wetland vegetation.",
+        `Throughout our design, we drew inspiration from more-than-human design, especially from Reynolds-Cuéllar and Salazar-Gómez's work on Nature-Human Interaction (2023). As opposed to the initial problem statement and traditional HCI approach focusing on improving performance or easing the physical burden on humans, we prioritized the ecosystem's and its members' safety.\n
+        Interestingly, this approach resulted in equal benefits both for humans and for the ecosystem.\n We could solve both the problem of human resources and the ecosystem's safety by focusing on detecting the sprouts instead of the fully developed reed (see more in the Process section).
+        `,
+        `To achieve it, we developed the concept of a 2-step system:\n
+        1st step | grabbing arms + capacitive sensor \n
+        The robot is equipped with a capacitive sensor on its grabbing arms. It serves for a constant monitoring of the environment on a low technological level and to distinguish living plants from other members of the ecosystem (e.g. dry trunks, animals). \n
+        2nd step | camera + ML model \n
+        Once a living plant is detected, the camera is activated. It is connected to an ML model trained to distinguish reeds from other members of the wetland vegetation.`,
       ],
       styles:{
-        0:[
-          {phrase:"", bold:true, serif:true}
+        1:[
+          {phrase:" Nature-Human Interaction ", bold:true},
+          {phrase:"Interestingly, this approach resulted in equal benefits both for humans and for the ecosystem.", bold:true, size:"lg"},
+          
+        ],
+        2:[
+          {phrase:"1st step", serif:true, size:"2xl"},
+          {phrase:"| grabbing arms + capacitive sensor", bold:true, size:"xl"},
+          {phrase:"2nd step", serif:true, size:"2xl"},
+          {phrase:"| camera + ML model", bold:true, size:"xl"},
         ]
       },
       videoUrl: `https://res.cloudinary.com/dskrqh0vu/video/upload/v1767639663/project-3-video.mp4`,
-      videoCaption: `Video: Here, you can see a video prototype showcasing the expected behavior of the robot in 3 scenarios:
-      1) when it encounters an animal
-      2) when it encounters a plant other than a common reed
+      videoCaption: `Video: Here, you can see a video prototype showcasing the expected behavior of the robot in 3 scenarios: \n
+      1) when it encounters an animal \n 
+      2) when it encounters a plant other than a common reed \n
       3) when it encounters common reed`,
     },
     process: [

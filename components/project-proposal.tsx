@@ -52,7 +52,9 @@ export default function ProjectProposal({ id, proposal }: ProjectProposalProps) 
                 Your browser does not support the video tag.
               </video>
           </div>
-          <p className="text-sm text-white/80  mt-4 italic">{proposal.videoCaption}</p>
+          <p className="text-sm text-white/80  mt-4 italic whitespace-pre-line">
+            {proposal.videoCaption}
+          </p>
         </div>
       </div>
     </section>
