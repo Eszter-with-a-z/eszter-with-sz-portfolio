@@ -21,7 +21,7 @@ interface ProjectProcessProps {
 
 export default function ProjectProcess({ process }: ProjectProcessProps) {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-background mx-auto max-w-[1200px]">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold mb-12">The process</h2>
 
@@ -43,32 +43,39 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
                     <span className="font-bold text-left">{step.title}</span>
                     <span className="text-sm text-muted-foreground">{step.subtitle}</span>
                   </div>
-                  <div className="flex items-center justify-center">
-                    <Plus className="w-5 h-5 shrink-0 transition-transform duration-200" />
-                  </div>
+                  
                 </div>
               </AccordionTrigger>
 
               <AccordionContent className="px-6 pb-6">
-                <div className="grid md:grid-cols-3 gap-6 mt-4">
+                <div className="flex flex-wrap gap-6 mt-4 items-stretch">
                   {step.content.map((item, itemIndex) =>
                     item.type === "text" ? (
-                      <div key={itemIndex} className="text-muted-foreground leading-relaxed">
+                      <div
+                        key={itemIndex}
+                        className="mx-auto min-w-[350px]  text-muted-foreground leading-relaxed flex-1 min-w-[250px] max-w-[500px] p-2"
+                      >
                         {item.text}
                       </div>
                     ) : (
-                      <div key={itemIndex} className="relative aspect-video rounded-lg overflow-hidden">
+                      <div
+                        key={itemIndex}
+                        className="flex-1 min-w-[250px] max-h-[400px] rounded-lg overflow-hidden"
+                      >
                         <Image
                           src={item.url || ""}
                           alt={`Step ${index + 1} image ${itemIndex + 1}`}
-                          fill
-                          className="object-cover"
+                          width={1600}
+                          height={900}
+                          className="w-full h-full object-contain rounded-lg"
                         />
                       </div>
-                    ),
+                    )
                   )}
                 </div>
+
               </AccordionContent>
+
             </AccordionItem>
           ))}
         </Accordion>
