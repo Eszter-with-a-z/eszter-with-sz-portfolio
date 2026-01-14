@@ -62,14 +62,14 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
                     item.type === "text" ? (
                       <div
                         key={itemIndex}
-                        className="mx-auto min-w-[350px]  text-muted-foreground leading-relaxed flex-1 min-w-[250px] max-w-[500px] p-2"
+                        className="mx-auto text-muted-foreground leading-relaxed flex-1 min-w-[250px] max-w-[500px] p-2"
                       >
                         {item.text}
                       </div>
                     ) : (
                       <div
                         key={itemIndex}
-                        className="flex-1 cursor-zoom-in min-w-[250px] max-h-[400px] rounded-lg overflow-hidden"
+                        className="flex-1 cursor-zoom-in "
                         onClick={() =>
                         setActiveImage({
                           src: item.url!,
@@ -77,6 +77,8 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
                         })
                       }                      
                       >
+                        <div className="min-w-[250px] max-h-[400px] rounded-lg overflow-hidden">
+
                         <Image
                           src={item.url || ""}
                           alt={`Step ${index + 1} image ${itemIndex + 1}`}
@@ -84,7 +86,16 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
                           height={900}
                           className="w-full h-full object-contain rounded-lg"
                         />
+                        </div>
+                          {/* Caption */}
+                        {item.caption && (
+                          <p className="text-sm text-muted-foreground mt-2 italic whitespace-pre-line">
+                            {item.caption}
+                          </p>
+                        )}
+
                       </div>
+
                     )
                   )}
                 </div>
