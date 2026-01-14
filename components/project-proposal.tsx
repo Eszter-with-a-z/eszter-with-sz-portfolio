@@ -1,9 +1,11 @@
+import { renderWithTextStyling } from "@/lib/functions"
 import Image from "next/image"
 
 interface ProjectProposalProps {
   id: number
   proposal: {
     text: string[]
+    styles?: any
     videoUrl: string
     videoCaption: string
   }
@@ -16,13 +18,15 @@ export default function ProjectProposal({ id, proposal }: ProjectProposalProps) 
       } as React.CSSProperties}>
     <section className="z-10 py-24 bg-[color:var(--project-color)]"
 >
-      <div className="text-white container mx-auto px-6 ">
+      <div className="text-white container mx-auto px-6 max-w-[1200px]">
         <h2 className="text-3xl font-bold mb-12">Design proposal</h2>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 md:max-w-full sm:max-w-[500px] mx-auto gap-4 mb-16">
           {proposal.text.map((paragraph, index) => (
-            <p key={index} className=" leading-relaxed">
-              {paragraph}
+            // Contidional map for odd cols
+            
+            <p key={index} className=" leading-relaxed whitespace-pre-line">
+              {renderWithTextStyling(paragraph, proposal.styles?.[index])}
             </p>
           ))}
         </div>

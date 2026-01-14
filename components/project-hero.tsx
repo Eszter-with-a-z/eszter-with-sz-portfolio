@@ -119,7 +119,7 @@ const getImageTransform = (index: number) => {
       } as React.CSSProperties}>
 
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden overflow-x-hidden overflow-y-hidden 
-      bg-[color:var(--project-color)]">
+      bg-[color:var(--project-color)] ">
         <div
           className="relative inset-0 flex flex-col items-center justify-center z-20 text-center px-6"
           style={{

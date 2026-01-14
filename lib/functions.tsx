@@ -1,12 +1,13 @@
 import { ReactNode } from "react"
 
-type TextSize = "sm" | "md" | "lg" | "xl" | "default"
+type TextSize = "sm" | "md" | "lg" | "xl" | "2xl" | "default"
 
 const sizeClassMap: Record<TextSize, string> = {
   sm: "text-sm",
   md: "text-base",
   lg: "text-lg",
   xl: "text-xl",
+  "2xl": "text-2xl",
   default: "text-default"
 }
 
@@ -17,7 +18,7 @@ export interface InlineTextStyle {
   bold?: boolean
   serif?: boolean
 
-  size?: "sm" | "md" | "lg" | "xl"
+  size?: TextSize
 
   colorClass?: string
 }
@@ -25,7 +26,7 @@ export interface InlineTextStyle {
 // use as: {renderWithTextStyling(text, boldArray, serifArray)}
 export function renderWithTextStyling(
   text: string,
-  styles: InlineTextStyle[]
+  styles: InlineTextStyle[] = []
 ): ReactNode[] {
   let parts: ReactNode[] = [text]
 

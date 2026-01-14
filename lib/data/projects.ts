@@ -49,28 +49,45 @@ export const caseStudies: Record<
         enhance the meaningfulness of their (day-to-day) 
         work?`,
         styles: {
-          col1: [`“I want AI to do my laundry and dishes so that I can do  art and writing, not for AI to do my art and writing so  that I can do my laundry and dishes.“`],
+          col1: [{phrase:`“I want AI to do my laundry and dishes so that I can do  art and writing, not for AI to do my art and writing so  that I can do my laundry and dishes.“`, serif: true, bold: true}],
         }
     },
     proposal: {
       text: [
-        `a conversational agent for creative workers to brainstorm social media content when their hands are busy `,
-        `“Showing the process is important. It’s almost as important as the physical product.”
-            “I know it is important to post on social media...but if I want to do it properly, it takes a full-time job.”
-            Even when your hobby is your work, it has monotonous phases. `,
-        `This project proposes a conversational agent that can help creative entrepreneurs in these monotonous phases progress with the “invisible work” of content creation. 
-            It does so by conversing with creative worker either to capture their ideas or to help come up with new ones. The conversation ends with
-            1) a visual recommendation based on the context (screenshot, video, photo depending on e.g. the location of the person)
-            2) SEO optimized hashtag recommendation for the content.
-            (See in the video below)`,
-        `This proposal builds on the finding that 
-creative entrepreneurs are willing to offload entrepreneurial, rather than the creative tasks in their work to AI. 
-
-This includes content creation for social media which is extremely important, as the creative workers confirm that showing the process behind their products differentiates them from mass-produced alternatives.`,
+        `a conversational agent for creative workers to brainstorm social media content while crafting `,
+        `“Showing the process is important. It’s almost as important as the physical product.” \n
+            “I know it is important to post on social media...but if I want to do it properly, it takes a full-time job.”\n
+            "Even when your hobby is your work, it has monotonous phases."
+        This proposal builds on the finding that 
+        creative entrepreneurs are willing to offload entrepreneurial, rather than creative tasks in their work to AI. 
+        `,
+        `This includes content creation for social media. Why is it extremely important? Creative workers confirm that showing the process behind their products differentiates them from mass-produced alternatives.\n 
+        This project proposes a conversational agent that can help creative entrepreneurs in these monotonous phases progress with the “invisible work” of content creation. 
+            The conversation ends with \n
+            1) a visual recommendation based on the context (screenshot, video, photo depending on e.g. the location of the person) \n
+            2) SEO optimized hashtag recommendation for the content. \n
+            (See in the video)`,
+        
       ],
+      styles: {
+        0:[
+          {phrase:"a conversational agent for creative workers to brainstorm social media content while crafting", bold: true, size:"2xl"}
+        ],
+        1:[
+          {phrase:`“Showing the process is important. It’s almost as important as the physical product.” \n
+            “I know it is important to post on social media...but if I want to do it properly, it takes a full-time job.”\n
+            "Even when your hobby is your work, it has monotonous phases."`, serif: true, size:"xl"},
+          {phrase:"creative entrepreneurs are willing to offload entrepreneurial, rather than creative tasks in their work to AI", bold: true, size:"2xl"},
+          {phrase:"showing the process", bold: true},
+          {phrase:"differentiates them", bold: true}
+        ],
+        2:[
+          {phrase:"1)", serif:true, size:"2xl"}
+        ]
+      },
       
       videoUrl: "https://res.cloudinary.com/dskrqh0vu/video/upload/v1767639545/project-1-video.mp4",
-      videoCaption: "Video: Here, you can see the video prototype showcasing the interaction between an architect student and the conversational agent.",
+      videoCaption: "Videoprototype: the interaction between an architect student and the conversational agent.",
     },
     process: [
       {
