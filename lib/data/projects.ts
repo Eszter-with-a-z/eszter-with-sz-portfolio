@@ -70,9 +70,6 @@ export const caseStudies: Record<
         
       ],
       styles: {
-        0:[
-          {phrase:"a conversational agent for creative workers to brainstorm social media content while crafting", bold: true, size:"2xl"}
-        ],
         1:[
           {phrase:`“Showing the process is important. It’s almost as important as the physical product.” \n
             “I know it is important to post on social media...but if I want to do it properly, it takes a full-time job.”\n
@@ -322,14 +319,26 @@ export const caseStudies: Record<
     proposal: {
       text: [
         "A lamp for readers, whose functionality ranges from ambience lamp to task lamp",
-        `Our prototype proposes a book-shaped ambient lamp whose brightness and temperature are adjustable to match the user's current activity. It ranges from a “candle” light (1500K) which has a warm and relaxing effect to white light (9500K) which helps stay awake and focused.`,
-        `Instead of “switching” between different moods, our goal was to afford an interaction that is 1) integral to its metaphor, & 2) continuous (to replace the switch interaction).
-
-        To achieve this, we chose the book metaphor with the opening - closing interaction. To make it continuous, its light ranges from a white and sharp light to help focused work to a warm, flickering light for relaxing.`,
-        `/the metaphor a book`,
-        `/the interaction opening-closing`
+        `No “switching” between different moods. To create a continuous interaction, we chose the book metaphor with the notion of opening & closing.The brightness and temperature of the lamp are adjustable to match the user's current activity. It ranges from a “candle” light (1500K) which has a warm and relaxing effect to white light (9500K) which helps stay awake and focused.`,
+        `/the metaphor a book \n
+        /the interaction opening-closing`,
+      
       ],
-      videoUrl: "https://res.cloudinary.com/dskrqh0vu/video/upload/v1767639567/project-2-video_2.mp4",
+      styles:{
+        1:[
+          {phrase:"continuous interaction", bold:true},
+          {phrase:"brightness and temperature", bold:true},
+          {phrase:"warm and relaxing", bold:true},
+          {phrase:" awake and focused.", bold:true}
+        ],
+        2:[
+          {phrase:"/the metaphor", bold: true, size:"2xl"},
+          {phrase:"a book", serif:true, size:"2xl"},
+          {phrase:"/the interaction", bold: true, size:"2xl"},
+          {phrase:"opening-closing", serif:true, size:"2xl"}
+        ],
+      },
+      videoUrl: "https://res.cloudinary.com/dskrqh0vu/video/upload/ac_none/v1767639567/project-2-video_2.mp4",
       videoCaption: `Video: The high-fidelity prototype of the book lamp demonstrates changing the light brightness and temperature depending on the angle of openness
                     The quality of the camera modified the appearance of the light. It ranges from approx. 1500K to 9500K.`,
     },
@@ -474,7 +483,11 @@ export const caseStudies: Record<
         "camera + ML model 2nd step",
         "Once a living plant is detected, the camera is activated. It is connected to an ML model trained to distinguish reeds from other members of the wetland vegetation.",
       ],
-      
+      styles:{
+        0:[
+          {phrase:"", bold:true, serif:true}
+        ]
+      },
       videoUrl: `https://res.cloudinary.com/dskrqh0vu/video/upload/v1767639663/project-3-video.mp4`,
       videoCaption: `Video: Here, you can see a video prototype showcasing the expected behavior of the robot in 3 scenarios:
       1) when it encounters an animal
