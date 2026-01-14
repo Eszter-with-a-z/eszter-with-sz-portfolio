@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from "react"
+import GalleryModal from "@/components/galleryModal"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Image from "next/image"
 import { Plus } from "lucide-react"
@@ -20,6 +24,11 @@ interface ProjectProcessProps {
 }
 
 export default function ProjectProcess({ process }: ProjectProcessProps) {
+  const [activeImage, setActiveImage] = useState<{
+  src: string
+  alt?: string
+} | null>(null)
+
   return (
     <section className="py-24 bg-background mx-auto max-w-[1200px]">
       <div className="container mx-auto px-6">
@@ -60,7 +69,13 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
                     ) : (
                       <div
                         key={itemIndex}
-                        className="flex-1 min-w-[250px] max-h-[400px] rounded-lg overflow-hidden"
+                        className="flex-1 cursor-zoom-in min-w-[250px] max-h-[400px] rounded-lg overflow-hidden"
+                        onClick={() =>
+                        setActiveImage({
+                          src: item.url!,
+                          alt: `Step ${index + 1} image ${itemIndex + 1}`,
+                        })
+                      }                      
                       >
                         <Image
                           src={item.url || ""}
@@ -80,6 +95,14 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
           ))}
         </Accordion>
       </div>
+      
+      {activeImage && (
+      <GalleryModal
+        src={activeImage.src}
+        alt={activeImage.alt}
+        onClose={() => setActiveImage(null)}
+      />
+)}
     </section>
   )
 }
