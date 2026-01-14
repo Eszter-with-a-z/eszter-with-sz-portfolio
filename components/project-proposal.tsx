@@ -22,28 +22,37 @@ export default function ProjectProposal({ id, proposal }: ProjectProposalProps) 
         <h2 className="text-3xl font-bold mb-12">Design proposal</h2>
 
         <div className="grid md:grid-cols-3 md:max-w-full sm:max-w-[500px] mx-auto gap-4 mb-16">
-          {proposal.text.map((paragraph, index) => (
-            // Contidional map for odd cols
-            
+          {proposal.text.map((paragraph, index) => 
+           {
+            if (index ==0){
+              return(            
+                <p key={index} className=" leading-relaxed whitespace-pre-line font-bold text-2xl">
+                  {renderWithTextStyling(paragraph, proposal.styles?.[index])}
+                </p>)
+            }
+            return(            
             <p key={index} className=" leading-relaxed whitespace-pre-line">
               {renderWithTextStyling(paragraph, proposal.styles?.[index])}
-            </p>
-          ))}
+            </p>)
+           }
+            
+
+          )}
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
-                <video
-                  className="w-full h-full object-cover"
-                  controls
-                  playsInline
-                  preload="metadata"
-                >
-                  <source src={proposal.videoUrl} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+        <div className="flex mx-auto gap-4 md:flex-row flex-col justify-end">
+          <div className="rounded-lg shadow-xl">
+            <video
+              className="max-h-[80vh] min-w-[50vw] mx-auto rounded-lg"
+              controls
+              playsInline
+              preload="metadata"
+            >
+                <source src={proposal.videoUrl} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
           </div>
-          <p className="text-sm text-white/80 text-center mt-4 italic">{proposal.videoCaption}</p>
+          <p className="text-sm text-white/80  mt-4 italic">{proposal.videoCaption}</p>
         </div>
       </div>
     </section>
