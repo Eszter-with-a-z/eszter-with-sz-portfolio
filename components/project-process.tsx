@@ -33,24 +33,33 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
     <section className="py-24 bg-background mx-auto max-w-[1200px]">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold mb-12">The process</h2>
-
+        <div className="w-full flex items-center  justify-between w-full pr-4 my-6">
+          <div className="flex px-6 w-full flex-col md:flex-row items-start md:gap-6  items-center font-sans not-italic">
+            <span className="font-bold text-xl font-sans w-[30%] whitespace-pre-line text-start md:text-end">
+              step
+            </span>
+            <span className="text-sm font-semibold text-muted-foreground w-full">
+              main outcome
+            </span>
+          </div>
+        </div>
         <Accordion type="single" collapsible className="space-y-4">
           {process.map((step, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg">
-              <AccordionTrigger className="px-6 hover:no-underline hidden md:flex">
+            <AccordionItem key={index} value={`item-${index}`} className=" rounded-lg">
+              <AccordionTrigger className="px-6 hover:no-underline hidden md:flex border">
                 <div className="flex items-center justify-between w-full pr-4">
-                  <div className="flex gap-6 items-center">
-                    <span className="font-bold">{step.title}</span>
-                    <span className="text-sm text-muted-foreground">{step.subtitle}</span>
+                  <div className="flex gap-6 items-center font-sans not-italic">
+                    <span className="font-bold text-xl font-sans w-[30%] whitespace-pre-line text-end">{step.title}</span>
+                    <span className="text-sm text-muted-foreground w-full">{step.subtitle}</span>
                   </div>
                 </div>
               </AccordionTrigger>
 
-              <AccordionTrigger className="px-6 hover:no-underline flex md:hidden">
-                <div className="flex items-center justify-between w-full pr-4 gap-4">
-                  <div className="flex flex-col items-start gap-1">
-                    <span className="font-bold text-left">{step.title}</span>
-                    <span className="text-sm text-muted-foreground">{step.subtitle}</span>
+              <AccordionTrigger className="px-6 hover:no-underline flex md:hidden border">
+                <div className="flex items-center justify-between w-full pr-4 gap-4 not-italic">
+                  <div className="flex flex-col items-start gap-1 font-sans not-italic">
+                    <span className="font-bold text-xl font-sans w-[50%] whitespace-pre-line ">{step.title}</span>
+                    <span className="text-sm text-sans text-muted-foreground">{step.subtitle}</span>
                   </div>
                   
                 </div>
@@ -69,7 +78,7 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
                     ) : (
                       <div
                         key={itemIndex}
-                        className="flex-1 cursor-zoom-in "
+                        className="flex-1 cursor-zoom-in flex justify-center flex-col"
                         onClick={() =>
                         setActiveImage({
                           src: item.url!,
@@ -77,19 +86,22 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
                         })
                       }                      
                       >
-                        <div className="min-w-[250px] max-h-[400px] rounded-lg overflow-hidden">
+                        <div className="
+                        min-w-[250px] max-h-[400px] 
+                        rounded-lg overflow-hidden
+                        w-full  max-w-[80vh] mx-auto">
 
                         <Image
                           src={item.url || ""}
                           alt={`Step ${index + 1} image ${itemIndex + 1}`}
                           width={1600}
                           height={900}
-                          className="w-full h-full object-contain rounded-lg"
+                          className="w-full h-full  object-contain rounded-lg"
                         />
                         </div>
                           {/* Caption */}
                         {item.caption && (
-                          <p className="text-sm text-muted-foreground mt-2 italic whitespace-pre-line">
+                          <p className="text-sm text-center text-muted-foreground mt-2 italic whitespace-pre-line">
                             {item.caption}
                           </p>
                         )}

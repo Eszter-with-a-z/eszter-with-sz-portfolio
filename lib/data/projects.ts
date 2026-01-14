@@ -111,7 +111,7 @@ export const caseStudies: Record<
         ],
       },
       {
-        title: "Empathize: User Research",
+        title: "Empathize: \n User Research",
         subtitle: `Crafters struggle to ask for the real price of their work due the unrealistic competition with industrialized production due to the “invisible work”.`,
         content: [
           {
@@ -148,7 +148,7 @@ export const caseStudies: Record<
         ],
       },
       {
-        title: "Define: Qualitative Analysis",
+        title: "Define:\n Qualitative Analysis",
         subtitle: `Crafters’ sense of meaningfulness comes from 3 main factors: the sense of creating something; bringing joy to others and artistic self expression.`,
         content: [
           {
@@ -172,7 +172,7 @@ export const caseStudies: Record<
         ],
       },
       {
-        title: "Ideate: Sketching",
+        title: "Ideate: \nSketching",
         subtitle: `Through sketching, identify 5 distinct design opportunities. 
                     From those, “invisible work” is chosen.`,
         content: [
@@ -193,7 +193,7 @@ export const caseStudies: Record<
         ],
       },
       {
-        title: "Define: Storyboarding",
+        title: "Define: \nStoryboarding",
         subtitle: `The addressed issue is further narrowed down to social media content creation.
                     Through storyboarding, I define the expected behavior of the prototype.`,
         content: [        
@@ -258,7 +258,7 @@ export const caseStudies: Record<
         ],
       },
       {
-        title: "Test: Usability Testing",
+        title: "Test: \n Usability Testing",
         subtitle: `The AI-powered assistant makes content creation more effortless.
                     It must ideate creatively, pick up and build on details from the context of the conversation.
                     Creatives are open for offloading parts of their tasks, but they themselves must do other parts to  preserve authenticity.`,

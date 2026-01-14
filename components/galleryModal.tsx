@@ -21,7 +21,7 @@ export default function GalleryModal({ src, alt, onClose }: GalleryModalProps) {
       >
         <button
           onClick={onClose}
-          className="absolute top-5 right-0 text-white hover:opacity-70"
+          className="absolute top-5 right-5 text-white hover:opacity-70"
           aria-label="Close gallery"
         >
           <X size={32} className="z-10 bg-accent rounded-2xl p-1"/>
@@ -32,7 +32,7 @@ export default function GalleryModal({ src, alt, onClose }: GalleryModalProps) {
           alt={alt ?? "Gallery image"}
           width={2000}
           height={1200}
-          className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
+          className="bg-background w-full h-auto max-h-[90vh] object-contain rounded-lg"
           priority
         />
       </div>
