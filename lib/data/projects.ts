@@ -135,7 +135,7 @@ export const caseStudies: Record<
                   I used qualitative analysis and from the findings I created 7 visualizations.\n
                   Many painpoints [2nd figure] originates from struggling to ask for the actual price of their work due to two reasons:\n
                   1) unrealistic competition \n
-                  Industrialized mass-production production (from the 1st industrial revolution) and all its working conditions lowered the price unrealistically. `,
+                  Industrialized mass-production production lowered production prices (and standards) that crafters can't realistically compete with. `,
             styles:[
               {phrase: `struggling to ask for the actual price of their work due to two reasons`, bold: true},
                 {phrase: `7 qualitative interviews with craft entrepreneurs`, bold: true},
@@ -145,15 +145,13 @@ export const caseStudies: Record<
           },
           {
             type: "text",
-            text: `The problem with that is that the only comparable information about products is predominantly the amount it costs (think of a web store and what information they highlight when you browse) instead of e.g. creation process or expected longevity. Therefore, it is natural, that most customers will choose based on the price.\n
-
+            text: `It is problematic because price becomes the predominant comparison for products instead of e.g. creation process or expected longevity (think of a web store and what information they highlight when you browse). Therefore, most customers will choose based on price even if it leads to a worse value-price purchase.\n
                   2) invisible work\n
-                  Crafters have to fulfill  all the roles from cleaner, driver,  seller through content creator  and  market  entrepreneur,  analyst , CEO  to  and  bookkeeper without any recognition. 
+                  Crafters have to fulfill  all the roles from cleaner, driver,  seller through content creator  and  market  entrepreneur,  analyst, CEO  to  and  bookkeeper without any recognition. 
                   Crafters feel like it is an invisible and overlooked part of their job  that takes up too much of their  time  and  energy.  Many  considered or actually stopped  crafting professionally because of  this phenomenon.`,
             styles:[
-                
-                
                 {phrase: `2) invisible work`, serif:true, size:"2xl"},
+                {phrase: `Many  considered or actually stopped  crafting professionally because of  this phenomenon`, bold:true},
             ] 
           },
           {
@@ -170,7 +168,9 @@ export const caseStudies: Record<
         content: [
           {
             type: "text",
-            text: `After identifying the pain points, the central inquiry of the research was to arrive to a definition of meaningfulness - in order to be able to create a tool to enhance it.
+            text: `After identifying the pain points,
+             the central inquiry of the research was to arrive to a definition of meaningfulness
+              - in order to be able to create a tool to enhance it.
 
                   Drawing upon the insights from the research, I created what I called the Value Wheel.
 
@@ -182,8 +182,10 @@ export const caseStudies: Record<
                   I used this illustration as a “compass” to guide my design choices in the ideating and prototyping.`,
             
             styles:[
-                {phrase: ``, serif:true, bold: true},
-                {phrase: ``, serif:true, bold: true},
+                {phrase: ` the central inquiry of the research was to arrive to a definition of meaningfulness`, serif:true, size: "2xl"},
+                {phrase: `the Value Wheel`,  bold: true},
+                {phrase: `my understanding of meaningfulness for creative entrepreneurs:`,  bold: true},
+                {phrase: `the sense of creating something; bringing joy to others and the artistic self expression.`, serif:true, size: "2xl"},
             ] 
           },
           {
@@ -207,12 +209,25 @@ export const caseStudies: Record<
             type: "text",
             text: `Drawing upon the identified pain points, I used sketching both to illustrate ideas my interviewees imagined and to generate new ones.
             I focused on the action of sketching, as a way to generate knowledge, and identified 5 distinct directions of ideas and design opportuities:
-            (A) a design for the (potential) customers - creating some artifacts that promote local crafters and their work;
-            (B) for trend analysis from the international community - collecting and organizing knowledge about current  trends, new technologies, events on a global scale to foster the phase of  research and inspiration;
-            (D) for the local crafter community - connecting crafters in vicinity and building a community and/or local clientele.`,
+            A) a design for the potential) customers - creating some artifacts that promote local crafters and their work;
+            B) for trend analysis from the international community - collecting and organizing knowledge about current  trends, new technologies, events on a global scale to foster the phase of  research and inspiration;
+            D) for the local crafter community - connecting crafters in vicinity and building a community and/or local clientele.`,
             styles:[
-                {phrase: ``, serif:true, bold: true},
-                {phrase: ``, serif:true, bold: true},
+                {phrase: `identified 5 distinct directions of ideas and design opportuities:`, bold: true},
+                {phrase: `A)`, serif:true, size:"2xl"},
+                {phrase: `B)`, serif:true, size:"2xl"},
+                {phrase: `D)`, serif:true, size:"2xl"},
+            ] 
+          },
+         {
+            type: "text",
+            text: `E) and for invisible work and roles - tackling the challenges of balancing between multiple roles/offloading certain roles.
+            I opted for E) since designing for invisible work addresses one of the 2 main reasons behind struggling the ask for actual price of labor.
+                              
+                  `,
+            styles:[
+                {phrase: `since designing for invisible work addresses one of the 2 main reasons behind struggling the ask for actual price of labor.`, serif:true, size:"2xl"},
+                {phrase: `E)`, serif:true, size:"2xl"},
             ] 
           },
 
