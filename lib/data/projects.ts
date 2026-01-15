@@ -625,14 +625,12 @@ export const caseStudies: Record<
             1) Navigation on water 
             2) Cutting mechanism 
             3)Reed-recognition 
-            We understood that within the given 5 weeks timeframe 
-            we could only focus on 2 of these meaningfully. 
-            We opted for the latter 2 since we had limited 
-            access to the necessary environment for 
-            navigation.`,
+            We understood that within the given 5 weeks timeframe we could only focus on 2 of these meaningfully. We opted for the latter 2 since we had limited access to the necessary environment for navigation.`,
             styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
+              {phrase: `1)`, serif:true, size:"2xl"},
+              {phrase: `2)`, serif:true, size:"2xl"},
+              {phrase: `3)`, serif:true, size:"2xl"},
+              {phrase: `We opted for the latter 2 `, bold:true},
             ] 
           },
         ],
@@ -645,26 +643,28 @@ export const caseStudies: Record<
             type: "text",
             text: `Through desk research, academic research and interviews
              with the NGO, we mapped out different types of 
-             reed eliminating methods:
+             reed eliminating methods [figure].
             We opted for over-surface on-water cutting considering 2 factors: 
             1) on-water 
             It is the most tedious for humans from the above-mentioned methods. 
             2) over-surface 
-            Although it would be most effective to cut the reed as close to the
-             root as possible, it would disproportionately increase the difficulty
-              of maintenance and costs. Over-surface cutting slows down the growth 
-              of the reed enough so that other plants have time to strengthen. 
-            3) sprouts It is a decision made later in the process. For more, see 
+            Although it would be most effective to cut the reed as close to the root as possible, it would disproportionately increase the difficulty of maintenance and costs. Over-surface cutting slows down the growth of the reed enough so that other plants have time to strengthen.
+            3) sprouts 
+            An important decision made later in the process. For more, see 
             "Research the Lifecycle of Reed".`,
             styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
+              {phrase: `1) on-water `, serif:true, size:"2xl"},
+              {phrase: `2) over-surface `, serif:true, size:"2xl"},
+              {phrase: `3) sprouts `, serif:true, size:"2xl"},
+              {phrase:'most tedious', bold:true},
+              {phrase:'slows down the growth of the reed enough ', bold:true},
+              {phrase:'Research the Lifecycle of Reed"', bold:true},
             ] 
           },
           {
             type: "image",
             url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639672/project-3_11.png`,
-            caption:"The decision tree for the cutting mechanism"
+            caption:"Decision tree to choose from the reed eliminating methods"
           },
         ],
       },
@@ -678,10 +678,11 @@ export const caseStudies: Record<
             text: `We explored different cutting mechanisms.
             Initially, we prototyped the simplest one which was a pair of blades attached to a servo motor in a scissors-like way (or in our case, an actual pair of scissors). 
 
-            We planned to have it as our first iteration. However, we conducted performance test by cutting actual reed with it and surprisingly, it proved to be sufficiently powerful to cut through the stem. Therefore, we decided to stick to this mechanism.`,
+            We planned to have it as our first iteration. However, we conducted performance test by cutting actual reed with it and surprisingly, it proved to be sufficiently powerful to cut through the stem.
+            Therefore, we decided to stick to this mechanism.`,
             styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
+              {phrase: `We planned to have it as our first iteration. `, bold: true},
+              {phrase: `surprisingly, it proved to be sufficiently powerful to cut through the stem.`, serif:true, size:"2xl"},
             ] 
           },
           {
@@ -712,11 +713,13 @@ export const caseStudies: Record<
                 In this phase, our focus shifted from easing the burden on humans to minimizing foreign intervention in the ecosystem. This deviation from our original goal was underpinned by our academic research in which we learned about the concept of Nature-Robot Interaction.
 
                 Its first principle is that the robot must not harm Nature.
-
                For the rest of the project, it became a reference point to argue for certain decisions, determining the direction of the project overall.`,
             styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
+              {phrase: `map out the different members of the ecosystem. `, bold: true},
+              {phrase: ` what entities our robot might come across`, bold: true},
+              {phrase: ` our focus shifted from easing the burden on humans to minimizing foreign intervention in the ecosystem. `, serif:true, size:"2xl"},
+              {phrase: ` Nature-Robot Interaction`, bold: true},
+              {phrase: `Its first principle is that the robot must not harm Nature.`, serif:true, size:"2xl"},
             ] 
           },
         ],
@@ -733,13 +736,17 @@ export const caseStudies: Record<
           {
             type: "text",
             text: `Our two main goals were to develop a cutting mechanism and a plant-recognition system. 
-
                     To design the latter, our initial approach was creating a vision-based system. However, we realized that that was disproportionally energy-consuming which is an important factor in case of a robot that functions in nature. 
 
-                  Therefore, we decided to deviate from a “human-perception-based” approach (identifying reed by visually recognizing it) and explore low-level sensors. Through  researching different sensors and testing, we found that a capacitive sensor is capable of distinguishing different materials. Although it is not precise enough to base the complete reed-recognition on only capacitance, it serves greatly for a continuous low-level monitoring of the environment, as well as for distinguishing living plants from other entities of the ecosystem.`,
+                  Therefore, we decided to deviate from a “human-perception-based” approach (identifying reed by visually recognizing it) and explore low-level sensors. \n
+                  Through  researching different sensors and testing, we found that a capacitive sensor is capable of distinguishing different materials. Although it is not precise enough to base the complete reed-recognition on only capacitance, it serves greatly for a continuous low-level monitoring of the environment, as well as for distinguishing living plants from other entities of the ecosystem.`,
             styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
+              {phrase: `plant-recognition system`, bold: true},
+              {phrase: `vision-based system`, bold: true},
+              {phrase: ` disproportionally energy-consuming`, bold: true},
+              {phrase: `Therefore, we decided to deviate from a “human-perception-based” approach`, serif:true, size:"2xl"},
+              {phrase: `a capacitive sensor is capable of distinguishing different materials.`, bold: true},
+              {phrase: `continuous low-level monitoring of the environment`, bold: true},
             ] 
           },
         ],
@@ -750,25 +757,25 @@ export const caseStudies: Record<
         content: [
           {
             type: "text",
-            text: `In the previous phase, while exploring different sensors, we also learned the traits by which reeds can be identified (leaf width, ligule, etc.). 
-              But more importantly, we learned about its lifecycle. 
+            text: `While exploring different sensors, we also learned the traits by which reeds can be identified (leaf width, ligule, etc.). 
+              But more importantly, we learned about lifecycle of a reed. 
               We first emphasized the importance of cutting the reed before the period when it releases its spores. However, after revising the interviews made with members of the NGO, we noticed a point that we previously overlooked: 
               The interviewee recommended that the robot cuts the sprouts instead of fully developed reed. 
-              Previously, we didn’t tackle it as our focus was on easing the physical burden on humans.  Cutting the sprouts was`,
+              Previously, we didn’t tackle it as our focus was on easing the physical burden on humans.\n
+               Cutting the sprouts wasn't done by them since they grew over the water at a different pace, so it was more practical to wait until they all grew completely.`,
             styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
+              {phrase: `But more importantly, we learned about lifecycle of a reed.`, serif:true, size:"2xl"},
+              {phrase: `The interviewee recommended that the robot cuts the sprouts instead of fully developed reed.`, bold: true},
             ] 
           },
           {
             type: "text",
-            text: `not done by them since they grew over the water at a different pace, so it was more practical to wait until they all grew completely.
-
-                  Once we prioritized the nature, eliminating the sprouts seemed to be the best to prevent the “reed-invasion” since in that case the reed simply has no resources to maintain itself. This method eliminates the reed instead of just slowing down its growth. Thus, interestingly, it is assumed to ease the burden on humans since the robot would do the first-round elimination of the reed,
-                  instead of attempting to replace humans by doing the same job as they do.`,
+            text: `Once we prioritized the nature, eliminating the sprouts seemed the best to prevent the “reed-invasion” since in that case the reed simply has no resources to maintain itself and dies. \n
+                  This method eliminates the reed instead of just slowing down its growth. Thus, interestingly, it is assumed to ease the burden on humans since the robot would do the first-round elimination of the reed, instead of attempting to replace humans by doing the same job as they do.`,
             styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
+              {phrase: `Once we prioritized the nature, eliminating the sprouts seemed the best`, serif:true, size:"2xl"},
+              {phrase: `This method eliminates the reed instead of just slowing down its growth.`, bold: true},
+              {phrase: `Thus, interestingly, it is assumed to ease the burden on humans `, serif:true, size:"2xl"}
             ] 
           },
         ],
@@ -786,11 +793,11 @@ export const caseStudies: Record<
             type: "text",
             text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
 
-                    Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
+                    Instead, we propose a local AI model specifically trained to distinguish common reed from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
             
             styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
+              {phrase: ` we brought back the visual recognition idea.`, bold: true},
+              {phrase: `local AI model specifically trained to distinguish common reed`, serif:true, size:"2xl"},
             ] 
           },
           {
@@ -819,8 +826,11 @@ export const caseStudies: Record<
 
               With this process we arrived to the concept introduced in the section of design proposal ⬆️.`,
             styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
+              {phrase:"1)", serif:true, size:"2xl"},
+              {phrase:"2)", serif:true, size:"2xl"},
+              {phrase:"3)", serif:true, size:"2xl"},
+              {phrase:"Interestingly, we found that we could enhance the grabbing arms' functionality by adding the capacitive sensor. ", serif:true, size:"2xl"},
+              {phrase:"the grabbing arm helps both ", bold:true}
             ] 
           },
         ],
