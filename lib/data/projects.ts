@@ -345,7 +345,7 @@ export const caseStudies: Record<
             text: `1) found the visual recommendation and hashtags useful, the caption superfluous;
             2) appreciate the details the assistant picks up from the conversation about the context;
               3) were surprised by the creativity of the recommendations and that they were built on details from the conversation; and finally,
-              4) agreed that such an assistant can make posting on social media more effortless. The idea of including it in the early phases of the  content generation (reminder, ideation) was appreciated for sparking creativity but leaving space to personalize the content in the later phases to preserve authenticity.`,
+              4) agreed that such an assistant can make posting on social media more effortless. The idea of including it in the early phases of the content generation (reminder, ideation) was appreciated for sparking creativity but leaving space to personalize the content in the later phases to preserve authenticity.`,
             styles:[
                 {phrase:`1)`, serif: true, size:"2xl"},
                 {phrase:`2)`, serif: true, size:"2xl"},
@@ -430,38 +430,39 @@ export const caseStudies: Record<
         content: [],
       },
       {
-        title: "Monday: Research & Ideate about Arduino sensors",
+        title: "Monday: Ideate about sensors",
         subtitle: "Create 12 sketches based on the built-in sensors of Arduino",
         content: [
           {
             type: "text",
-            text: `On Monday, upon receiving the design challenge, we got an introduction to our design material: a Supplyfame PCB lamp starter kit as the light output and an Arduino Nano BLE 33 microcontroller as the controller, but also an input device.
-            First, we mapped out the different sensors of the given microcontroller and challenged ourselves to come up with at least one idea for each. 
-            The image shows a stage of our mind map, where the words in rectangles signify the sensors, to which we connected our related ideas. 
-
-            By the end of the session, we collected a total of 12 ideas.`,
+            text: `On Monday, upon receiving the design challenge, we got an introduction to our design material: a Supplyfame PCB lamp starter kit as the light output and an Arduino Nano BLE 33 microcontroller as the controller, but also an input device.\n
+            First, we mapped out the different sensors of the given microcontroller and challenged ourselves to come up with at least one idea for each. \n
+            By the end of the session, we collected 12 ideas.`,
             styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
+              {phrase: `a Supplyfame PCB lamp starter kit as the light output`, bold: true},
+              {phrase: `Arduino Nano BLE 33 microcontroller`, bold: true},
+              {phrase: `an input device`, bold: true},
+              {phrase: `we mapped out the different sensors`, bold: true},
+              {phrase: `come up with at least one idea for each`, bold: true},
             ] 
           },
           {
             type: "image",
             url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_5.png`,
-            caption: "Our initial mind map with each sensor of the microcontroller in the rectangles."
+            caption: "A stage of our mind map with each sensor in the rectangles and our ideas connected to them."
           },
         ],
       },
       {
-        title: "Tuesday: Research the use of household lamps",
+        title: "Tuesday: Research lamp uses in homes",
         subtitle: "Discover a need for adjustable ambience lamps",
         content: [
           {
             type: "text",
-            text: `On Tuesday, we conducted short interviews with arbitrary people around us to learn more about their use of household lamps. The interviews revealed a need for ambient lamps that are easily adjustable. Based on this, we further narrowed our ideas down to 3 (in the picture: the ones with asterisks next to them).`,
+            text: `On Tuesday, we conducted short interviews with arbitrary people around us to learn more about their use of household lamps. The interviews revealed a need for ambient lamps that are easily adjustable.\n
+             Based on this, we further narrowed our ideas down to 3 (in the picture: the ones with asterisks next to them).`,
             styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
+              {phrase: `The interviews revealed a need for ambient lamps that are easily adjustable.`, bold: true},
             ] 
           },
           {
@@ -472,57 +473,60 @@ export const caseStudies: Record<
         ],
       },
       {
-        title: "Wednesday: Ideate about the shape and use of the book lamp",
+        title: "Wednesday: Ideate about shape & use",
         subtitle: "Strive for a light-weighted portable lamp whose functionality ranges from task lamp to ambient lamp",
         content: [
+          {
+            type: "text",
+            text: `In our next ideation phase, we "bodystormed" about the 3 different ideas.
+            As an outcome, we shifted our focus from creating a reading lamp to creating a lamp for a reader. 
+                  What it meant for us is to create a wide functionality to fit the user’s versatile needs: sometimes, you need sharp light for reading to prevent eye fatigue, whereas other times, you want to warm lights to create a cozy ambience for reading.\n
+                  We sketched out four different ideas for its shape. Finally, we picked the idea of the "Pinterest-famous" book-shaped lamp, as we wanted to prioritize lightweight portable ones over standing lamps to afford more flexibility.`,
+            styles:[
+              {phrase: `we "bodystormed" about the 3 different ideas`, bold: true},
+              {phrase: `we shifted our focus from creating a reading lamp to creating a lamp for a reader`, serif:true, size:"2xl"},
+              {phrase: `What it meant for us is to create a wide functionality to fit the user’s versatile needs:`, bold:true},
+              {phrase: `to focus`, bold:true},
+              {phrase: `to create a cozy ambience`, bold:true},
+
+            ] 
+          },
+          {
+            type: "text",
+            text: `So what would be our contribution?
+                  We decided to focus not in creating a new shape but to enhance the book metaphor by creating a behavior that is integral to it.
+                  In our case, this behavior was the "opening-closing" interaction - instead of on-off states, we focused on the motion and angle of opening the book. It created a range the bridges the gap between ambient lamps to task lamps.`,
+            styles:[
+              {phrase: `So what would be our contribution?`, serif:true, size:"2xl"},
+              {phrase: `to enhance the book metaphor by creating a behavior that is integral to it`, bold: true},
+              {phrase: ` It created a range the bridges the gap between ambient lamps to task lamps`, bold: true},
+            ] 
+          },
           {
             type: "image",
             url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_7.png`,
             caption:"Illustrations of the expected behavior of the lamp."
           },
-          {
-            type: "text",
-            text: `In our next ideation phase, we "bodystormed" about the 3 different ideas. As an outcome, we shifted our focus from creating a reading lamp to creating a lamp for a reader. 
-
-                  What it meant for us is to create a wide functionality to fit the user’s versatile needs: sometimes, you need sharp light for reading to focus and prevent eye fatigue, whereas other times, you want to use smaller lamps to create a cozy ambience for reading.
-                  We sketched out four different ideas for its shape. Finally, we picked the idea of the "Pinterest-famous" book-shaped lamp, as we wanted to prioritize lightweight portable ones over standing lamps to afford more flexibility. `,
-            styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
-            ] 
-          },
-          {
-            type: "text",
-            text: `So what would be our contribution? 
-
-                  We decided to focus not in creating a new shape but to enhance the book metaphor by creating a behavior that is integral to it.
-                  In our case, this behavior was the "opening-closing" interaction - instead of on-off states, we focused on the motion and angle of opening the book. It created a range the bridges the gap between ambient lamps to task lamps.`,
-            styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
-            ] 
-          },
         ],
       },
       {
         title: "Thursday: Prototype & Test",
-        subtitle: "Material exploration",
+        subtitle: "Enhance functionality by changing the light temperature, too",
         content: [
+          {
+            type: "text",
+            text: `My groupmates were working on the cover of the book and I wrote the code.\n
+            The general idea is that the more opened the book is, the more dimmed the light should be to serve as a decoration. Accordingly, the more closed it is, the brighter and more direct the light should be.\n
+                    It was only after the user testing, that we realized that not only the brightness but also the temperature of the light shall change.\n
+                    We spent the rest of the day implementing that feature and refining the lampshade.`,
+            styles:[
+              {phrase: `It was only after the user testing, that we realized that not only the brightness but also the temperature of the light shall change.`, serif:true, size:"2xl"},
+            ] 
+          },
           {
             type: "image",
             url: `${CLOUDINARY_PROJECT_URL_BASE}/v1767639580/project-2_4.png`,
             caption:"The lampshade in the making."
-          },
-          {
-            type: "text",
-            text: `My groupmates were working on the cover of the book. In the meantime, I wrote the code. The general idea is that the more opened the book is, the more dimmed the light should be to serve as a decoration. Accordingly, the more closed it is, the brighter and more direct the light should be.
-                    It was only after the user testing, the we realized that not only the brightness but also the temperature of the light shall change.
-                    
-                    We spent the rest of the day implementing that feature and refining the lampshade.`,
-            styles:[
-              {phrase: ``, serif:true, bold: true},
-              {phrase: ``, serif:true, bold: true},
-            ] 
           },
         ],
       },
