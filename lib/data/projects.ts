@@ -130,29 +130,30 @@ export const caseStudies: Record<
           },
           {
             type: "text",
-            text: `I conducted 7 qualitative interviews with craft entrepreneurs. It was important for me to chose crafters, not digital artists, so that generative AI doesn’t directly interfere with their products (which would be the case with e.g. digital artist or musicians).
+            text: `I conducted 7 qualitative interviews with craft entrepreneurs [1st figure]. It was important for me to chose crafters, not digital artists, so that generative AI doesn’t directly interfere with their products (which would be the case with e.g. digital artist or musicians).
 
-                  I used qualitative analysis and created 7 visualizations based in the findings.`,
+                  I used qualitative analysis and from the findings I created 7 visualizations.\n
+                  Many painpoints [2nd figure] originates from struggling to ask for the actual price of their work due to two reasons:\n
+                  1) unrealistic competition \n
+                  Industrialized mass-production production (from the 1st industrial revolution) and all its working conditions lowered the price unrealistically. `,
             styles:[
-                {phrase: ``, serif:true, bold: true},
-                {phrase: ``, serif:true, bold: true},
+              {phrase: `struggling to ask for the actual price of their work due to two reasons`, bold: true},
+                {phrase: `7 qualitative interviews with craft entrepreneurs`, bold: true},
+                {phrase: `7 visualizations`, bold: true},
+                {phrase: `1) unrealistic competition`, serif:true, size:"2xl"},
             ] 
           },
           {
             type: "text",
-            text: `One of these visualizations is shown on the right. Among all the struggles it illustrates, many can be traced back to struggling to advocate for the actual price of their work. It is due to two reasons:
+            text: `The problem with that is that the only comparable information about products is predominantly the amount it costs (think of a web store and what information they highlight when you browse) instead of e.g. creation process or expected longevity. Therefore, it is natural, that most customers will choose based on the price.\n
 
-                  (1) unrealistic competition
-                  Industrialized mass-production production (from the 1st industrial revolution) and all its working conditions lowered the price unrealistically. 
-
-                  The problem with that is that the only comparable information about products is predominantly the amount it costs (think of a web store and what information they highlight when you browse) instead of e.g. creation process or expected longevity. Therefore, it is natural, that most customers will choose based on the price.
-
-                  (2) invisible work
+                  2) invisible work\n
                   Crafters have to fulfill  all the roles from cleaner, driver,  seller through content creator  and  market  entrepreneur,  analyst , CEO  to  and  bookkeeper without any recognition. 
                   Crafters feel like it is an invisible and overlooked part of their job  that takes up too much of their  time  and  energy.  Many  considered or actually stopped  crafting professionally because of  this phenomenon.`,
             styles:[
-                {phrase: ``, serif:true, bold: true},
-                {phrase: ``, serif:true, bold: true},
+                
+                
+                {phrase: `2) invisible work`, serif:true, size:"2xl"},
             ] 
           },
           {
@@ -404,6 +405,10 @@ export const caseStudies: Record<
             The image shows a stage of our mind map, where the words in rectangles signify the sensors, to which we connected our related ideas. 
 
             By the end of the session, we collected a total of 12 ideas.`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "image",
@@ -418,7 +423,11 @@ export const caseStudies: Record<
         content: [
           {
             type: "text",
-            text: `On Tuesday, we conducted short interviews with arbitrary people around us to learn more about their use of household lamps. The interviews revealed a need for ambient lamps that are easily adjustable. Based on this, we further narrowed our ideas down to 3 (in the picture: the ones with asterisks next to them).`
+            text: `On Tuesday, we conducted short interviews with arbitrary people around us to learn more about their use of household lamps. The interviews revealed a need for ambient lamps that are easily adjustable. Based on this, we further narrowed our ideas down to 3 (in the picture: the ones with asterisks next to them).`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "image",
@@ -441,14 +450,22 @@ export const caseStudies: Record<
             text: `In our next ideation phase, we "bodystormed" about the 3 different ideas. As an outcome, we shifted our focus from creating a reading lamp to creating a lamp for a reader. 
 
                   What it meant for us is to create a wide functionality to fit the user’s versatile needs: sometimes, you need sharp light for reading to focus and prevent eye fatigue, whereas other times, you want to use smaller lamps to create a cozy ambience for reading.
-                  We sketched out four different ideas for its shape. Finally, we picked the idea of the "Pinterest-famous" book-shaped lamp, as we wanted to prioritize lightweight portable ones over standing lamps to afford more flexibility. `
+                  We sketched out four different ideas for its shape. Finally, we picked the idea of the "Pinterest-famous" book-shaped lamp, as we wanted to prioritize lightweight portable ones over standing lamps to afford more flexibility. `,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "text",
             text: `So what would be our contribution? 
 
                   We decided to focus not in creating a new shape but to enhance the book metaphor by creating a behavior that is integral to it.
-                  In our case, this behavior was the "opening-closing" interaction - instead of on-off states, we focused on the motion and angle of opening the book. It created a range the bridges the gap between ambient lamps to task lamps.`
+                  In our case, this behavior was the "opening-closing" interaction - instead of on-off states, we focused on the motion and angle of opening the book. It created a range the bridges the gap between ambient lamps to task lamps.`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
         ],
       },
@@ -466,7 +483,11 @@ export const caseStudies: Record<
             text: `My groupmates were working on the cover of the book. In the meantime, I wrote the code. The general idea is that the more opened the book is, the more dimmed the light should be to serve as a decoration. Accordingly, the more closed it is, the brighter and more direct the light should be.
                     It was only after the user testing, the we realized that not only the brightness but also the temperature of the light shall change.
                     
-                    We spent the rest of the day implementing that feature and refining the lampshade.`
+                    We spent the rest of the day implementing that feature and refining the lampshade.`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
         ],
       },
@@ -483,7 +504,11 @@ export const caseStudies: Record<
             type: "text",
             text: `On our final day, we once again tested the prototype and documented what would be the next steps in its development.
 
-                Finally, we concluded the design sprint by presenting the concept, receiving feedback and discussing it.`
+                Finally, we concluded the design sprint by presenting the concept, receiving feedback and discussing it.`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
         ],
       },
@@ -566,6 +591,10 @@ export const caseStudies: Record<
             We opted for the latter 2 since we had limited 
             access to the necessary environment for 
             navigation.`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
         ],
       },
@@ -588,6 +617,10 @@ export const caseStudies: Record<
               of the reed enough so that other plants have time to strengthen. 
             3) sprouts It is a decision made later in the process. For more, see 
             "Research the Lifecycle of Reed".`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "image",
@@ -607,6 +640,10 @@ export const caseStudies: Record<
             Initially, we prototyped the simplest one which was a pair of blades attached to a servo motor in a scissors-like way (or in our case, an actual pair of scissors). 
 
             We planned to have it as our first iteration. However, we conducted performance test by cutting actual reed with it and surprisingly, it proved to be sufficiently powerful to cut through the stem. Therefore, we decided to stick to this mechanism.`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "image",
@@ -638,6 +675,10 @@ export const caseStudies: Record<
                 Its first principle is that the robot must not harm Nature.
 
                For the rest of the project, it became a reference point to argue for certain decisions, determining the direction of the project overall.`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
         ],
       },
@@ -657,6 +698,10 @@ export const caseStudies: Record<
                     To design the latter, our initial approach was creating a vision-based system. However, we realized that that was disproportionally energy-consuming which is an important factor in case of a robot that functions in nature. 
 
                   Therefore, we decided to deviate from a “human-perception-based” approach (identifying reed by visually recognizing it) and explore low-level sensors. Through  researching different sensors and testing, we found that a capacitive sensor is capable of distinguishing different materials. Although it is not precise enough to base the complete reed-recognition on only capacitance, it serves greatly for a continuous low-level monitoring of the environment, as well as for distinguishing living plants from other entities of the ecosystem.`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
         ],
       },
@@ -671,13 +716,21 @@ export const caseStudies: Record<
               We first emphasized the importance of cutting the reed before the period when it releases its spores. However, after revising the interviews made with members of the NGO, we noticed a point that we previously overlooked: 
               The interviewee recommended that the robot cuts the sprouts instead of fully developed reed. 
               Previously, we didn’t tackle it as our focus was on easing the physical burden on humans.  Cutting the sprouts was`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "text",
             text: `not done by them since they grew over the water at a different pace, so it was more practical to wait until they all grew completely.
 
                   Once we prioritized the nature, eliminating the sprouts seemed to be the best to prevent the “reed-invasion” since in that case the reed simply has no resources to maintain itself. This method eliminates the reed instead of just slowing down its growth. Thus, interestingly, it is assumed to ease the burden on humans since the robot would do the first-round elimination of the reed,
-                  instead of attempting to replace humans by doing the same job as they do.`
+                  instead of attempting to replace humans by doing the same job as they do.`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
         ],
       },
@@ -695,6 +748,11 @@ export const caseStudies: Record<
             text: `Upon realizing that the capacitive sensor is capable of distinguishing non-living entities, plants, and animals, but not precise enough to distinguish reeds from other plants, we brought back the visual recognition idea. We got started with the idea of using an API, however, it can be problematic since a stable internet connection can not be taken for granted in wetlands. 
 
                     Instead, we propose a local AI model specifically trained to distinguish common reeds from the other members of wetland vegetation. In our prototype, we used image recognition with a Teachable Machines Machine Learning Model.`,
+            
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "image",
@@ -721,6 +779,10 @@ export const caseStudies: Record<
               the grabbing arm helps both the plant-recognition by providing the 1st-step identification & the cutting mechanism by stabilizing the stem.
 
               With this process we arrived to the concept introduced in the section of design proposal ⬆️.`,
+            styles:[
+              {phrase: ``, serif:true, bold: true},
+              {phrase: ``, serif:true, bold: true},
+            ] 
           },
         ],
       },

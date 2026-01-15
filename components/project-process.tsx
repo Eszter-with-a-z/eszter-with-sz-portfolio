@@ -89,7 +89,7 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
                       }                      
                       >
                         <div className="
-                        min-w-[250px] max-h-[400px] 
+                        min-w-[300px] max-h-[400px] 
                         rounded-lg overflow-hidden
                         w-full  max-w-[80vh] mx-auto">
 
@@ -103,7 +103,7 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
                         </div>
                           {/* Caption */}
                         {item.caption && (
-                          <p className="text-sm text-center text-muted-foreground mt-2 italic whitespace-pre-line">
+                          <p className="text-sm  min-w-[250px] text-center text-muted-foreground mt-2 italic whitespace-pre-line">
                             {item.caption}
                           </p>
                         )}
