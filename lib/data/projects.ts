@@ -96,18 +96,26 @@ export const caseStudies: Record<
             type: "text",
             text: `Since it was my thesis project, I got started with reviewing academic literature.
 
-                  Research suggests that AI above all will replace tasks, not jobs. Therefore, the project draws inspiration from Job Crafting. It is an approach in which the individual increases meaningfulness in their job through tailoring what tasks it entails. The two main methods are simply adding and dropping tasks over time to not only replace the unwanted parts, but to enhance the meaningful ones.
+                  Research suggests that AI above all will replace tasks, not jobs. Therefore, I adopt the framework of Job Crafting: an approach in which the individual increases meaningfulness in their job through tailoring what tasks it entails. The two main methods are simply adding and dropping tasks over time to not only replace the unwanted parts, but to enhance the meaningful ones.\n
+                  Studies also find that even though there are hardly any jobs that are or will be “replaced”, AI introduces a major shift in most industries.`,
+            styles:[
+              {phrase: `AI above all will replace tasks, not jobs`, bold: true},
+              {phrase: `Job Crafting: an approach in which the individual increases meaningfulness in their job through tailoring what tasks it entails`, bold: true},
 
-                  Studies also find that even though there are hardly any jobs that are or will be “replaced”, the changes AI introduces in what each job entails is creating a major shift in industries.`,
+            ]
           },
           {
             type: "text",
             text: `The transition, as in previous industrial revolutions, happens naturally, but it doesn’t mean ideally.
                     The premise of the project is that
-                    it needs deliberate, informed and sensitive design to ensure that the shift occurs in a humane way (as opposed to technocratic). 
+                    the disruption AI causes needs deliberate, informed and sensitive design to play out in a human-centered way (as opposed to technocratic). 
 
                     Therefore, human-centered AI principles were central in the project (more in Prototyping).`,
-          },          
+            styles:[
+                {phrase: `the disruption AI causes needs deliberate, informed and sensitive design`, serif:true, size: "2xl"},
+                {phrase: `human-centered AI principles`, bold: true},
+            ] 
+          },         
         ],
       },
       {
@@ -125,6 +133,10 @@ export const caseStudies: Record<
             text: `I conducted 7 qualitative interviews with craft entrepreneurs. It was important for me to chose crafters, not digital artists, so that generative AI doesn’t directly interfere with their products (which would be the case with e.g. digital artist or musicians).
 
                   I used qualitative analysis and created 7 visualizations based in the findings.`,
+            styles:[
+                {phrase: ``, serif:true, bold: true},
+                {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "text",
@@ -138,6 +150,10 @@ export const caseStudies: Record<
                   (2) invisible work
                   Crafters have to fulfill  all the roles from cleaner, driver,  seller through content creator  and  market  entrepreneur,  analyst , CEO  to  and  bookkeeper without any recognition. 
                   Crafters feel like it is an invisible and overlooked part of their job  that takes up too much of their  time  and  energy.  Many  considered or actually stopped  crafting professionally because of  this phenomenon.`,
+            styles:[
+                {phrase: ``, serif:true, bold: true},
+                {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "image",
@@ -163,6 +179,11 @@ export const caseStudies: Record<
                   the sense of creating something; bringing joy to others and the artistic self expression.
 
                   I used this illustration as a “compass” to guide my design choices in the ideating and prototyping.`,
+            
+            styles:[
+                {phrase: ``, serif:true, bold: true},
+                {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "image",
@@ -188,6 +209,10 @@ export const caseStudies: Record<
             (A) a design for the (potential) customers - creating some artifacts that promote local crafters and their work;
             (B) for trend analysis from the international community - collecting and organizing knowledge about current  trends, new technologies, events on a global scale to foster the phase of  research and inspiration;
             (D) for the local crafter community - connecting crafters in vicinity and building a community and/or local clientele.`,
+            styles:[
+                {phrase: ``, serif:true, bold: true},
+                {phrase: ``, serif:true, bold: true},
+            ] 
           },
 
         ],
@@ -207,6 +232,10 @@ export const caseStudies: Record<
             text: `I opted to narrow down the  scope of the issue that my prototype will address to social media management. 
 
                   According to my research, it is not only a highly desired task to avoid among creative workers, but as the visualization illustrates, it is also connected to multiple roles crafters must fulfill while  managing their business.`,
+            styles:[
+                {phrase: ``, serif:true, bold: true},
+                {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "image",
@@ -222,6 +251,10 @@ export const caseStudies: Record<
                   The goal with using  voice interaction is so that the new technology doesn’t keep them away from their creative work – and since they do it professionally, there is a lot of  monotonicity involved so the worker might have free capacity to engage in a  dialogue. 
 
                   The prototype, after having a thought-provoking discussion (ideally, the  questions spark new reflections on the human’s half), would come up with  a recommendation for social media content.`,
+            styles:[
+                {phrase: ``, serif:true, bold: true},
+                {phrase: ``, serif:true, bold: true},
+            ] 
           },
         ],
       },
@@ -244,6 +277,10 @@ export const caseStudies: Record<
                   But perhaps more  importantly, it aims to help building a habit and to lower the effort it  takes to post on social media, so that it creates resources for the artists  to augment their skills in what truly matters: in their art or craft.
                   (3) Human-driven decision making  
                   Many tools with a similar purpose automate the whole flow of content  generation from collection to publication. The prototype purposefully focuses on the ideation part of content generation, and leaves the  publication for the human. By doing so, plus asking the crafter  whether the generated content feels authentic to them (last two lines in the second iteration), I hope to keep the human the decision-maker of the  process.`,
+            styles:[
+                {phrase: ``, serif:true, bold: true},
+                {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "image",
@@ -269,6 +306,10 @@ export const caseStudies: Record<
               The outcomes revolved around conversation design, voice, the “character” of the assistant, how it fits into the workflow, and finally, the output that the conversation ends with. 
               The most important findings were that creative workers
               1) found the visual recommendation and hashtags useful, the caption superfluous;`,
+            styles:[
+                {phrase: ``, serif:true, bold: true},
+                {phrase: ``, serif:true, bold: true},
+            ] 
           },
           {
             type: "text",
@@ -276,6 +317,10 @@ export const caseStudies: Record<
               3) were surprised by the creativity of the recommendations and that they were built on details from the conversation; and finally,
               4) agreed that such an assistant can make posting on social media more effortless. The idea of including it in the early phases of the  content generation (reminder, ideation) was appreciated 
               for sparking creativity but leaving space to personalize the content in the later phases to preserve authenticity.`,
+            styles:[
+                {phrase: ``, serif:true, bold: true},
+                {phrase: ``, serif:true, bold: true},
+            ] 
           },
                     {
             type: "image",

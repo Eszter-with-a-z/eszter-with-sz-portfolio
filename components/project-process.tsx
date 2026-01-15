@@ -4,13 +4,15 @@ import { useState } from "react"
 import GalleryModal from "@/components/galleryModal"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Image from "next/image"
-import { Plus } from "lucide-react"
+import { InlineTextStyle } from "@/lib/functions"
+import { renderWithTextStyling } from "@/lib/functions"
 
 export interface ProcessContentItem {
   type: "text" | "image"
   text?: string
   url?: string
   caption?:string
+  styles?: InlineTextStyle[]
 }
 
 export interface ProcessStep {
@@ -71,9 +73,9 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
                     item.type === "text" ? (
                       <div
                         key={itemIndex}
-                        className="mx-auto text-muted-foreground leading-relaxed flex-1 min-w-[250px] max-w-[500px] p-2"
+                        className="mx-auto whitespace-pre-line text-muted-foreground leading-relaxed flex-1 min-w-[250px] max-w-[500px] p-2"
                       >
-                        {item.text}
+                        {renderWithTextStyling(item.text, item.styles) }
                       </div>
                     ) : (
                       <div

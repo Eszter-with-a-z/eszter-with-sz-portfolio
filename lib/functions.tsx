@@ -23,13 +23,13 @@ export interface InlineTextStyle {
   colorClass?: string
 }
 
-// use as: {renderWithTextStyling(text, boldArray, serifArray)}
+
 export function renderWithTextStyling(
-  text: string,
+  text: string | undefined,
   styles: InlineTextStyle[] = []
 ): ReactNode[] {
+   if (!text) return []
   let parts: ReactNode[] = [text]
-
   styles.forEach((style, styleIndex) => {
     parts = parts.flatMap((part) => {
       if (typeof part !== "string") return part
