@@ -108,11 +108,11 @@ export const caseStudies: Record<
             type: "text",
             text: `The transition, as in previous industrial revolutions, happens naturally, but it doesn’t mean ideally.
                     The premise of the project is that
-                    the disruption AI causes needs deliberate, informed and sensitive design to play out in a human-centered way (as opposed to technocratic). 
+                    the disruption caused by AI needs deliberate, informed and sensitive design to play out in a human-centered way (as opposed to technocratic). 
 
                     Therefore, human-centered AI principles were central in the project (more in Prototyping).`,
             styles:[
-                {phrase: `the disruption AI causes needs deliberate, informed and sensitive design`, serif:true, size: "2xl"},
+                {phrase: `the disruption caused by AI needs deliberate, informed and sensitive design`, serif:true, size: "2xl"},
                 {phrase: `human-centered AI principles`, bold: true},
             ] 
           },         
@@ -211,23 +211,30 @@ export const caseStudies: Record<
             I focused on the action of sketching, as a way to generate knowledge, and identified 5 distinct directions of ideas and design opportuities:
             A) a design for the potential) customers - creating some artifacts that promote local crafters and their work;
             B) for trend analysis from the international community - collecting and organizing knowledge about current  trends, new technologies, events on a global scale to foster the phase of  research and inspiration;
-            D) for the local crafter community - connecting crafters in vicinity and building a community and/or local clientele.`,
+            c) for administration, like bookkeeping, scheduling, tracking orders`,
             styles:[
                 {phrase: `identified 5 distinct directions of ideas and design opportuities:`, bold: true},
                 {phrase: `A)`, serif:true, size:"2xl"},
                 {phrase: `B)`, serif:true, size:"2xl"},
-                {phrase: `D)`, serif:true, size:"2xl"},
-            ] 
-          },
-         {
-            type: "text",
-            text: `E) and for invisible work and roles - tackling the challenges of balancing between multiple roles/offloading certain roles.
-            I opted for E) since designing for invisible work addresses one of the 2 main reasons behind struggling the ask for actual price of labor.
-                              
-                  `,
-            styles:[
+                {phrase: `C)`, serif:true, size:"2xl"},
+                {phrase: `for the potential) customers`, bold: true},
+                {phrase: `for trend analysis`, bold: true},
+                {phrase: `for administration`, bold: true},                
+              ] 
+            },
+            {
+              type: "text",
+              text: `D) for the local crafter community - connecting crafters in vicinity and building a community and/or local clientele.
+              E) and for invisible work and roles - tackling the challenges of balancing between multiple roles/offloading certain roles.
+              I opted for E) since designing for invisible work addresses one of the 2 main reasons behind struggling the ask for actual price of labor.
+              
+              `,
+              styles:[
                 {phrase: `since designing for invisible work addresses one of the 2 main reasons behind struggling the ask for actual price of labor.`, serif:true, size:"2xl"},
+                {phrase: `D)`, serif:true, size:"2xl"},
                 {phrase: `E)`, serif:true, size:"2xl"},
+                {phrase: `for the local crafter community`, bold: true},
+                {phrase: `for invisible work and roles`, bold: true},
             ] 
           },
 
@@ -245,12 +252,17 @@ export const caseStudies: Record<
           },  
           {
             type: "text",
-            text: `I opted to narrow down the  scope of the issue that my prototype will address to social media management. 
-
-                  According to my research, it is not only a highly desired task to avoid among creative workers, but as the visualization illustrates, it is also connected to multiple roles crafters must fulfill while  managing their business.`,
+            text: `I opted to narrow down the scope of the issue that my prototype will address to social media management. \n
+                  According to my research, it is not only a highly desired task to avoid, but as the visualization illustrates, it is also the most connected to multiple roles crafters must fulfill while managing their business.\n
+                  After a couple of iterations, I created the storyboard [ 1st figure ] to demonstrate the expected user flow and context of the  prototype.\n 
+                  The idea is an artefact powered by AI that engages creative entrepreneurs verbally while they are working on a repetitive part of their project that doesn’t require too much concentration.`,
             styles:[
-                {phrase: ``, serif:true, bold: true},
-                {phrase: ``, serif:true, bold: true},
+                {phrase: ` narrow down`,  bold: true},
+                {phrase: `to social media management`, bold: true},
+                {phrase: `highly desired`, bold: true},
+                {phrase: `the most connected to multiple roles`, bold: true},
+                {phrase: `user flow and context`, bold: true},
+                {phrase: `an artefact powered by AI that engages creative entrepreneurs verbally`, bold: true},
             ] 
           },
           {
@@ -260,16 +272,12 @@ export const caseStudies: Record<
           },         
           {
             type: "text",
-            text: `After a couple of iterations, I created the storyboard shown on the right to demonstrate the expected user flow and context of the  prototype. 
-
-                  The idea is to create an artefact powered by AI that engages creative entrepreneurs verbally while they are working on a repetitive part of their project that doesn’t require too much concentration.
-
-                  The goal with using  voice interaction is so that the new technology doesn’t keep them away from their creative work – and since they do it professionally, there is a lot of  monotonicity involved so the worker might have free capacity to engage in a  dialogue. 
-
-                  The prototype, after having a thought-provoking discussion (ideally, the  questions spark new reflections on the human’s half), would come up with  a recommendation for social media content.`,
+            text: `The goal with using  voice interaction is so that the new technology doesn’t keep them away from their creative work - and since they do it professionally, there is a lot of  monotonicity involved so the worker might have free capacity to engage in a  dialogue. \n
+                  The prototype, after having a thought-provoking discussion (ideally, the  questions spark new reflections on the human's half), would come up with  a recommendation for social media content.`,
             styles:[
-                {phrase: ``, serif:true, bold: true},
-                {phrase: ``, serif:true, bold: true},
+                {phrase: `The goal with using  voice interaction is so that the new technology doesn’t keep them away from their creative work`, serif:true, size:"2xl"},
+                {phrase: `monotonicity `, bold: true},
+                {phrase: `free capacity to engage in a  dialogue.`, bold: true},
             ] 
           },
         ],
@@ -281,21 +289,24 @@ export const caseStudies: Record<
         content: [
           {
             type: "text",
-            text: `I used a local AI model (Gemma 3) and a light-weight Flask application to build a high-fidelity prototype quickly to test it with my target audience.
+            text: `I used a local AI model (Gemma 3) and a light-weight Flask application to build a high-fidelity prototype quickly to test it with my target audience.\n
+                  I built 2 iterations based on user' feedback. The 2 figures illustrate how I changed the conversation flow from the first iteration to the second.\n
+                  I prioritized 3 Human-Centered AI principles in prototyping:
 
-                  I built 2 iterations based on the users’ feedback. The flow charts on the right illustrate how I changed the conversation flow from the first iteration to the second.
-
-                  During the prototyping, I prioritized 3 Human-Centered AI principles:
-
-                  (1) Usable AI
+                  1) Usable AI
                   The voice input builds on strengths of AI to reduce screen time and enable usability in cases when the artists can’t  use their eyes and hands to interact with the AI.
-                  (2) Augmenting human ability   
-                  But perhaps more  importantly, it aims to help building a habit and to lower the effort it  takes to post on social media, so that it creates resources for the artists  to augment their skills in what truly matters: in their art or craft.
-                  (3) Human-driven decision making  
-                  Many tools with a similar purpose automate the whole flow of content  generation from collection to publication. The prototype purposefully focuses on the ideation part of content generation, and leaves the  publication for the human. By doing so, plus asking the crafter  whether the generated content feels authentic to them (last two lines in the second iteration), I hope to keep the human the decision-maker of the  process.`,
+                  2) Augmenting human ability   
+                  More  importantly, it aims to help building a habit and to lower the effort to post on social media, so that it creates resources for the artists to augment their skills in what truly matters: in their art or craft.
+                  3) Human-driven decision making  
+                  Many tools with a similar purpose automate the whole flow of content  generation from collection to publication. The prototype purposefully focuses on the ideation part of content generation, and leaves the  publication for the human. By doing so, plus asking the crafter whether the generated content feels authentic to them (last two lines in the second iteration), I hope to keep the human the decision-maker of the  process.`,
             styles:[
-                {phrase: ``, serif:true, bold: true},
-                {phrase: ``, serif:true, bold: true},
+                {phrase: `2 iterations`, bold: true},
+                {phrase: `3 Human-Centered AI principles`, bold: true},
+                {phrase: `it creates resources for the artists to augment their skills in what truly matters: in their art or craft.`, bold: true},
+                {phrase: `keep the human the decision-maker of the  process`, bold: true},
+                {phrase: `1) Usable AI`, serif:true, size:"2xl"},
+                {phrase: `2) Augmenting human ability`, serif:true, size:"2xl"},
+                {phrase: `3) Human-driven decision making `, serif:true, size:"2xl"},
             ] 
           },
           {
@@ -318,24 +329,33 @@ export const caseStudies: Record<
         content: [
           {
             type: "text",
-            text: `Finally, I conducted 5 usability tests: 2 with the 1st prototype, and 3 with the 2nd iteration. The participants were asked to bring a project in which there were in a monotonous phase, e.g. creating sketches, or coloring bigger surfaces. During the test, they were asked to work on their project in a comfortable work environment while conversing with the prototype. Then, we had a retrospective think-aloud session. 
-              The outcomes revolved around conversation design, voice, the “character” of the assistant, how it fits into the workflow, and finally, the output that the conversation ends with. 
-              The most important findings were that creative workers
-              1) found the visual recommendation and hashtags useful, the caption superfluous;`,
+            text: `Finally, I conducted 5 usability tests. \n
+            1. The participants were asked to bring a project in which they were in a monotonous phase, e.g. creating sketches, or coloring. \n
+            2. They were then asked to work on their project in a comfortable environment while conversing with the prototype. \n
+            3. Finally, we had a retrospective think-aloud session. \n
+              The outcomes revolved around conversation design, voice, the “character” of the assistant, how it fits into the workflow, and finally, the output that the conversation ends with. \n
+              The most important findings were that creative workers`,
             styles:[
-                {phrase: ``, serif:true, bold: true},
-                {phrase: ``, serif:true, bold: true},
+                {phrase: `5 usability tests`, bold: true},
+                {phrase: `The outcomes revolved around conversation design, voice, the “character” of the assistant, how it fits into the workflow, and finally, the output that the conversation ends with. `, bold: true},                
             ] 
           },
           {
             type: "text",
-            text: `2) appreciate the details the assistant picks up from the conversation about the context;
+            text: `1) found the visual recommendation and hashtags useful, the caption superfluous;
+            2) appreciate the details the assistant picks up from the conversation about the context;
               3) were surprised by the creativity of the recommendations and that they were built on details from the conversation; and finally,
-              4) agreed that such an assistant can make posting on social media more effortless. The idea of including it in the early phases of the  content generation (reminder, ideation) was appreciated 
-              for sparking creativity but leaving space to personalize the content in the later phases to preserve authenticity.`,
+              4) agreed that such an assistant can make posting on social media more effortless. The idea of including it in the early phases of the  content generation (reminder, ideation) was appreciated for sparking creativity but leaving space to personalize the content in the later phases to preserve authenticity.`,
             styles:[
-                {phrase: ``, serif:true, bold: true},
-                {phrase: ``, serif:true, bold: true},
+                {phrase:`1)`, serif: true, size:"2xl"},
+                {phrase:`2)`, serif: true, size:"2xl"},
+                {phrase:`3)`, serif: true, size:"2xl"},
+                {phrase:`4)`, serif: true, size:"2xl"},
+                {phrase:`about the context`, bold: true},
+                {phrase:` surprised by the creativity of the recommendations`, bold: true},
+                {phrase:`posting on social media more effortless`, bold: true},
+                {phrase:`early phases`, bold: true},
+                {phrase:`for sparking creativity but leaving space to personalize the content in the later phases to preserve authenticity.`, serif: true, size:"2xl"},
             ] 
           },
                     {
