@@ -81,28 +81,27 @@ const getImageTransform = (index: number) => {
     : -900 - rand * 280
 
   // --- EASING ---
-  const eased = easeInOut(scrollProgress)
-
-
-
-
-  const translateY =
-    startY + (endY - startY) * eased * speed
+  const timeWarp = 0.75 + rand * 0.6
+const eased = easeInOut(
+  Math.min(scrollProgress * timeWarp, 1)
+)
+const distance = 0.85 + rand * 0.4
+const translateY =
+  startY + (endY - startY) * eased * distance
 
   // --- OPACITY ---
-  let opacity = 1
-  const fadeInEnd = isDesktop ? 0.05 : 0.08
-  const fadeOutStart = isDesktop ? 0.95 : 0.92
+let opacity = 0
+const fadeInEnd = isDesktop ? 0.03 : 0.04
 
-  if (scrollProgress < fadeInEnd) {
-    opacity = scrollProgress / fadeInEnd
-  } else if (scrollProgress > fadeOutStart) {
-    opacity = (1 - scrollProgress) / (1 - fadeOutStart)
-  }
+if (scrollProgress > 0) {
+  const t = Math.min(scrollProgress / fadeInEnd, 1)
+  opacity = easeInOut(t)
+}
+
 
   return {
     transform: `translateY(${translateY}px)`,
-    opacity:1,
+    opacity,
   }
 }
 
@@ -113,7 +112,7 @@ const getImageTransform = (index: number) => {
     
     <section 
     ref={heroRef} 
-    className="relative h-[300vh] overscroll-none"
+    className="relative h-[200vh] overscroll-none"
       style={{
         "--project-color": `var(--project-${project.id})`,
       } as React.CSSProperties}>
@@ -162,6 +161,7 @@ const getImageTransform = (index: number) => {
               { top: "18%", left: "4%", width: 220, height: 320 },
               { top: "22%", right: "6%", width: 250, height: 350 },
               { bottom: "28%", left: "8%", width: 230, height: 330 },
+              
               { bottom: "12%", right: "4%", width: 210, height: 300 },
             ]
 
