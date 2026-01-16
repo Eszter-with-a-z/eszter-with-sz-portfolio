@@ -34,7 +34,7 @@ export default async function ProjectPage({
       <ProjectProblem problem={project.problem} />
       <ProjectProposal id={project.id} proposal={project.proposal} />
       <ProjectProcess id={project.id} process={project.process} />
-      <ProjectNavigation currentId={project.id} />
+      <ProjectNavigation currentId={project.id} currentTitle={project.title} />
       <Footer />
     </div>
   )
