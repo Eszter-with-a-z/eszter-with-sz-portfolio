@@ -22,22 +22,28 @@ export interface ProcessStep {
 }
 
 interface ProjectProcessProps {
+  id:number
   process: ProcessStep[]
 }
 
-export default function ProjectProcess({ process }: ProjectProcessProps) {
+export default function ProjectProcess({ process, id }: ProjectProcessProps) {
   const [activeImage, setActiveImage] = useState<{
   src: string
   alt?: string
 } | null>(null)
 
   return (
-    <section className="py-24 bg-background mx-auto max-w-[1200px]">
+    <section 
+    className="py-24 bg-background mx-auto max-w-[1200px]"
+    style={{
+        "--project-color": `var(--project-${id})`,
+      } as React.CSSProperties}
+    >
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold mb-12">The process</h2>
-        <div className="w-full flex items-center  justify-between w-full pr-4 my-6">
-          <div className="flex px-6 w-full flex-col md:flex-row items-start md:gap-6  items-center font-sans not-italic">
-            <span className="font-bold text-xl font-sans w-[30%] whitespace-pre-line text-start md:text-end">
+        <div className=" flex content-center w-full pr-4 my-6">
+          <div className="flex px-6 w-full flex-col border rounded-lg py-3 md:flex-row items-start md:items-center md:gap-6  items-center font-sans not-italic">
+            <span className="font-bold text-xl font-sans w-[50%] whitespace-pre-line md:text-end">
               step
             </span>
             <span className="text-sm font-semibold text-muted-foreground w-full">
@@ -47,21 +53,31 @@ export default function ProjectProcess({ process }: ProjectProcessProps) {
         </div>
         <Accordion type="single" collapsible className="space-y-4">
           {process.map((step, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className=" rounded-lg">
-              <AccordionTrigger className="px-6 hover:no-underline hidden md:flex border">
+            <AccordionItem key={index} value={`item-${index}`} className="rounded-lg">
+              <AccordionTrigger className="
+              px-6 hover:no-underline hidden md:flex border
+              hover:bg-[color:var(--project-color)] hover:text-white 
+              [&[data-state=open]]:bg-[color:var(--project-color)] [&[data-state=open]]:text-white 
+              [&[data-state=open]>svg]:stroke-white">
                 <div className="flex items-center justify-between w-full pr-4">
                   <div className="flex gap-6 items-center font-sans not-italic">
-                    <span className="font-bold text-xl font-sans w-[30%] whitespace-pre-line text-end">{step.title}</span>
-                    <span className="text-sm text-muted-foreground w-full">{step.subtitle}</span>
+                    <span className="font-bold text-xl font-sans w-[50%] whitespace-pre-line text-end">{step.title}</span>
+                    <span className="text-sm w-full">{step.subtitle}</span>
                   </div>
                 </div>
               </AccordionTrigger>
 
-              <AccordionTrigger className="px-6 hover:no-underline flex md:hidden border">
+              <AccordionTrigger className="
+              px-6 hover:no-underline flex 
+              md:hidden border 
+              hover:bg-[color:var(--project-color)] hover:text-white 
+              [&[data-state=open]]:bg-[color:var(--project-color)] [&[data-state=open]]:text-white 
+              [&[data-state=open]>svg]:stroke-white
+              ">
                 <div className="flex items-center justify-between w-full pr-4 gap-4 not-italic">
                   <div className="flex flex-col items-start gap-1 font-sans not-italic">
-                    <span className="font-bold text-xl font-sans w-[50%] whitespace-pre-line ">{step.title}</span>
-                    <span className="text-sm text-sans text-muted-foreground">{step.subtitle}</span>
+                    <span className="font-bold text-xl font-sans whitespace-pre-line ">{step.title}</span>
+                    <span className="text-sm text-sans">{step.subtitle}</span>
                   </div>
                   
                 </div>

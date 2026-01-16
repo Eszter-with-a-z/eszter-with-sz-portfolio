@@ -33,7 +33,7 @@ export default async function ProjectPage({
       <ProjectHero project={project} />
       <ProjectProblem problem={project.problem} />
       <ProjectProposal id={project.id} proposal={project.proposal} />
-      <ProjectProcess process={project.process} />
+      <ProjectProcess id={project.id} process={project.process} />
       <ProjectNavigation currentId={project.id} />
       <Footer />
     </div>

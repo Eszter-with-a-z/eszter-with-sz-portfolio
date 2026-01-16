@@ -197,8 +197,7 @@ export const caseStudies: Record<
       },
       {
         title: "Ideate: \nSketching",
-        subtitle: `Through sketching, identify 5 distinct design opportunities. 
-                    From those, “invisible work” is chosen.`,
+        subtitle: `Through sketching, identify 5 distinct design opportunities. From those, “invisible work” is chosen.`,
         content: [
          {
             type: "image",
