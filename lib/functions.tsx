@@ -33,7 +33,7 @@ export function renderWithTextStyling(
   styles.forEach((style, styleIndex) => {
     parts = parts.flatMap((part) => {
       if (typeof part !== "string") return part
-
+      
       return part.split(style.phrase).flatMap((chunk, i, arr) =>
         i < arr.length - 1
           ? [

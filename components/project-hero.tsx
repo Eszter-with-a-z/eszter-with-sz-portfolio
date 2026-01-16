@@ -126,29 +126,29 @@ if (scrollProgress > 0) {
           }}
         >
 
-          <h1 className="text-white text-5xl  lg:text-7xl font-bold mb-4 text-balance">{project.title}</h1>
+          <h1 className="text-white text-5xl  lg:text-7xl font-bold mt-12 mb-4 text-balance">{project.title}</h1>
           <p className="text-white/90 text-xl lg:text-2xl text-muted-foreground mb-8 text-pretty max-w-3xl">{project.subtitle}</p>
 
           <div className=" bg-background/95 backdrop-blur-sm p-8 rounded-2xl border shadow-xl max-w-2xl">
             <div className=" space-y-3 text-sm">
               <div className="flex justify-between pb-3 border-b-1">
-                <span className="font-semibold">Field</span>
-                <span className="text-muted-foreground">{project.field}</span>
+                <span className="font-semibold text-start mr-1">Field</span>
+                <span className="text-muted-foreground text-end">{project.field}</span>
               </div>
               <div className="flex justify-between pb-3 border-b-1">
-                <span className="font-semibold">Project type</span>
-                <span className="text-muted-foreground">{project.projectType}</span>
+                <span className="font-semibold text-start mr-1">Project type</span>
+                <span className="text-muted-foreground text-end">{project.projectType}</span>
               </div>
               <div className="flex justify-between pb-3 border-b-1">
-                <span className="font-semibold">Responsibilities</span>
+                <span className="font-semibold text-start mr-1">Responsibilities</span>
                 <span className="text-muted-foreground text-end max-w-[50%]">{project.responsibilities}</span>
               </div>
               <div className="flex justify-between pb-3 border-b-1">
-                <span className="font-semibold">Duration</span>
-                <span className="text-muted-foreground">{project.duration}</span>
+                <span className="font-semibold text-start mr-1">Duration</span>
+                <span className="text-muted-foreground text-end">{project.duration}</span>
               </div>
               <div className="flex justify-between">
-                <span className="font-semibold">Technology</span>
+                <span className="font-semibold text-start mr-1">Technology</span>
                 <span className="text-muted-foreground text-end max-w-[50%]">{project.technology}</span>
               </div>
             </div>
