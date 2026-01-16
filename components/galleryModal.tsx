@@ -24,7 +24,7 @@ export default function GalleryModal({ src, alt, onClose }: GalleryModalProps) {
           className="absolute top-5 right-5 text-white hover:opacity-70"
           aria-label="Close gallery"
         >
-          <X size={32} className="z-10 bg-accent rounded-2xl p-1"/>
+          <X size={32} className="z-10 bg-accent/30 rounded-2xl p-1"/>
         </button>
 
         <Image
