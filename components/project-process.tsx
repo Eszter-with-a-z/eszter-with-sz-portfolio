@@ -83,13 +83,13 @@ export default function ProjectProcess({ process, id }: ProjectProcessProps) {
                 </div>
               </AccordionTrigger>
 
-              <AccordionContent className="px-6 pb-6">
+              <AccordionContent className="px-2 px:sm-6 pb-6">
                 <div className="flex flex-wrap gap-6 mt-4 items-stretch">
                   {step.content.map((item, itemIndex) =>
                     item.type === "text" ? (
                       <div
                         key={itemIndex}
-                        className="mx-auto whitespace-pre-line text-muted-foreground leading-relaxed flex-1 min-w-[250px] max-w-[500px] p-2"
+                        className="mx-auto whitespace-pre-line text-muted-foreground leading-relaxed flex-1 min-w-[250px] max-w-[500px]"
                       >
                         {renderWithTextStyling(item.text, item.styles) }
                       </div>
