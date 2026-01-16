@@ -81,13 +81,13 @@ const getImageTransform = (index: number) => {
     : -900 - rand * 280
 
   // --- EASING ---
-  const timeWarp = 0.75 + rand * 0.6
-const eased = easeInOut(
-  Math.min(scrollProgress * timeWarp, 1)
-)
-const distance = 0.85 + rand * 0.4
-const translateY =
-  startY + (endY - startY) * eased * distance
+  const eased = easeInOut(scrollProgress)
+
+
+
+
+  const translateY =
+    startY + (endY - startY) * eased * speed
 
   // --- OPACITY ---
 let opacity = 0
@@ -161,7 +161,6 @@ if (scrollProgress > 0) {
               { top: "18%", left: "4%", width: 220, height: 320 },
               { top: "22%", right: "6%", width: 250, height: 350 },
               { bottom: "28%", left: "8%", width: 230, height: 330 },
-              
               { bottom: "12%", right: "4%", width: 210, height: 300 },
             ]
 
