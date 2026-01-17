@@ -426,7 +426,10 @@ export const caseStudies: Record<
       {
         title: "Receive design challenge",
         subtitle: "Create a lamp that affords interaction other than an on/off switch!",
-        content: [],
+        content: [{
+          type: "text",
+          text:"We got the design challenge to critique and rethink the binary switon/off interaction, and the dealine: 5 dasy!"
+        }],
       },
       {
         title: "Monday: Ideate about sensors",
