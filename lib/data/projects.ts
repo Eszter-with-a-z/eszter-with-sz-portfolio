@@ -38,16 +38,7 @@ export const caseStudies: Record<
     ],
     problem: {
       col1: "“I want AI to do my laundry and dishes so that I can do  art and writing, not for AI to do my art and writing so  that I can do my laundry and dishes.“ (Maciejewska,  2024)",
-      col2: `The 4th industrial revolution once again 
-      poses the question: are we automating the work we
-       want to be liberated from? What work should be 
-       replaced by technology (in this case, by AI)? 
-       The target group of the project is creative 
-       entrepreneurs, such as crafters and digital 
-       artists. My thesis asks the question: How might c
-       reative entrepreneurs use generative AI to 
-        enhance the meaningfulness of their (day-to-day) 
-        work?`,
+      col2: `The 4th industrial revolution once again poses the question: are we automating the work we want to be liberated from? What work should be replaced by technology (in this case, by AI)? The target group of the project is creative entrepreneurs, such as crafters and digital artists. My thesis asks the question: How might creative entrepreneurs use generative AI to enhance the meaningfulness of their (day-to-day) work?`,
         styles: {
           col1: [{phrase:`“I want AI to do my laundry and dishes so that I can do  art and writing, not for AI to do my art and writing so  that I can do my laundry and dishes.“`, serif: true, bold: true}],
         }
@@ -815,8 +806,7 @@ export const caseStudies: Record<
         content: [
           {
             type: "text",
-            text: `In our first step (Narrowing Down the Framing), we set the goal of exploring 3 areas in the development of 
-              Reed-E: 
+            text: `In our first step (Narrowing Down the Framing), we set the goal of exploring 3 areas in the development of Reed-E: 
                1) the cutting mechanism
                2) the plant recognition, and
                3) how to combine them.
