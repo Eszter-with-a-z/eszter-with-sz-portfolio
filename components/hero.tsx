@@ -34,7 +34,7 @@ export default function Hero() {
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: `url(https://res.cloudinary.com/dskrqh0vu/image/upload/v1767638432/analog_${bgImage}.jpg)`,
+            backgroundImage: `url(https://res.cloudinary.com/dskrqh0vu/image/upload/q_auto,f_auto/v1767638432/analog_${bgImage}.jpg)`,
           }}
         />
         <div className="absolute inset-0 bg-black/50" />
