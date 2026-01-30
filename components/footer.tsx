@@ -31,6 +31,7 @@ export default function Footer() {
           <a href="#hero" className="inline-block mb-8 hover:opacity-80 transition-opacity">
             <h3 className="text-2xl font-bold mb-2">Eszter Kovács</h3>
             <p className="text-sm italic font-bold  ">Interaction Designer <span className="not-italic font-light">[ C ]</span> </p>
+            <p className="leading-none mt-3">Technology is to enhance, not to replace humans.</p>
           </a>
 
           <div className="space-y-4">
@@ -59,6 +60,7 @@ export default function Footer() {
               <span>🇭🇺 +36 70 622 0027</span>
             </div>
           </div>
+          <p className="leading-none italic font-bold font-serif mt-3">Contact me for my CV!</p>
         </div>
       </div>
 

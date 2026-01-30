@@ -11,7 +11,7 @@ export default function AboutMe() {
             <p className="font-sans font-bold mb-4">
               {renderWithTextStyling(
                 "I am Eszter Kovács, an Interaction Designer based in Malmö, Sweden.",
-                [], ["Eszter Kovács"]
+                [{phrase: `Eszter Kovács`, serif: true}]
               )}
               </p>
             <p className="text-center leading-relaxed text-muted-foreground">
@@ -21,7 +21,10 @@ export default function AboutMe() {
               
               {renderWithTextStyling(
                 "I am passionate about my analog camera, linguistics, calisthenics, sustainability, wombats, and getting to know people!",
-                [], ["analog camera", "calisthenics", "wombats"]
+                [
+                  {phrase: "analog camera", serif: true},
+                  {phrase: "linguistics", serif: true}, 
+                  {phrase:"wombats", serif: true}]
               )}
             </p>
           </div>
@@ -46,7 +49,7 @@ export default function AboutMe() {
             <div className="text-md">
               <h4 className="text-lg font-semibold mb-2"> 🔬 my design approach</h4>
               <p className=" text-muted-foreground leading-relaxed">
-                Enhancing rather than replacing meaningful human interactions with technology.
+                Technology is to enhance, not to replace humans.
               </p>
             </div>
             <div>

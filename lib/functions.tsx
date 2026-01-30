@@ -23,7 +23,22 @@ export interface InlineTextStyle {
   colorClass?: string
 }
 
-
+/*
+{renderWithTextStyling(
+  item.text string,
+  item.styles: 
+      [
+        {phrase: `xy`, serif:true }, 
+        {phrase}
+      ]
+)
+styles: {
+        1:[
+          {phrase:`xy`, serif: true, bold:true, size:"xl"},
+          {phrase:`xy`, serif: true, bold:true, size:"xl"},
+          {phrase:`xy`, serif: true, bold:true, size:"xl"},
+        ],
+*/
 export function renderWithTextStyling(
   text: string | undefined,
   styles: InlineTextStyle[] = []
