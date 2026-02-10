@@ -22,7 +22,7 @@ export const projectGallery:OtherProject[] = [
   {
     image: `${CLOUDINARY_URL_BASE}/other-project_10.png`,
     title: `React Website for a Concert Photographer`,
-    subtitle: `Portfolio for a photographer of the underground life of Budapest`,
+    subtitle: `Portfolio for a photographer who captures the underground life of Budapest`,
     field: `UX & frontend`,
     team: `individual`,
     responsibilities: `design & implement website from scratch`,
@@ -41,7 +41,7 @@ export const projectGallery:OtherProject[] = [
     {
     image: `${CLOUDINARY_URL_BASE}/other-project_11.png`,
     title: `Wordpress Website for Leadership Coaching`,
-    subtitle: `Business site for programs that promote feminine assertivity & leadership`,
+    subtitle: `Business site for programs that promote feminine assertiveness & leadership`,
     field: `UX & frontend`,
     team: `individual`,
     responsibilities: `design & implement website in Wordpress`,
