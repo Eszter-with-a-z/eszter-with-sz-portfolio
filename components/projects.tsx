@@ -38,7 +38,7 @@ export default function Projects() {
             <h3 className="text-2xl font-semibold mb-2">Other Projects</h3>
             <p className="text-muted-foreground">Hover/tap for more!</p>
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {projectGallery.map((project, index) => (
               <ProjectTile key={index} project={project} />
             ))}
