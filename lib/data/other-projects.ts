@@ -6,25 +6,47 @@ export interface OtherProject {
     field: string
     team: string
     responsibilities: string
+    cta?:string
+    url?:string
 }
 
 export const projectGallery:OtherProject[] = [
     {
     image: `${CLOUDINARY_URL_BASE}/other-project_9.png`,
-    title: "Design system variables for an educational app",
+    title: "Design system tokens for an educational app",
     subtitle: "a three-tier variable system for the DS of a financial literacy app",
     field: "UI design",
     team: "individual contribution",
     responsibilities: "create the variable collections",
   },
   {
+    image: `${CLOUDINARY_URL_BASE}/other-project_10.png`,
+    title: `React Website for a Concert Photographer`,
+    subtitle: `Portfolio for a photographer of the underground life of Budapest`,
+    field: `UX & frontend`,
+    team: `individual`,
+    responsibilities: `design & implement website from scratch`,
+    cta:`Check out the live website!`,
+    url:`https://egyheppem.hu/`
+  },
+  {
     
     image: `${CLOUDINARY_URL_BASE}/other-project_5.png`,
     title: "QR scanner for Material & Automation",
-    subtitle: "Creating the QR scanner a project in the Southern Swedish Designer Days",
+    subtitle: "creating the QR scanner a project in the Southern Swedish Designer Days",
     field: "robotics",
     team: "in a team of 2",
     responsibilities: "technical implementation",
+  },
+    {
+    image: `${CLOUDINARY_URL_BASE}/other-project_11.png`,
+    title: `Wordpress Website for Leadership Coaching`,
+    subtitle: `Business site for programs that promote feminine assertivity & leadership`,
+    field: `UX & frontend`,
+    team: `individual`,
+    responsibilities: `design & implement website in Wordpress`,
+    cta:`Check out the live website!`,
+    url:`https://vanszavad.hu/`
   },
   {
     image: `${CLOUDINARY_URL_BASE}/other-project_6.png`,

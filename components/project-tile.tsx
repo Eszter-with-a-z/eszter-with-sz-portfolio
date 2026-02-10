@@ -12,6 +12,8 @@ interface ProjectTileProps {
     field: string
     team: string
     responsibilities: string
+    cta?: string
+    url?: string
   }
 }
 
@@ -59,9 +61,19 @@ export default function ProjectTile({ project }: ProjectTileProps) {
           <div>
             <p className="text-xs mb-1 text-center">Sounds interesting?</p>
             <Button
-              onClick={()=> scrollToSection('footer')}
+              onClick={(e)=> 
+                {
+                  e.stopPropagation()
+                  if (project.cta && project.url) {
+                    
+                    window.open(project.url, "_blank", "noopener, noreferrer");
+                  } else {
+                    scrollToSection('footer')
+                  } 
+                }
+              }
               variant="secondary" size="sm" className="w-full rounded-4xl hover:bg-background hover:text-foreground bg-black text-white">
-              Contact me for a discussion!
+              {project.cta? project.cta :"Contact me for a discussion!"}
             </Button>
           </div>
         </div>
