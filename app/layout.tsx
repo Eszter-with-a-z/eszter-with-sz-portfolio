@@ -55,8 +55,43 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "Eszter (with SZ) Kovács - Interaction Designer",
-  description: "Technology is to enhance, not to replace humans. | IxD & UX/UI | Case Studies | More Projects | Testimonials | About me | Contact",
-  
+  description: "Technology is to enhance, not to replace humans. Eszter Kovács is a designer specializing in UX design and Human-Centered AI.",
+  keywords: [
+    "UX designer",
+    "interaction designer",
+    "UX/UI designer",
+    "user-centered design",
+    "human-centered design",
+    "AI UX designer",
+    "AI usability",
+    "designer portfolio",
+    "Eszter Kovács designer",
+    "IxD designer",
+    "usable AI products",
+    "usable AI design",
+    "user-friendly"
+  ],
+  authors: [{ name: "Eszter Kovács", url: "https://eszter-with-sz.com" }],
+  creator: "Eszter Kovács",
+  metadataBase: new URL("https://eszter-with-sz.com"),
+  openGraph: {
+    title: "Eszter Kovács (with SZ) Kovács - Interaction Designer",
+    description:
+      "Technology is to enhance, not to replace humans. Eszter Kovács is a designer specializing in UX design and Human-Centered AI.",
+    url: "https://eszter-with-sz.com",
+    siteName: "Eszter (with SZ) Kovács - Designer Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+    robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: { canonical: "https://eszter-with-sz.com" }
   /*icons: {
     icon: [
       {
