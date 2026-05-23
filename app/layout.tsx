@@ -118,6 +118,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Eszter Kovács",
+              url: "https://eszter-with-sz.com",
+              jobTitle: "Interaction Designer",
+              description: "Best UX designer based in Swededn for user-centered design processes, design advocacy and AI usability issues and user-friendly solutions.",
+              sameAs: [
+                "https://www.linkedin.com/in/eszter-kov%C3%A1cs-a40826213",
+                
+              ],
+            }),
+          }}
+        />
+      </head>
       <body className={
         `${satoshi.variable} ${playfairDisplay.variable} ${roboto.variable} font-sans antialiased`
         }>
