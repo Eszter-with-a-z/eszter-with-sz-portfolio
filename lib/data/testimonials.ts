@@ -40,6 +40,22 @@ export const testimonials: Testimonial[] = [
   },
   {
     id:3,
+    text: `Eszter is a technically strong designer with a rare ability 
+    to work deeply across both design and implementation. Eszter has been
+    strong in mapping prototype problems and turning them into robust designs. 
+    Her user research is methodologically strong and marked by 
+    challenging the status quo through careful analysis and clear presentation 
+    of findings.`,
+    name: "Peter",
+    title: "CEO of Factorise Technologies Aps.",
+    styles: [
+      {phrase:"technically strong designer", bold: true},
+      {phrase:"challenging the status quo", bold: true},
+      {phrase:"careful analysis and clear presentation", bold: true}    
+    ]
+  },
+    {
+    id:4,
     text: `I have witnessed first-hand her exceptional growth 
     and innate talents in this domain. Eszter is deeply reflective 
     and thoughtful designer who is committed  to continuous 
@@ -54,6 +70,5 @@ export const testimonials: Testimonial[] = [
       {phrase:"exhibits skills characteristic of medior", bold: true},
       {phrase:"senior-level professionals", bold: true}     
     ]
-
-  },
+  }
 ]
