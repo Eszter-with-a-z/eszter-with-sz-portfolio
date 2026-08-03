@@ -1,4 +1,5 @@
 import { renderWithTextStyling } from "@/lib/functions"
+import Image from "next/image"
 {/* Icons: */}
 import { ClipboardList, Sparkle, Sparkles, Users } from "lucide-react"
 
@@ -7,50 +8,40 @@ export default function AboutMe() {
     <section id="about-me" className="z-10 py-12 bg-background ">
       <div className="container mx-auto px-6 ">
         <h2 className="text-4xl font-bold  text-center">About me</h2>
-        <div className="m-auto max-w-[1000px] grid sm:grid-cols-2">
+        {/**    Row 1     */}
+        <div className="m-auto max-w-[1000px] flex flex-col justify-center sm:flex-row py-10 gap-8 text-muted-foreground items-center">
           {/* Column 1 */}
-          <div className="text-end text-2xl my-12">
+          <div className="flex justify-center sm:justify-start sm:items-center">
+            <div className="relative rounded-full w-48 h-48 overflow-hidden justify-end">
+              <Image
+                src="/images/profile-image.jpg"
+                alt="Eszter Kovács"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+          {/* Column 2 */}
+          <div className="text-2xl w-auto max-w-[500px]">
             <p className="font-sans font-bold mb-4">
               {renderWithTextStyling(
-                "I am Eszter Kovács, an Interaction Designer based in Malmö, Sweden.",
-                [{phrase: `Eszter Kovács`, serif: true}]
+                `I am Eszter Kovács, an Interaction Designer with a focus on Human-Centered AI & UX.`,
+                [{phrase: `Eszter Kovács`, serif: true}
+                ]
               )}
               </p>
-            <p className="text-center leading-relaxed text-muted-foreground">
-              📚🤸🌎💬
-            </p>
-            <p className=" font-sans font-bold leading-relaxed text-muted-foreground">
-              
+              <p className="font-sans font-bold mb-4">
               {renderWithTextStyling(
-                "I am passionate about my analog camera, linguistics, calisthenics, sustainability, wombats, and getting to know people!",
+                `I design for my users to say 'I didn't know, but I needed this!' `,
                 [
-                  {phrase: "analog camera", serif: true},
-                  {phrase: "linguistics", serif: true}, 
-                  {phrase:"wombats", serif: true}]
-              )}
-            </p>
-          </div>
-
-          {/* Column 2 */}
-          {/*<div>
-            <p className="leading-relaxed text-muted-foreground">
-              No matter how extroverted I am there are 2 things I can never respond to properly:
-                How are you?
-              Introduce yourself!
-            </p>
-            <p className="leading-relaxed text-muted-foreground mt-4">
-              The first is not relevant now. But instead of introducing myself, let me just say that instead of defining myself,
-              I strive to define my goals and my principles. Consequently, I trust that  they will define me if my actions are aligned with them.
-            </p>
-            <p>So what are these goals and principles? 
-              Here are some I find important:</p>
-          </div>
-
-           Column 3 */}
-         
+                  {phrase: `'I didn't know, but I needed this!'`, serif: true}
+                ]
+              )}        
+              </p>
+          </div>          
         </div>
 
-        {/*        Row 2        */}
+        {/*        Row 2        */}        
         <div className="m-auto max-w-[1000px] grid my-12">
           <div id="about-me" className="space-y-8 grid md:grid-cols-3 gap-8 ">
             <div className="flex flex-col items-center">
@@ -82,6 +73,22 @@ export default function AboutMe() {
             </div>
           </div>
         </div>
+
+        {/*        Row 3        */}
+        <div className="m-auto max-w-[1000px]  gap-8 text-2xl  mb-4">
+            <p className="text-center leading-relaxed ">
+              📚🤸🌎💬
+            </p>
+            <p className="text-center font-sans font-bold leading-relaxed text-muted-foreground">
+              
+              {renderWithTextStyling(
+                "Beyond design, I am passionate about my analog camera, linguistics, calisthenics, sustainability, wombats, and getting to know people!",
+                [
+                  {phrase: "analog camera", serif: true},
+                  {phrase: "linguistics", serif: true}, 
+                  {phrase:"wombats", serif: true}]
+              )}
+            </p>        </div>
       </div>
     </section>
   )
