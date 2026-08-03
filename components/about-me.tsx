@@ -1,13 +1,15 @@
 import { renderWithTextStyling } from "@/lib/functions"
+{/* Icons: */}
+import { ClipboardList, Sparkle, Sparkles, Users } from "lucide-react"
 
 export default function AboutMe() {
   return (
-    <section id="about-me" className="z-10 py-24 bg-background">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-16 text-center">About me</h2>
-        <div className="m-auto max-w-[1000px] grid sm:grid-cols-2 gap-12">
+    <section id="about-me" className="z-10 py-12 bg-background ">
+      <div className="container mx-auto px-6 ">
+        <h2 className="text-4xl font-bold  text-center">About me</h2>
+        <div className="m-auto max-w-[1000px] grid sm:grid-cols-2">
           {/* Column 1 */}
-          <div className="text-end text-2xl ">
+          <div className="text-end text-2xl my-12">
             <p className="font-sans font-bold mb-4">
               {renderWithTextStyling(
                 "I am Eszter Kovács, an Interaction Designer based in Malmö, Sweden.",
@@ -45,24 +47,37 @@ export default function AboutMe() {
           </div>
 
            Column 3 */}
-          <div id="about-me" className="space-y-8">
-            <div className="text-md">
-              <h4 className="text-lg font-semibold mb-2"> 🔬 my design approach</h4>
-              <p className=" text-muted-foreground leading-relaxed">
-                Technology is to enhance, not to replace humans.
+         
+        </div>
+
+        {/*        Row 2        */}
+        <div className="m-auto max-w-[1000px] grid my-12">
+          <div id="about-me" className="space-y-8 grid md:grid-cols-3 gap-8 ">
+            <div className="flex flex-col items-center">
+              <ClipboardList className="w-8 h-8 mb-2 text-muted-foreground" />
+              <h4 className="text-lg text-center font-sans not-italic font-semibold mb-2">
+                Qualitative Research
+              </h4>
+              <p className=" text-muted-foreground text-justify leading-relaxed">
+                I have been trained in advanced qualitative research during my UX Research & Business Design internship at Meet Service Design Ltd. In my work, I prioritize human-centered design research, data visualization and turning findings into actionable insights for developers.
               </p>
             </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-2">🥅 my goal</h4>
-              <p className=" text-muted-foreground leading-relaxed">
-                To find projects that challenge me to learn new skills.
+            <div className="flex flex-col items-center">
+              <Sparkle className="w-8 h-8 mb-2  text-muted-foreground"/>
+              <h4 className="text-lg text-center font-sans not-italic font-semibold mb-2">
+                Human-Centered AI
+                </h4>
+              <p className=" text-muted-foreground text-justify leading-relaxed">
+                The most exciting topic of our era for me is how to make AI human-centered instead of making humans AI-centered. I initiated Human-Centered Design process with AI (as a tool) during my UX/UI internship at Factorise Technologies Aps. In my thesis, I led a Human-Centered Design process for AI (as a product), creating a conversational AI for creative entrepreneurs.
               </p>
             </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-2">🌠 my philosophy</h4>
-              <p className=" text-muted-foreground leading-relaxed">
-                You improve when you help others improve,
-                and you help others improve by improving yourself.
+            <div className="flex flex-col items-center">
+              <Users className="w-8 h-8 mb-2 text-muted-foreground"/>
+              <h4 className="text-lg text-center  font-sans not-italic font-semibold mb-2">
+                Cross-disciplinary Collaborations
+              </h4>
+              <p className=" text-muted-foreground text-justify leading-relaxed">
+                I have worked with clients and teams across disciplines from developers through architects to dentists through (1)my position as a mechatronic&design lab assistant  and (2)my (award-winning) side projects in fields of architecture and business strategy.
               </p>
             </div>
           </div>
