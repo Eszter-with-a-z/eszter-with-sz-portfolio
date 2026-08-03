@@ -30,8 +30,10 @@ export default function Footer() {
         <div className="max-w-2xl">
           <a href="#hero" className="inline-block mb-8 hover:opacity-80 transition-opacity">
             <h3 className="text-2xl font-bold mb-2">Eszter Kovács</h3>
-            <p className="text-sm italic font-bold  ">Interaction Designer <span className="not-italic font-light">[ C ]</span> </p>
-            <p className="leading-none mt-3">Technology is to enhance, not to replace humans.</p>
+            <p className="text-sm italic font-bold  ">Interaction Designer <span className="not-italic font-light">[ C ]</span>
+            </p>
+            <p className="text-sm">with a focus on Human-Centered AI & UX</p>
+            <p className="leading-none mt-3">I design for my users to say 'I didn't know, but this is what I needed!'</p>
           </a>
 
           <div className="space-y-4">

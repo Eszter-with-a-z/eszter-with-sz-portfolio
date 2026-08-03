@@ -45,10 +45,12 @@ export default function Hero() {
         {/* Col 1 */}
         <div className="flex-1 "></div>
         {/* Col 2 =  */}
-        <div className="text-white text-center flex-1">
-          <p className="text-lg mb-2">Hi there! I am</p>
+        <div className="text-white text-center flex-2">
+          <p className="text-md mb-12">I design for my users to say 
+            <br/>'I didn't know, but this is what I needed!'</p>
           <h1 className=" text-6xl font-bold italic mb-4">Eszter <br/> (with SZ)</h1>
-          <p className="text-2xl max-w-100">- an Interaction Designer based in Malmö, Sweden</p>
+          <p className="text-2xl max-w-500">- an Interaction Designer with a focus <br/> on Human-Centered AI & UX</p>
+
         </div>
 
         {/* Dictionary Style Card */}

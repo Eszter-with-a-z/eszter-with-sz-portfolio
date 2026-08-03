@@ -32,9 +32,9 @@ export default function AboutMe() {
               </p>
               <p className="font-sans font-bold mb-4">
               {renderWithTextStyling(
-                `I design for my users to say 'I didn't know, but I needed this!' `,
+                `I design for my users to say 'I didn't know, but this is what I needed!' `,
                 [
-                  {phrase: `'I didn't know, but I needed this!'`, serif: true}
+                  {phrase: `'I didn't know, but this is what I needed!'`, serif: true}
                 ]
               )}        
               </p>
